@@ -414,21 +414,23 @@ header {
     position: relative;
     z-index: 4;
     padding-top: 10px;
+    cursor: pointer;
 }
 .sel:hover {
     background-image: url(../img/str_h.png);
 }
 .select {
-    width: 576px;
+    /* width: 576px; */
     height: 71px;
     background-color: rgb( 255, 255, 255 );
     position: absolute;
-    width: 580px;
+    /* width: 580px; */
     height: 420px;
     z-index: 5;
     border-radius: 4px;
     left: -2px;
     top: -5px;
+    right: -2px;
     /* overflow-y: scroll; */
     padding-top: 15px;
     padding-left: 2px;
@@ -1071,6 +1073,7 @@ footer {
 
 #pop2 {
     /* padding-top: 103px; */
+    /* width: 600px; */
 }
 #pop2 .kam {
     float: none;
@@ -1095,6 +1098,9 @@ footer {
 }
 #pop2 .btn_p{
     margin-top: 58px
+}
+#pop2 .wrap{
+	max-width: 600px;
 }
 #pop3 {
     /* padding-top: 223px */
@@ -1126,9 +1132,16 @@ footer {
 
 #okgo {
     /* padding-top: 298px; */
-    display: table-cell;
-    vertical-align: middle;
-    height: 100vh;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /* height: 100vh; */
+    position: relative;
+}
+#okgo .wrap{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0);
 }
 #okgo h4 {
     margin-top: 57px
@@ -1175,6 +1188,9 @@ footer {
 .arcticmodal-container_i{margin:0 auto;height:100%;}
 .arcticmodal-container_i2{padding:0;margin:0;border:0;vertical-align:middle;}
 .error-input{/* border:1px solid red!important; */background-color: rgba(255, 0, 0, 0.2);}
+.good-input{
+	background-color: white;
+}
 #pop5 .wrap{
     /* max-width: 100%; */
     /* display: block; */

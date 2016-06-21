@@ -26,13 +26,38 @@ $('#pop1 .kamni').click(function(){
 
 $('#kal2').click(function(e){
   e.preventDefault();
+  if ($(this).closest('.wrap').find('.kamni.active').length>0) {
     $('#pop1').arcticmodal('close');
     $('#pop2').arcticmodal({
         afterOpen: function(data, el) {
           $('body,header').css({'overflow': 'hidden','padding-right': '16px'});
         }
-    });
+    });    
+  }
 });
+
+$('.sel a.active').click(function(e){
+  e.preventDefault();
+});
+
+$('.sel a').not('.active').click(function(e){
+  e.preventDefault();
+  $(this).closest('.sel').find('a.active').html($(this).text());
+});
+
+$('.sel').click(function(e){
+  if (!$(this).children('.select').is(':visible')) {
+    $(this).children('.select').show();
+  }else{
+    $(this).children('.select').hide();
+  }
+});
+
+$('.sel .select a').not('active').click(function(e){
+  e.preventDefault();
+
+});
+
 $('#kal3').click(function(e){
   e.preventDefault();
     $('#pop2').arcticmodal('close');
@@ -93,15 +118,15 @@ var menu_active = 0;
     $('<input type="hidden" />').attr({name: 'url', value: document.location.href}).appendTo("form");
     $('<input type="hidden" />').attr({name: 'title', value: document.title}).appendTo("form");
 
-    $('input[name="name"]').blur(function() {if($(this).val().length < 2) {$(this).addClass('error-input');}});
-    $('input[name="name"]').focus(function() {$(this).removeClass('error-input');});
+    $('input[name="name"]').blur(function() {if($(this).val().length < 2) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
+    $('input[name="name"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
 
     $('input[name="phone"]').mask('+7 (999) 999-99-99');
-    $('input[name="phone"]').blur(function() {if($(this).val().length != 18) {$(this).addClass('error-input');}});
-    $('input[name="phone"]').focus(function() {$(this).removeClass('error-input');});
+    $('input[name="phone"]').blur(function() {if($(this).val().length != 18) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
+    $('input[name="phone"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
 
-    $('input[name="email"]').blur(function() {if(!validateEmail($(this).val())) {$(this).addClass('error-input');}});
-    $('input[name="email"]').focus(function() {$(this).removeClass('error-input');});
+    $('input[name="email"]').blur(function() {if(!validateEmail($(this).val())) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
+    $('input[name="email"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
 
     $('form').submit(function(e){
         e.preventDefault();
@@ -113,13 +138,20 @@ var menu_active = 0;
             var data=$(this).serialize();
             $.ajax({type: type, url: url, data: data,
             success : function(){
-                $.arcticmodal('close');$('#okgo').arcticmodal();
+                $.arcticmodal('close');
+                $('#okgo').arcticmodal({
+                    afterOpen: function(data, el) {
+                      $('body,header').css({'overflow': 'hidden','padding-right': '16px'});
+                    }
+                });
             }
         }); 
         }else{
           $('#error').arcticmodal({
              afterClose: function(data, el) {
-                //$('body,header').css({'overflow': 'visible','padding-right': '0px'});
+              if ($('.arcticmodal-container').length<2) {
+                $('body,header').css({'overflow': 'visible','padding-right': '0px'});
+              }
               }
           });
         }
