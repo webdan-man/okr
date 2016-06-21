@@ -253,6 +253,7 @@ header {
     line-height: 50px;
     letter-spacing: -0.6px
 }
+.sec2 h3 span{display: inline-block;vertical-align: top;}
 .cel_gr {
     margin-top: 43px;
 }
@@ -492,16 +493,17 @@ color: #ffbf00;
     height: 330px;
     display: inline-block;
     margin-top: 20px;
+    padding: 0px 13% 0px 6.5%;
 }
 .kam_in img {
     float: right;
-    margin: 70px 12% 0px 0px;
+    margin: 70px 0px 0px 0px;
 }
 .inf_gr {
     float: left;
     text-align: left;
     margin-top: 10px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     width: 200px;
 }
 .inf_gr p,.inf_gr a {
@@ -549,19 +551,37 @@ color: #ffbf00;
 
 .pr_gr {
     float: right;
-    width: 320px;
+    width: 33.4%;
     padding-top: 21px;
     margin-right: 1%;
     height: 100%;
 }
-
+.pr_gr form input,.pr_gr form button{
+    width: 76%;
+}
+.form_gr:before{
+    content:"";
+    background-image: url(../img/line_form.png);
+    background-position: top;
+    background-repeat-x: no-repeat;
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    /* background-size: contain; */
+}
 .form_gr {
-    background-image: url(../img/form_fon.png);
+    /* background-image: url(../img/line_form.png); */
+    /* background-position: top; */
     width: 100%;
     height: 422px;
     margin-top: 31px;
     padding-top: 31px;
     position: relative;
+    border: solid 2px rgb( 255, 191, 0 );
+    border-top: none;
+    border-radius: 3px;
 }
 .form_gr h4 {
     font-size: 20px;
@@ -629,10 +649,10 @@ form button {
 .usl{
     border: solid 1px rgb( 230, 230, 230 );
     display: inline-block;
-    width: 470px;
+    width: 49%;
     height: 271px;
     vertical-align: top;
-    padding-top: 37px
+    padding-top: 37px;
 }
 .usl_gr .usl:nth-of-type(2),.usl_gr .usl:nth-of-type(4) {
     margin-left: -1px;
@@ -754,6 +774,7 @@ form button {
     width: 40px;
     height: 26px;
     position: absolute;
+    cursor: pointer;
 }
 .trak:hover,.trak.active {
     background-image: url(../img/tractor_h.png);
@@ -766,6 +787,7 @@ form button {
     top: -240px;
     left: -99px;
     display: none;
+    cursor: initial;
 }
 .trak_h h4 {
     font-size: 16px;
@@ -1205,14 +1227,17 @@ footer {
     padding: 0 1%;
 }
 .pr_gr {
-    margin-right: 0%;
+    margin-right: 1%;
 }
 .usl_gr .usl:nth-of-type(2), .usl_gr .usl:nth-of-type(4) {
-    margin-left: 0px;
+    /* margin-left: 0px; */
+}
+.sec2 h3 span{
+    display: inline;
 }  
 }
 
-@media screen and (min-width: 901px) and (max-width: 960px) { 
+@media screen and (min-width: 900px) and (max-width: 960px) { 
 .cel {
     margin: 20px 4%;
 }
@@ -1222,24 +1247,25 @@ footer {
 .map{
     transform: scale3d(0.95, 0.95, 1);
 }
+
 }
-@media screen and (min-width: 651px) and (max-width: 900px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
 .kam {
-    float: none;
-    width: 600px;
+    /* float: none; */
+    /* width: 600px; */
     display: inline-block;
     vertical-align: top;
 }
 .pr_gr {
-    float: none;
-    width: 320px;
-    margin-right: 0;
+    /* float: left; */
+    /* width: 320px; */
+    /* margin-right: 0; */
     display: inline-block;
     vertical-align: top;
 }
 
 }
-@media screen and (min-width: 851px) and (max-width: 900px) { 
+@media screen and (min-width: 850px) and (max-width: 900px) { 
 .cel {
     margin: 20px 2%;
 }
@@ -1250,8 +1276,11 @@ footer {
     transform: scale3d(0.85, 0.85, 1);
 }
 .bit_gr a{padding-left: 2px;}
+.kam_in {
+    padding: 0px 8% 0px 5.5%;
 }
-@media screen and (min-width: 801px) and (max-width: 850px) { 
+}
+@media screen and (min-width: 800px) and (max-width: 850px) { 
 .cel {
     margin: 20px 2%;
 }
@@ -1261,12 +1290,15 @@ footer {
 .map{
     transform: scale3d(0.8, 0.8, 1);
 }
+.kam_in {
+    padding: 0px 6.5% 0px 5%;
 }
-@media screen and (min-width: 751px) and (max-width: 800px) { 
+.bit_gr a{padding-left: 0px;}
+}
+@media screen and (min-width: 750px) and (max-width: 800px) { 
 .map{
-    transform: scale3d(0.75, 0.75, 1);
+    transform: scale3d(0.8, 0.8, 1);
 }
 .proc_gr{
-    transform: scale3d(0.95, 0.95, 1);
 }
 }
