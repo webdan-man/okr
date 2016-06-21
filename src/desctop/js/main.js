@@ -75,7 +75,7 @@ $('.trak').hover(function(){
   });
 
 $('.top').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 500);});
-$('.verh').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 500);});
+$('.verh,.mena,.kkam').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-90}, 500);});
 
 $( window ).scroll(function() {
   if ($(document).scrollTop()>0) {
@@ -92,13 +92,17 @@ var menu_active = 0;
             $('.menu').removeClass('noactive');
             menu_active = 1;
     });
-    $('section,.as-close').click(function(){
+    $('section,.as-close,.mena').click(function(){
   if (menu_active == 1) {
     $('.menu').addClass('noactive');
     menu_active = 0;
   }
 });
 
+$('.mena').click(function(){  
+  $('.mena').removeClass('active');
+  $(this).addClass('active');
+});
 
   function validateEmail(email) {var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;return re.test(email);};
     $('input#email-valid').blur(function() {if (!validateEmail($(this).val())) {$(this).addClass('error-input');}});

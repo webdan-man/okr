@@ -482,7 +482,7 @@ color: #ffbf00;
     width: 12px;
     height: 6px;
     top: 35px;
-    right: 20px;
+    right: 3.2%;
     z-index: 5;
     cursor: pointer;
 }
@@ -1268,7 +1268,13 @@ footer {
     display: inline-block;
     vertical-align: top;
 }
-
+.select a {
+    width: 80%;
+}
+.sec1 h4:nth-of-type(1) {
+    background-image: url(../img/sec1_h.png);
+    background-position: 41% 0px;
+}
 }
 @media screen and (min-width: 850px) and (max-width: 900px) { 
 .cel {
