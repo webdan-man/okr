@@ -278,7 +278,7 @@ header {
 
 .sec3 {
     background-color: rgb( 245, 245, 245 );
-    height: 650px;
+    min-height: 650px;
     position: relative;
     z-index: 2;
     padding-top: 68px;
@@ -1265,5 +1265,8 @@ footer {
 @media screen and (min-width: 751px) and (max-width: 800px) { 
 .map{
     transform: scale3d(0.75, 0.75, 1);
+}
+.proc_gr{
+    transform: scale3d(0.95, 0.95, 1);
 }
 }
