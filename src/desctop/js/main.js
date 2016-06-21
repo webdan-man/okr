@@ -74,14 +74,13 @@ $('.trak').hover(function(){
     }
   });
 
-$('.top').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 500);});
-$('.verh,.mena,.kkam').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-90}, 500);});
+$('.top,.verh,.mena,.kkam').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-90}, 500);});
 
 $( window ).scroll(function() {
-  if ($(document).scrollTop()>0) {
+  if ($(document).scrollTop()>20) {
     $('header').addClass('head_w').css('top',0);
   }else{
-    $('header').removeClass('head_w').removeAttr('css');
+    $('header').removeClass('head_w').removeAttr('style');
   }
 });
 
