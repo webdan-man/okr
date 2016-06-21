@@ -5,9 +5,9 @@
 *{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat}
 :not(a):after,:not(a):before,:not(br):after,:not(br):before,:not(img):after,:not(img):before,:not(span):after,:not(span):before{content:" ";display:block;width:100%;height:0;clear:both}
 a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none}
-.wrap{position:relative;margin:0 auto;max-width:960px;width:100%;min-width:960px;z-index:2;text-align:center;font-size: 0;}
+.wrap{position:relative;margin:0 auto;max-width:960px;width:100%;/* min-width:960px; */z-index:2;text-align:center;font-size: 0;}
 .clear{clear:both}
-.section,section,header{width:100%;overflow:hidden;position:relative;z-index:1;min-width:960px}
+.section,section,header{width:100%;overflow:hidden;position:relative;z-index:1;/* min-width:960px */}
 h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center}
 body{font-family: "ProximaNova";font-weight:400;color: rgb( 255, 255, 255 );line-height: normal;}
 a{text-decoration:none;color:inherit;outline:0!important}
@@ -98,11 +98,12 @@ header {
 
 .sec1 {
     background-image: url(../img/bg_sec1.jpg);
-    height: 760px;
+    min-height: 760px;
     position: relative;
     z-index: 2;
     padding-top: 225px;
     font-size: 0;
+    /* padding-bottom: 70px; */
 }
 .sec1 h4:nth-of-type(1) {
     font-size: 25px;
@@ -111,7 +112,7 @@ header {
     padding-top: 17px;
     letter-spacing: -0.5px;
     font-weight: 300;
-    background-position: 357px 0px
+    background-position: 42% 0px;
 }
 .sec1 h4 span{
     margin-left: 52px
@@ -171,10 +172,11 @@ header {
   
 .sec2 {
     position: relative;
-    height: 750px;
+    min-height: 750px;
     background-color: white;
     z-index: 2;
     padding-top: 68px;
+    padding-bottom: 60px;
 }
 .sec2 h5 {
     color: rgb( 68, 68, 68 );
@@ -207,13 +209,13 @@ header {
     letter-spacing: -0.6px
 }
 .cel_gr {
-    margin-top: 63px;
+    margin-top: 43px;
 }
 .cel{
     display: inline-block;
     vertical-align: top;
     width: 200px;
-    margin: 0px 60px;
+    margin: 20px 6%;
 }
 .cirk {
     background-image: url(../img/cirk.png);
@@ -234,7 +236,8 @@ header {
     height: 650px;
     position: relative;
     z-index: 2;
-    padding-top: 68px
+    padding-top: 68px;
+    padding-bottom: 60px;
 }
 
 .sec3 h2 {
@@ -337,13 +340,16 @@ header {
 }
 .sec4 {
     background-image: url(../img/bg_sec4.jpg);
-    height: 650px;
-    padding-top: 66px
+    min-height: 650px;
+    padding-top: 66px;
+    background-size: cover;
+    padding-bottom: 60px;
 }
 
 .kam {
     float: left;
-    width: 600px;
+    width: 62.5%;
+    padding: 0px 10px;
 }
 .kam h2 {
     font-size: 49px;
@@ -353,10 +359,10 @@ header {
 
 
  .sel{
-    width: 580px;
+    width: 100%;
     height: 70px;
     background-image: url(../img/str.png);
-    background-position-x: 546px;
+    background-position-x: 97%;
     border: solid 2px rgb( 255, 255, 255 );
     display: inline-block;
     margin-top: 26px;
@@ -389,8 +395,8 @@ header {
 color: #ffbf00;
     
 }
-.sel a {color: #444444;font-size: 25px;line-height: 5px;padding-left: 35px;font-weight: 400;letter-spacing: -0.9px;line-height: 40px;text-align: left;display: inline-block;width: 60%;float: left;}
-
+.sel a {color: #444444;font-size: 25px;line-height: 5px;padding-left: 35px;font-weight: 400;letter-spacing: -0.9px;line-height: 40px;text-align: left;display: inline-block;float: left;}
+.select a {width: 60%;}
 .select:after {
   background-image: -moz-linear-gradient( -90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( -90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
@@ -435,14 +441,14 @@ color: #ffbf00;
 
 .kam_in {
     background-color: rgba(230, 230, 230, 0.08);
-    width: 580px;
+    width: 100%;
     height: 330px;
     display: inline-block;
     margin-top: 20px;
 }
 .kam_in img {
     float: right;
-    margin: 70px 70px 0px 0px
+    margin: 70px 12% 0px 0px;
 }
 .inf_gr {
     float: left;
@@ -495,10 +501,10 @@ color: #ffbf00;
 }
 
 .pr_gr {
-    float: left;
+    float: right;
     width: 320px;
     padding-top: 21px;
-    margin-left: 30px;
+    margin-right: 1%;
 }
 
 .form_gr {
@@ -558,10 +564,11 @@ form button {
 :-ms-input-placeholder      {color: rgba( 255, 255, 255, 0.4 );}
 .sec5 {
     background-color: white;
-    height: 800px;
+    min-height: 800px;
     position: relative;
     z-index: 2;
-    padding-top: 65px
+    padding-top: 65px;
+    padding-bottom: 60px;
 }
 .sec5 h2 {
     font-size: 39px;
@@ -569,7 +576,7 @@ form button {
     
 }
 .usl_gr {
-    margin-top: 69px
+    margin-top: 70px;
 }
 .usl{
     border: solid 1px rgb( 230, 230, 230 );
@@ -582,7 +589,7 @@ form button {
 .usl_gr .usl:nth-of-type(2),.usl_gr .usl:nth-of-type(4) {
     margin-left: -1px;
 }
-.usl_gr .usl:nth-of-type(3),.usl_gr .usl:nth-of-type(4) {
+.usl_gr .usl:nth-of-type(1),.usl_gr .usl:nth-of-type(2),.usl_gr .usl:nth-of-type(3),.usl_gr .usl:nth-of-type(4) {
     margin-top: -1px;
 }
 .usl_gr .usl:nth-of-type(1) .usl_img{
@@ -627,8 +634,9 @@ form button {
     margin: 80px auto 0;
     height: 490px;
     width: 100%;
-    min-width: 940px;
+    /* min-width: 940px; */
     position: relative;
+    background-size: contain;
 }
 .map .trak:nth-of-type(1){
     top: 100px;
@@ -1112,7 +1120,28 @@ footer {
     /* max-width: 100%; */
     /* display: block; */
 }
-.sel option{
-width: 100%;
-height: 100px;
+@media screen and (min-width: 320px) and (max-width: 960px) { 
+.section, section, header{
+    padding: 0 1%;
+}
+.pr_gr {
+    margin-right: 0%;
+}
+}
+
+@media screen and (min-width: 901px) and (max-width: 960px) { 
+.cel {
+    margin: 20px 4%;
+}
+.sec1 {
+    padding-top: 200px;
+}
+}
+@media screen and (min-width: 850px) and (max-width: 900px) { 
+.cel {
+    margin: 20px 2%;
+}
+.sec1 {
+    padding-top: 175px;
+}
 }
