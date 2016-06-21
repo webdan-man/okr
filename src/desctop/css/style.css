@@ -837,13 +837,14 @@ footer {
     
 .menu {
     background-color: rgb( 255, 255, 255 );
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 600px;
-    height: 760px;
+    height: 100%;
     z-index: 11;
-    padding-top: 55px;
+    /* opacity: 0.5; */
+    padding-top: 35px;
     padding-left: 61px;
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -934,7 +935,8 @@ footer {
     top: 200px;
 }
 .noactive {
-    display: none;
+    /* display: none; */
+    left: -600px;
 }
 
 .close_w {
