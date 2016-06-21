@@ -143,31 +143,73 @@ header {
 
 .bit_gr {
     position: relative;
-    margin-top: 146px;
+    margin: 146px auto 0;
+    /* width: 745px; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    -webkit-flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
 }
 .bit_gr a{
-    display: inline-block;
-    margin: 0px 10px;
-    background: 0;
+    /* display: inline-block; */
+    /* margin: 0px 10px; */
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
     width: 60px;
     height: 62px;
+    padding-right: 70px;
+    padding-left: 10px;
     padding-top: 12px;
     position: relative;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    transition: all 0.5s;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -webkit-flex: 1 1;
+    max-width: 60px;
+}
+.bit_gr a img{
+	position: absolute;
+	right: 10px;
 }
 .bit_gr a:hover {
     background-image: url(../img/trac_cir.png);
+    max-width: 300px;
+    width: 100%;
+    flex: 2 1;
+    -webkit-flex: 2 1;
 }
 .bit_gr a p {
     font-size: 14px;
     color: rgb( 255, 191, 0 );
-    position: absolute;
-    top: 22px;
-    left: -90px;
-    display: none;
+    position: relative;
+    top: 11px;
+    /* float: left; */
+    /* left: -90px; */
+    /* display: none; */
+    opacity: 0;
     text-transform: uppercase;
+    padding-left: 0;
+    transition: all 0.25s;
 }
 .bit_gr a:hover p {
-    display: inline-block;
+    opacity: 1;
+    padding-left: 0px;
 }
   
 .sec2 {
@@ -1143,5 +1185,4 @@ footer {
 }
 .sec1 {
     padding-top: 175px;
-}
 }

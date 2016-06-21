@@ -23,7 +23,11 @@ $('.top').click(function(e){e.preventDefault();$("html, body").animate({ scrollT
 $('.verh').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 500);});
 
 $( window ).scroll(function() {
-  $('header').addClass('head_w').css('top',0);
+  if ($(document).scrollTop()>0) {
+    $('header').addClass('head_w').css('top',0);
+  }else{
+    $('header').removeClass('head_w').removeAttr('css');
+  }
 });
 
 //menu
