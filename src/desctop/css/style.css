@@ -129,7 +129,7 @@ header {
     font-size: 25px;
     font-weight: 300;
     letter-spacing: -0.5px;
-    margin-top: 52px
+    margin-top: 52px;
 }
 
 .mause {
@@ -631,12 +631,15 @@ form button {
 .map {
     background-image: url(../img/map.png);
     display: inline-block;
-    margin: 80px auto 0;
+    /* margin: 80px auto 0; */
     height: 490px;
     width: 100%;
-    /* min-width: 940px; */
-    position: relative;
+    min-width: 940px;
+    position: absolute;
     background-size: contain;
+    top: 80px;
+    left: 50%;
+    margin-left: -470px;
 }
 .map .trak:nth-of-type(1){
     top: 100px;
@@ -1127,6 +1130,9 @@ footer {
 .pr_gr {
     margin-right: 0%;
 }
+.usl_gr .usl:nth-of-type(2), .usl_gr .usl:nth-of-type(4) {
+    margin-left: 0px;
+}  
 }
 
 @media screen and (min-width: 901px) and (max-width: 960px) { 
@@ -1137,11 +1143,37 @@ footer {
     padding-top: 200px;
 }
 }
-@media screen and (min-width: 850px) and (max-width: 900px) { 
+@media screen and (min-width: 651px) and (max-width: 900px) {
+.kam {
+    float: none;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+.pr_gr {
+    float: none;
+    width: 320px;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+  
+}
+@media screen and (min-width: 851px) and (max-width: 900px) { 
 .cel {
     margin: 20px 2%;
 }
 .sec1 {
     padding-top: 175px;
 }
+
+}
+@media screen and (min-width: 801px) and (max-width: 850px) { 
+.cel {
+    margin: 20px 2%;
+}
+.sec1 {
+    padding-top: 150px;
+}
+
 }
