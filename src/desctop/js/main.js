@@ -1,15 +1,31 @@
 $(document).ready(function(){
 
+$('#pop1').arcticmodal('setDefault',{
+        beforeOpen: function(data, el) {
+          $('body,header').css({'overflow': 'hidden','padding-right': '15px'});
+          $(el).closest('.arcticmodal-container_i').css('width','100%');
+        },
+        afterOpen: function(data, el) {
+        },
+        beforeClose: function(data, el) {
+        },
+        afterClose: function(data, el) {
+          $('body,header').css({'overflow': 'visible','padding-right': '0px'});
+        }
+        });
+
 $('.btn_z').click(function(e) {
     e.preventDefault();
     $('#pop1').arcticmodal();
   });
 $('#kal2').click(function(e){
   e.preventDefault();
+    $('#pop1').arcticmodal('close');
     $('#pop2').arcticmodal();
 });
 $('#kal3').click(function(e){
   e.preventDefault();
+    $('#pop2').arcticmodal('close');
     $('#pop3').arcticmodal();
 });
 
@@ -90,9 +106,12 @@ var menu_active = 0;
           $('#error').arcticmodal();
         }
     });
+
 $('.close_g,.close_w').click(function(){
-      $.arcticmodal('close');
-    });
+      $(this).parent().arcticmodal('close');
+});
+
+
 $('.foto').click(function() {
         $('#pop5').arcticmodal({
             afterOpen: function(data, el) {
