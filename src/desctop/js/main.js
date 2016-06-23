@@ -88,12 +88,12 @@ $( window ).scroll(function() {
 var menu_active = 0;
     $('.menu_btn').click(function(e) {
         e.preventDefault();
-            $('.menu').removeClass('noactive');
+            $('.menu_m').removeClass('noactive');
             menu_active = 1;
     });
     $('section,.as-close,.mena').click(function(){
   if (menu_active == 1) {
-    $('.menu').addClass('noactive');
+    $('.menu_m').addClass('noactive');
     menu_active = 0;
   }
 });
