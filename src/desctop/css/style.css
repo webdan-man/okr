@@ -1209,17 +1209,19 @@ footer {
 #pop3 form {
     margin-top: 53px;
     display: inline-block;
+    width: 97%;
 }
 #pop3 form input {
-    margin: 0px 10px
+    margin: 0px 9px;
 }
 
 .line {
     background-color: rgb( 255, 255, 255 );
-    width: 760px;
+    max-width: 760px;
     height: 2px;
     display: inline-block;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 97%;
 }
 #pop3 form button {
     margin-top: 58px
@@ -1465,6 +1467,13 @@ footer {
 }
 .mause{display: none;}
 .kam_gr{padding: 0}
+ #pop3 form input{
+    margin: 0px auto 15px;
+    display: block;
+}
+#pop3 form {
+    width: 97%;
+}
 }
 
 @media screen and (min-width: 750px) and (max-width: 800px) { 
@@ -2050,7 +2059,7 @@ header{
     height: 42px;
     border-radius: 4px;
 }
-#pop2 .kam{padding: 0 8%;}
+#pop2 .kam{padding: 0 2%;}
   #pop2 .kam_in{
     margin-top: 0;
 }
@@ -2062,6 +2071,7 @@ header{
 }
 #pop2 .btn_p{
     margin-top: 0;
+    width: 285px;
 }
 .btn_p,#pop3 form button,#pop3 form input{
     width: 85%;
