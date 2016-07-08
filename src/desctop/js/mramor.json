@@ -1,0 +1,222 @@
+[
+	{
+		"id":1,
+		"name":"Месторождение Верхний Уфалей (Октябрьское)",
+		"phone":"+7 111 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":2,
+		"name":"Месторождение Вasdasd Уфалей (Октябрьское)",
+		"phone":"+7 222 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":3,
+		"name":"Местasd dasние Верхний Уфалей (Октябрьское)",
+		"phone":"+7 333 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":4,
+		"name":"Месторождение Верхний Уфалеиasdрьское)",
+		"phone":"+7 444 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	},
+	{
+		"id":1,
+		"name":"Месторождение Верхний Уфалей (Октябрьское)",
+		"phone":"+7 111 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":2,
+		"name":"Месторождение Вasdasd Уфалей (Октябрьское)",
+		"phone":"+7 222 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":3,
+		"name":"Местasd dasние Верхний Уфалей (Октябрьское)",
+		"phone":"+7 333 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":4,
+		"name":"Месторождение Верхний Уфалеиasdрьское)",
+		"phone":"+7 444 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	},
+	{
+		"id":1,
+		"name":"Месторождение Верхний Уфалей (Октябрьское)",
+		"phone":"+7 111 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":2,
+		"name":"Месторождение Вasdasd Уфалей (Октябрьское)",
+		"phone":"+7 222 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":3,
+		"name":"Местasd dasние Верхний Уфалей (Октябрьское)",
+		"phone":"+7 333 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":4,
+		"name":"Месторождение Верхний Уфалеиasdрьское)",
+		"phone":"+7 444 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	},
+	{
+		"id":1,
+		"name":"Месторождение Верхний Уфалей (Октябрьское)",
+		"phone":"+7 111 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":2,
+		"name":"Месторождение Вasdasd Уфалей (Октябрьское)",
+		"phone":"+7 222 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":3,
+		"name":"Местasd dasние Верхний Уфалей (Октябрьское)",
+		"phone":"+7 333 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":4,
+		"name":"Месторождение Верхний Уфалеиasdрьское)",
+		"phone":"+7 444 345 34 23",
+		"region": "Московская область",
+		"photos":"img/slid1.jpg,img/slid2.jpg,img/slid3.jpg",
+		"sert":"img/sld3.jpg,img/sld2.jpg,img/sld1.jpg",
+		"kamen":"img/mramor.png",
+		"kamen_m":"img/mramor_m.png",
+		"kamen_map":"img/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	}
+]

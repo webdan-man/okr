@@ -8,50 +8,40 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 </head>
 
 <body>
     <header class="">
-        <a href="javascript:void(0)" class="menu_btn"><span>Меню</span><span>ОКР</span></a>
+        <a href="#" class="menu_btn"><span>Меню</span><span>ОКР</span></a>
         <a href="javascript:void(0)" class="btn_z">Запрос цен</a>
         <a href="javascript:void(0)" class="okr"></a>
     </header>
     <section class="sec1" id="sec1">
         <div class="wrap">
         <a href="javascript:void(0)" class="okr"></a>
-            <h4>Увеличьте прибыль <span>работая с производителем.</span></h4>
-            <h2>Оптовые поставки натурального камня напрямую с карьера</h2>
-            <h2>Натуральный камень<br> оптом напрямую<br> с карьера</h2>
-            <h4>Гарантия лучшей цены. <span> Сравните сами.</span></h4>
+            <div class="middle-sec1">
+            	<h4>Увеличьте прибыль <span class="span">работая с производителем.</span><span class="after"></span></h4>
+	            <h2>Оптовые поставки натурального камня напрямую с карьера</h2>
+	            <h2>Натуральный камень<br> оптом напрямую<br> с карьера</h2>
+	            <h4><span class="like-button">Блок<span class="before"></span><span class="after"></span></span><span class="like-button">Плитка<span class="before"></span><span class="after"></span></span><span class="like-button">Слэб<span class="before"></span><span class="after"></span></span><span class="like-button">Бардюр<span class="before"></span><span class="after"></span></span><span class="like-button">Брусчатка<span class="before"></span><span class="after"></span></span></h4>
+            </div>
             <div class="grup_bit">
             <div class="bit_gr">
                 <a class="kkam" href="#sec4"><img src="img/bit_im2.png" alt="" width="40" height="40">
-                    <p>Мрамор</p>
+                    <span class="span">Мрамор</span>
+                    <span class="a"></span>
                 </a>                
                 <a class="kkam" href="#sec4"><img src="img/bit_im3.png" alt="" width="40" height="40">
-                    <p>Гранит</p>
-                </a>
-                <a class="kkam" href="#sec4"><img src="img/bit_im1.png" alt="" width="40" height="40">
-                    <p>Известняк</p>
-                </a>
-                <a class="kkam" href="#sec4"><img src="img/bit_im4.png" alt="" width="40" height="40">
-                    <p>Песчаник</p>
-                </a>
-                <a class="kkam" href="#sec4"><img src="img/bit_im5.png" alt="" width="40" height="40">
-                    <p>Сланец</p>
-                </a>
-                <a class="kkam" href="#sec4"><img src="img/bit_im6.png" alt="" width="40" height="40">
-                    <p>Ракушечник</p>
-                </a>
-                <a class="kkam" href="#sec4"><img src="img/bit_im7.png" alt="" width="40" height="40">
-                    <p>Базальт</p>
+                    <span class="span">Гранит</span>
+                    <span class="a"></span>
                 </a>
                 <a class="kkam" href="#sec4"><img src="img/bit_im8.png" alt="" width="40" height="40">
-                    <p>Доломит</p>
+                    <span class="span">Доломит</span>
+                    <span class="a"></span>
                 </a>
             </div>
             </div>
-            <div class="line_m"><span></span></div>
         </div>
         <div class="mause"></div>
     </section>
@@ -131,35 +121,22 @@
     </section>
     <section class="sec4" id="sec4">
         <div class="wrap">
-            <div class="kam">
+            <div class="kam" data-kamen="mramor">
                 <h2>Мрамор</h2>
                 <div class="sel">
                     <a href="" class="active">Месторождение «Коелга»</a>
                     <div class="select">
                     <div class="str_a"></div>
                         <a href="" class="active">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <div class="strit"><div class="polz"></div></div>
+                        <div class="scroll-wrap">                          	
+                        </div>
                     </div>
                 </div>
                 <div class="kam_in">
                     <div class="kamen"></div>
                     <div class="inf_gr">
-                        <a href="tel:+786423451365">+7 864 2345 13 65<span>— Бесплатная линия</span></a>
-                        <p>Челябинская область</p>
+                        <a href="tel:+786423451365" class="tel"><span class="tel">+7 864 2345 13 65</span> <span>Бесплатная линия</span></a>
+                        <p class="oblast">Челябинская область</p>
                         <p class="foto">Фото карьера</p>
                         <p>Ознакомиться с сертификатами</p>
                     </div>                    
@@ -173,6 +150,7 @@
                         <input type="text" name="name" placeholder="Имя">
                         <input type="text" name="phone" placeholder="Телефон">
                         <input type="text" name="email" placeholder="Email">
+                        <input type="hidden" name="karier" class="input-mramor">
                         <button type="submit" value="Получить прайс">Получить прайс</button>
                     </form>
                     <a href="" class="btn_pp">Получить прайс</a>
@@ -215,141 +193,7 @@
         <div class="wrap">
             <h2>MAP</h2>
             <div class="map">
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Базальт</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Доломит</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Базальт</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak active">
-                    <div class="trak_h">
-                        <h4>Мрамор</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Сланец</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Доломит</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Известняк</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Мрамор</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Гранит</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Сланец</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Ракушечник</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Песчаник</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Известняк</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Песчаник</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-                <div class="trak">
-                    <div class="trak_h">
-                        <h4>Гранит</h4>
-                        <p>Месторождение
-                            <br> «Коелга»</p>
-                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
-                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -378,29 +222,13 @@
                 <li><a class="mena" href="#sec6">Карта</a></li>
             </ul>
             <div class="opis_gr">
-                <ul class="opis">
-                    <li><a href="javascript:void(0)">Месторождение «Коелга»</a></li>
-                    <li><a href="javascript:void(0)">Месторождение «Houston»</a></li>
-                    <li><a href="javascript:void(0)">Месторождение «GR–2»</a></li>
-                </ul>
-                <div class="opis_b">
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <a href="">Месторождение «Коелга»</a>
-                        <a href="">Месторождение «Houston»</a>
-                        <a href="">Месторождение «GR–2»</a>
-                        <div class="strit"><div class="polz"></div></div>
-                    </div>
+                <div class="opis_b active" data-kamen="mramor">
+                </div>
+                <div class="opis_b" data-kamen="granit">
+                </div>
+                <div class="opis_b" data-kamen="dolomit">
+                </div>
+                <!--div class="strit"><div class="polz"></div></div-->
             </div>
         </div>
     </div>
@@ -411,21 +239,16 @@
                 <li><a class="mena" href="#sec1">Главная</a></li>
                 <li><a class="mena" href="#sec2">ОКР</a></li>
                 <li><a class="mena" href="#sec4">Мрамор</a>
-                    <ul class="opis">
-                        <li><a href="javascript:void(0)">Месторождение «Коелга»</a></li>
-                        <li><a href="javascript:void(0)">Месторождение «Houston»</a></li>
-                        <li><a href="javascript:void(0)">Месторождение «GR–2»</a></li>
+                    <ul class="opis active" data-kamen="mramor">
                     </ul>
                 </li>
-                <li><a class="mena" href="#sec4">Песчаник</a></li>
-                <li><a class="mena" href="#sec4">Известняк</a></li>
                 <li><a class="mena" href="#sec4">Гранит</a></li>
-                <li><a class="mena" href="#sec4">Сланец</a></li>
-                <li><a class="mena" href="#sec4">Ракушечник</a></li>
-                <li><a class="mena" href="#sec4">Базальт</a></li>
+                    <ul class="opis active" data-kamen="granit">
+                    </ul>
                 <li><a class="mena" href="#sec4">Доломит</a></li>
+                    <ul class="opis active" data-kamen="dolomit">
+                    </ul>
                 <li><a class="mena" href="#sec5">Услуги</a></li>
-                <li><a class="mena" href="#sec6">Карта</a></li>
             </ul>
 
         </div>
@@ -497,34 +320,21 @@
             <div class="close_w"></div>
             <div class="wrap">
                 <h2>Выберите месторождение</h2>
-                <div class="kam">
+                <div class="kam" data-kamen="mramor">
                     <div class="sel">
                         <a href="" class="active">Месторождение «Коелга»</a>
                         <div class="select">
                         <div class="str_a"></div>
                             <a href="" class="active">Месторождение «Коелга»</a>
-                            <a href="">Месторождение «Houston»</a>
-                            <a href="">Месторождение «GR–2»</a>
-                            <a href="">Месторождение «Коелга»</a>
-                            <a href="">Месторождение «Houston»</a>
-                            <a href="">Месторождение «GR–2»</a>
-                            <a href="">Месторождение «Коелга»</a>
-                            <a href="">Месторождение «Houston»</a>
-                            <a href="">Месторождение «GR–2»</a>
-                            <a href="">Месторождение «Коелга»</a>
-                            <a href="">Месторождение «Houston»</a>
-                            <a href="">Месторождение «GR–2»</a>
-                            <a href="">Месторождение «Коелга»</a>
-                            <a href="">Месторождение «Houston»</a>
-                            <a href="">Месторождение «GR–2»</a>
-                            <div class="strit"><div class="polz"></div></div>
+                            <div class="scroll-wrap">                           	
+                            </div>
                         </div>
                     </div>
                     <div class="kam_in">
                     <div class="kamen"></div>
                         <div class="inf_gr">
-                            <a href="tel:+786423451365">+7 864 2345 13 65<span>— Бесплатная линия</span></a>
-                            <p>Челябинская область</p>
+                            <a href="tel:+786423451365" class="tel"><span class="tel">+7 864 2345 13 65</span> <span>Бесплатная линия</span></a>
+                            <p class="oblast">Челябинская область</p>
                         </div>
                     </div>
                 </div>
@@ -540,6 +350,7 @@
                     <input type="text" name="name" placeholder="Имя">
                     <input type="text" name="phone" placeholder="Телефон">
                     <input type="text" name="email" placeholder="Email">
+                    <input class="input-kamen-karier" name="kamen-karier" type="hidden">
                     <div class="line"></div>
                     <button type="submit" value="Получить прайс">Получить прайс</button>
                 </form>
@@ -565,6 +376,24 @@
             <div class="str_l"></div>
             <div class="str_r"></div>
         </div>
+        <!-- АХТУНГЕ тут магія -->
+		<div class="for-parsed-style" data-kamen="mramor">
+			
+		</div>
+		<div id="map-point-sceleton">
+                <div class="trak">
+                    <div class="trak_h">
+                        <h4>Гранит</h4>
+                        <p>Месторождение
+                            <br> «Коелга»</p>
+                        <div class="trak_cir"><img src="img/mramor_trak.png" alt="" width="40" height="40"></div>
+                        <a href="#sec4" class="top">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+		</div>
+        <!-- АХТУНГЕ тут магія -->
+
+
     </div>
 
 
@@ -572,7 +401,9 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.cookie.min.js"></script>
     <script src="js/jquery.arcticmodal.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>   
+    <script src="js/jquery.bxslider.min.js"></script>  
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/main.js"></script>
     
     

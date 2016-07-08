@@ -36,27 +36,6 @@ $('#kal2').click(function(e){
   }
 });
 
-$('.sel a.active').click(function(e){
-  e.preventDefault();
-});
-
-$('.sel a').not('.active').click(function(e){
-  e.preventDefault();
-  $(this).closest('.sel').find('a.active').html($(this).text());
-});
-
-$('.sel').click(function(e){
-  if (!$(this).children('.select').is(':visible')) {
-    $(this).children('.select').show();
-  }else{
-    $(this).children('.select').hide();
-  }
-});
-
-$('.sel .select a').not('active').click(function(e){
-  e.preventDefault();
-
-});
 
 $('#kal3').click(function(e){
   e.preventDefault();
@@ -86,14 +65,51 @@ $( window ).scroll(function() {
 
 //menu
 var menu_active = 0;
-    $('.menu_btn').click(function(e) {
-        e.preventDefault();
-            $('.menu_m').removeClass('noactive');
-            menu_active = 1;
+$('.menu_btn').click(function(e) {
+    e.preventDefault();
+        $('.menu_m,.menu').removeClass('noactive');
+        menu_active = 1;
+
+  $('.opis_b').slimScroll({destroy:true});
+
+  $('.opis_b').removeAttr('style');  
+  
+  if ($('.opis_b:visible').height()>470) {
+    //ініціаліація скролу якщо висота списку більша за 470
+    $('.opis_b:visible').slimScroll({
+      height: '470px', 
+      size: '6px',
+      color: '#ffbf00',
+      opacity: '1',
+      distance: '1px',
+      alwaysVisible: true,
+      railVisible: true, 
     });
-    $('section,.as-close,.mena').click(function(){
+    //корекція кссу для скроллу старт
+    $('.opis_b:visible').parent().find('.sscrollbar').css({
+      'transform': 'scale(1,0.65)',
+      'height':'100px'
+    });
+
+    $('.opis_b:visible').parent().find('.sscrollrail').css({
+      'transform': 'scale(1,0.45)',
+      'right':'3px',
+      'width':'2px'
+    });
+
+    setTimeout(function(){
+    $('.opis_b:visible').slimScroll({ scrollTo:'1px',
+    alwaysVisible: true,
+    railVisible: true});
+    },500);
+  }
+
+  
+
+});
+$('section,.as-close,.mena').click(function(){
   if (menu_active == 1) {
-    $('.menu_m').addClass('noactive');
+    $('.menu_m,.menu').addClass('noactive');
     menu_active = 0;
   }
 });
@@ -164,7 +180,7 @@ $('.close_g,.close_w').click(function(){
       $(this).parent().arcticmodal('close');
 });
 
-
+/*
 $('.foto').click(function() {
         $('#pop5').arcticmodal({
             afterOpen: function(data, el) {
@@ -178,6 +194,149 @@ $('.foto').click(function() {
             }
         });
     });
+*/
+parse_mramor();
+
+  
+
+
+
 
 
 });
+
+
+
+
+
+var mramor_array;
+
+function parse_mramor(){
+  $.getJSON( "js/mramor.json", function( data ) {
+  
+  //запис джсона в змінну
+  mramor_array = data;
+
+  //парсинг всього з джсону і заповнення html
+  for (var i = mramor_array.length - 1; i >= 0; i--) {
+  
+
+    //наповнення списків з карьерами  
+    $('<a href="#" data-id="'+mramor_array[i].id+'">'+mramor_array[i].name+'</a>').appendTo('.opis_b[data-kamen="mramor"]');
+    $('<li><a href="#" data-id="'+mramor_array[i].id+'">'+mramor_array[i].name+'</a></li>').appendTo('.opis[data-kamen="mramor"]');
+    $('<a href="#" data-id="'+mramor_array[i].id+'">'+mramor_array[i].name+'</a>').appendTo('.kam[data-kamen="mramor"] .scroll-wrap');
+
+    //магія карти через скелет
+    $('#map-point-sceleton .trak h4').text('Мрамор');
+    $('#map-point-sceleton .trak p').text(mramor_array[i].name);
+    $('#map-point-sceleton .trak img').attr('src',mramor_array[i].kamen_map);
+    $('#map-point-sceleton .trak').css({
+      'top':mramor_array[i].map_t,
+      'left':mramor_array[i].map_l
+    });
+    $($('#map-point-sceleton').html()).appendTo('.map');
+  }
+
+
+
+  //ініціалізація функціоналу селектбоксів
+
+  //slimscroll_start
+  $('.kam[data-kamen="mramor"] .scroll-wrap').slimScroll({
+    height: '365px', 
+    size: '6px',
+    color: '#ffbf00',
+    opacity: '1',
+    distance: '23px',
+    alwaysVisible: true,
+    railVisible: true, 
+  }).css({
+    'padding-bottom': '80px' // паддинг в селектбоксі
+  });;
+  //корекція кссу для скроллу старт
+  $('.kam[data-kamen="mramor"]').find('.sscrollbar').css({
+    'transform': 'scale(1,0.65)'
+  });
+
+  $('.kam[data-kamen="mramor"]').find('.sscrollrail').css({
+    'transform': 'scale(1,0.45)',
+    'right':'25px',
+    'width':'2px'
+  });
+  //корекція кссу для скроллу енд
+  
+  //хотфікс для відбораження скроллбару при відкритті
+  $('.kam[data-kamen="mramor"] .sel').click(function(){
+    setTimeout(function(){
+      $('.kam[data-kamen="mramor"] .scroll-wrap').slimScroll({ scrollTo:'1px',
+    alwaysVisible: true,
+    railVisible: true});
+    },500);
+  });
+  //slimscrool_end
+
+  //відкриття, закриття селектбоксів старт
+  $('.kam[data-kamen="mramor"] .sel a').not('.active').click(function(e){
+    e.preventDefault();
+    if ($(this).text().length <= 37) {
+      $(this).closest('.sel').find('a.active').html($(this).text());
+    }else{
+      $(this).closest('.sel').find('a.active').html($(this).text().substring(0,34)+'...');
+    }
+    parse_mramor_cart($(this).data('id'));//парсинг карточки карьеру і її ініціалізація
+    $(this).closest('.select').hide();
+  });
+
+  $('.kam[data-kamen="mramor"] .sel').children('.active').click(function(e){
+    e.preventDefault();
+    if (!$(this).parent().children('.select').is(':visible')) {
+      $(this).parent().children('.select').show();
+    }else{
+      $(this).parent().children('.select').hide();
+    }
+  });
+
+  $('.kam[data-kamen="mramor"] .sel .select a').not('active').click(function(e){
+    e.preventDefault();
+    $(this).closest('.select').hide();
+  });
+  //відкриття, закриття селектбоксів енд
+
+
+
+
+  });
+
+}
+function parse_mramor_cart(id){
+  for (var i = mramor_array.length - 1; i >= 0; i--) {
+    if (mramor_array[i].id == id) {
+      //миняємо телефон
+      $('.kam[data-kamen="mramor"] a.tel').attr('href', 'tel:'+mramor_array[i].phone.replace(/ /g,'')).children('span.tel').text(mramor_array[i].phone);
+      //область
+      $('.kam[data-kamen="mramor"] p.oblast').text(mramor_array[i].region);
+      //ідентифікатори в формах
+      $('input.input-mramor').val(mramor_array[i].name);
+      $('input.input-kamen-karier').val(mramor_array[i].name);
+      //фотки текстур камнів
+      $('.for-parsed-style[data-kamen="mramor"]').html('');//очистка
+      var style_string = '.kam[data-kamen="mramor"] .kamen{background-image: url('+mramor_array[i].kamen+')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="mramor"] .kamen{background-image: url('+mramor_array[i].kamen_m+')}}';
+      $('<style>'+style_string+'</style>').appendTo('.for-parsed-style[data-kamen="mramor"]');
+      //фотографії карьеру
+      $('.kam[data-kamen="mramor"] p.foto').unbind('click');//видаляємо попередню функцію привязану на клік
+      var photo_array = mramor_array[i].photos.split(',');
+      $('.kam[data-kamen="mramor"] p.foto').click(function() {
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'loop': false} )
+      });
+      //сертифікати карьеру тимчасово непотрібно
+      /*
+      $('.kam[data-kamen="mramor"] p.sert').unbind('click');//видаляємо попередню функцію привязану на клік
+      var sert_array = mramor_array[i].photos.split(',');
+      $('.kam[data-kamen="mramor"] p.sert').click(function() {
+        $.fancybox.open(sert_array , {helpers:{overlay:{locked:false},title:null},'loop': false} )
+      });
+      */
+    }
+  }
+}
+
