@@ -1,0 +1,15 @@
+[
+	{
+		"id":1,
+		"name":"Месторождение Балаково",
+		"phone":"+7 111 345 34 23",
+		"region": "Саратовская область",
+		"photos":"img/dolomit/photos/slid1.jpg,img/dolomit/photos/slid2.jpg,img/dolomit/photos/slid3.jpg",
+		"sert":"img/dolomit/sert/sld3.jpg,img/dolomit/sert/sld2.jpg,img/dolomit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"303px",
+		"map_l":"233px"
+	}
+]

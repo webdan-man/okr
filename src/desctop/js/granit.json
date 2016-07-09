@@ -1,0 +1,309 @@
+[
+	{
+		"id":1,
+		"name":"Месторождение  Андреевское",
+		"phone":"+7 111 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"303px",
+		"map_l":"233px"
+	},
+
+	{
+		"id":2,
+		"name":"Месторождение Балтийское (Дымовский)",
+		"phone":"+7 222 345 34 23",
+		"region": "Ленинградская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":3,
+		"name":"Месторождение Винга",
+		"phone":"+7 333 345 34 23",
+		"region": "Мурманская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":4,
+		"name":"Месторождение Возрождение",
+		"phone":"+7 444 345 34 23",
+		"region": "Ленинградская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	},
+	{
+		"id":5,
+		"name":"Месторождение Габбро",
+		"phone":"+7 111 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":6,
+		"name":"Месторождение Камбулатовский(камбулатский)",
+		"phone":"+7 222 345 34 23",
+		"region": "Челябинская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"210px",
+		"map_l":"117px"
+	},
+
+	{
+		"id":7,
+		"name":"Месторождение Каменогорское",
+		"phone":"+7 333 345 34 23",
+		"region": "Ленинградская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":8,
+		"name":"Месторождение Кашина Гора",
+		"phone":"+7 333 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":9,
+		"name":"Месторождение Кузреченское",
+		"phone":"+7 333 345 34 23",
+		"region": "Мурманская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":10,
+		"name":"Месторождение Летнереченское",
+		"phone":"+7 333 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":11,
+		"name":"Месторождение Лисья Горка",
+		"phone":"+7 333 345 34 23",
+		"region": "Свердловская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"190px",
+		"map_l":"317px"
+	},
+
+	{
+		"id":12,
+		"name":"Месторождение Мансуровское",
+		"phone":"+7 444 345 34 23",
+		"region": "Республика Башкортостан",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"310px",
+		"map_l":"287px"
+	},
+
+	{
+		"id":13,
+		"name":"Месторождение Нигрозеро",
+		"phone":"+7 111 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":14,
+		"name":"Месторождение Нигрозеро Айс Тундра",
+		"phone":"+7 111 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":15,
+		"name":"Месторождение Никитовичи",
+		"phone":"+7 111 345 34 23",
+		"region": "Ленинградская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":16,
+		"name":"Месторождение Павловское",
+		"phone":"+7 111 345 34 23",
+		"region": "Воронежская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":17,
+		"name":"Месторождение Сибирский",
+		"phone":"+7 111 345 34 23",
+		"region": "Свердловская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":18,
+		"name":"Месторождение Сопка Бунтина",
+		"phone":"+7 111 345 34 23",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":19,
+		"name":"Месторождение Сосновый Бор",
+		"phone":"+7 111 345 34 23",
+		"region": "Свердловская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":20,
+		"name":"Месторождение Суховязский",
+		"phone":"+7 111 345 34 23",
+		"region": "Челябинская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":21,
+		"name":"Месторождение Цветок Урала",
+		"phone":"+7 111 345 34 23",
+		"region": "Челябинская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	},
+
+	{
+		"id":22,
+		"name":"Месторождение Южно-Султаевский",
+		"phone":"+7 111 345 34 23",
+		"region": "Челябинская область",
+		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/mramor/kamen/mramor.png",
+		"kamen_m":"img/mramor/kamen/mramor_m.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak.png",
+		"map_t":"110px",
+		"map_l":"217px"
+	}
+
+]

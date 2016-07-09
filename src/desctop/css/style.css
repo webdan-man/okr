@@ -2,8 +2,8 @@
 @font-face{font-family:"ProximaNova";src:url(../fonts/proxima_nova_bold.eot);src:url(../fonts/proxima_nova_bold.eot?#iefix) format('embedded-opentype'),url(../fonts/proxima_nova_bold.woff2) format('woff2'),url(../fonts/proxima_nova_bold.woff) format('woff'),url(../fonts/proxima_nova_bold.ttf) format('truetype');font-weight:600;font-style:normal}
 @font-face{font-family:"ProximaNova";src:url(../fonts/proxima_nova_regular.eot);src:url(../fonts/proxima_nova_regular.eot?#iefix) format('embedded-opentype'),url(../fonts/proxima_nova_regular.woff2) format('woff2'),url(../fonts/proxima_nova_regular.woff) format('woff'),url(../fonts/proxima_nova_regular.ttf) format('truetype');font-weight:400;font-style:normal}
 @font-face{font-family:"ProximaNova";src:url(../fonts/proxima_nova_light.eot);src:url(../fonts/proxima_nova_light.eot?#iefix) format('embedded-opentype'),url(../fonts/proxima_nova_light.woff2) format('woff2'),url(../fonts/proxima_nova_light.woff) format('woff'),url(../fonts/proxima_nova_light.ttf) format('truetype');font-weight:300;font-style:normal}
-*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat}
-:not(a):after,:not(a):before,:not(br):after,:not(br):before,:not(img):after,:not(img):before,:not(span):after,:not(span):before{content:" ";display:block;width:100%;height:0;clear:both}
+*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat;}
+:not(a):after,:not(a):before,:not(br):after,:not(br):before,:not(img):after,:not(img):before,:not(span):after,:not(span):before{content:" ";display:block;width:100%;height:0;clear:both;}
 a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none}
 .wrap{position:relative;margin:0 auto;max-width:960px;width:100%;/* min-width:960px; */z-index:2;text-align:center;font-size: 0;height: 100%;}
 .clear{clear:both}
@@ -15,10 +15,10 @@ a{text-decoration:none;color:inherit;outline:0!important}
 #maket {
     width: 100%;
     height: 2770px;
-    background: url(../mak.jpg) no-repeat top center;
+    background: url(../maket.jpg) no-repeat top center;
     opacity: 0.5;
     position: absolute;
-    top: 0px;
+    top: -111px;
     left: 0px;
     z-index: 44;
     display: none;
@@ -449,8 +449,7 @@ header {
     z-index: 1;
     padding-top: 26px;
 }
-.proc_cir:after{
-    content: "";
+.proc_cir .after{
     background-image: url(../img/proc_cir.png);
     width: 86px;
     height: 80px;
@@ -458,7 +457,17 @@ header {
     top: 0px;
     left: 2px;
     z-index: -1;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    transform: rotate(15deg);
+    background-color: red;
+    border-radius: 50%;
 }
+
+
 .proc_gr .proc:nth-of-type(1){
     margin-top: 60px
 }
@@ -477,23 +486,59 @@ header {
 .proc_gr .proc:nth-of-type(6){
     margin-top: 60px
 }
-.proc_gr .proc:nth-of-type(1) .proc_cir:after{
+.proc_gr .proc:nth-of-type(1) .proc_cir.after{
     transform: rotate(-12deg);
 }
-.proc_gr .proc:nth-of-type(2) .proc_cir:after{
+.proc_gr .proc:nth-of-type(2) .proc_cir.after{
     transform: rotate(4deg);
 }
-.proc_gr .proc:nth-of-type(3) .proc_cir:after{
+.proc_gr .proc:nth-of-type(3) .proc_cir.after{
     transform: rotate(10deg);
 }
-.proc_gr .proc:nth-of-type(4) .proc_cir:after{
+.proc_gr .proc:nth-of-type(4) .proc_cir.after{
     transform: rotate(18deg);
 }
-.proc_gr .proc:nth-of-type(5) .proc_cir:after{
+.proc_gr .proc:nth-of-type(5) .proc_cir.after{
     transform: rotate(25deg);
 }
-.proc_gr .proc:nth-of-type(6) .proc_cir:after{
+.proc_gr .proc:nth-of-type(6) .proc_cir.after{
     transform: rotate(46deg);
+}
+.proc_cir .after:after{
+  content:'';
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 0px;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -32px;
+  margin-bottom: -32px;
+  background-image: url(../img/proc_cir.png);
+  background-position: left bottom;
+  /* transform: rotate(15deg); */
+  transform-origin: right center;
+  /* transition: 0.2s height 0.2s linear,0.2s width 0.1s linear; */
+  transition: height 0.2s linear,widht 0.1s linear;
+}
+.proc_cir .after:before{
+  content:'';
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 0px;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background-image: url(../img/proc_cir.png);
+  background-position: top right;
+  background-position: right top;
+  /* transform: rotate(15deg); */
+  transform-origin: left center;
+  /* transition: height 0.2s linear,widht 0.1s linear; */
+  transition: 0.2s height 0.2s linear,0.2s width 0.1s linear;
 }
 .proc {
     display: inline-block;
@@ -590,7 +635,7 @@ header {
 	line-height: 66px;
 }
 .sel a {color: #444444;font-size: 25px;line-height: 5px;padding-left: 35px;font-weight: 400;letter-spacing: -0.9px;line-height: 40px;text-align: left;display: inline-block;float: left;}
-.select a {width: 60%;}
+.select a {width: 77%;}
 .select:after {
   background-image: -moz-linear-gradient( -90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( -90deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
@@ -880,6 +925,7 @@ form button,.btn_pp {
     left: -99px;
     display: none;
     cursor: initial;
+    padding: 0 2px;
 }
 .trak_h h4 {
     font-size: 16px;
@@ -1021,12 +1067,18 @@ footer {
 }
 
 .menu_gr {
-    display: table-cell;
+    /* display: table-cell; */
     vertical-align: middle;
     width: 600px;
-    height: 684px;
+    /* min-height: 470px; */
+    max-height: 100%;
+    /* height: 400px; */
+    /* height: 100%; */
+    /* top: 50%; */
+    /* transform: translate3d(0,-50%,0); */
     position: relative;
-    padding-top: 5px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     /* height: 100%; */
     /* min-height: 673px; */
 }
@@ -1039,6 +1091,9 @@ footer {
     padding-top: 10px;
     width: 100%;
     min-height: 35px;
+}
+.menu_m .menu_line a{
+  background-position: right top;
 }
 .menu_line a {
     font-size: 20px;
@@ -1056,6 +1111,10 @@ footer {
 }    
 .opis_b{
     width: 315px;
+    display: none;
+}
+.opis_b.active{
+  display: block;
 }
 .opis a,.opis_b a {
     font-size: 18px;
@@ -1063,6 +1122,7 @@ footer {
     margin: 10px 0px;
     display: inline-block;
     letter-spacing: 0.1px;
+    width: 95%;
 }
 
 .opis {
@@ -1074,12 +1134,14 @@ footer {
 
 .opis_gr {
     position: relative;
-    display: table-cell;
-    vertical-align: middle;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
     width: 350px;
-    height: 470px;
-    padding-left: 51px;
+    /* height: 470px; */
+    max-height: 100%;
+    padding-left: 35px;
     padding-right: 22px;
+    overflow: hidden;
 }
 .opis_b .strit{
     right: 10px;
@@ -1170,9 +1232,29 @@ footer {
     max-height: 760px;
     min-height: 100vh;
 }
+.back{
+  top: 40px;
+  left: 40px;
+  background-image: url(../img/back.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.back:hover{
+  background-image: url(../img/back_h.png);  
+  transition: all 0.25s;
+}
 .pop .close_w {
     top: 40px;
     right: 40px;
+    transform: rotate(-90deg);
+  transition: all 0.35s;
+}
+.pop .close_w:hover{
+      transform: rotate(90deg);
+  transition: all 0.35s;
 }
 .pop h2 {
     font-size: 35px;
@@ -1187,17 +1269,17 @@ footer {
 }
 
 .kamni {
-    display: inline-block;
-    vertical-align: top;
-    margin: 17px 2.3%;
-    cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  margin: 17px 5%;
+  cursor: pointer;
 }
 .kamni:hover .kam_cir,.kamni.active .kam_cir{
 	background-image: url(../img/kam_cir.png);
 }
 .kam_cir {
-    width: 140px;
-    height: 142px;
+    width: 200px;
+    height: 200px;
     padding-top: 12px;
     background-image: none;
     position: relative;
@@ -1225,13 +1307,26 @@ footer {
 #pop2 .kam {
     float: none;
     display: inline-block;
-    margin: 24px 0px 0px 0px;
     width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 4;
+    opacity:0;
+}
+#pop2 .kam.active{
+  z-index:5;
+  opacity:1;
 }
 #pop2 .kam_in{
     background: 0;
     height: 252px;
     border-bottom: solid 2px rgb( 255, 255, 255 );
+}
+.p_k_w{
+  position: relative;
+  height: 476px;
+  margin-top: 24px;
 }
 #pop2 .kamen {
     margin-right: 0px;
@@ -1291,6 +1386,7 @@ footer {
 	left: 50%;
 	top: 50%;
 	transform: translate3d(-50%,-50%,0);
+  height: initial;
 }
 #okgo h4 {
     margin-top: 57px
@@ -1347,7 +1443,9 @@ footer {
 }
 .kam_cir img {
     position: relative;
-    z-index: 3
+    z-index: 3;
+    width: 190px;
+    height: 190px;
 }
 #hidden-box{display:none}
 .arcticmodal-container,.arcticmodal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000}
@@ -1367,7 +1465,19 @@ footer {
     top: 50%;
     transform: translate3d(-50%,-50%,0);
 }
-
+.kam_wrap{
+ z-index:4;
+ opacity: 0;
+ top: 0;
+ position: absolute;
+}
+.kam_wrap.active{
+z-index: 5;
+opacity: 1;
+}
+.dn{
+  display: none!important;
+}
 @media screen  and (max-width: 960px) { 
 .sec1 {
     padding-top: 190px;
@@ -2249,6 +2359,11 @@ header{
     top: 10px;
     right: 10px;
 }
+.back{
+    top: 10px;
+    left: 10px;
+}
+
 .pop h4{font-size: 18px;margin: 0 18%;}
 #pop3 form{
     margin-top: 50px;
@@ -2323,4 +2438,6 @@ margin: 4px 0px;
 }
 .menu_line li{
     float: left;
-    displa
+    display:block;
+  }
+}
