@@ -4,13 +4,13 @@
 		"name":"Месторождение  Андреевское",
 		"phone":"+7 111 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid1.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"303px",
-		"map_l":"233px"
+		"kamen":"img/granit/kamen/granit_1.png",
+		"kamen_m":"img/granit/kamen/granit_m1.png",
+		"kamen_map":"img/granit/kamen/granit_trak1.png",
+		"map_t":"115px",
+		"map_l":"191px"
 	},
 
 	{
@@ -18,13 +18,13 @@
 		"name":"Месторождение Балтийское (Дымовский)",
 		"phone":"+7 222 345 34 23",
 		"region": "Ленинградская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid2.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"210px",
-		"map_l":"117px"
+		"kamen":"img/granit/kamen/granit_2.png",
+		"kamen_m":"img/granit/kamen/granit_m2.png",
+		"kamen_map":"img/granit/kamen/granit_trak2.png",
+		"map_t":"115px",
+		"map_l":"139px"
 	},
 
 	{
@@ -32,13 +32,13 @@
 		"name":"Месторождение Винга",
 		"phone":"+7 333 345 34 23",
 		"region": "Мурманская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid3.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_3.png",
+		"kamen_m":"img/granit/kamen/granit_m3.png",
+		"kamen_map":"img/granit/kamen/granit_trak3.png",
+		"map_t":"79px",
+		"map_l":"210px"
 	},
 
 	{
@@ -46,40 +46,40 @@
 		"name":"Месторождение Возрождение",
 		"phone":"+7 444 345 34 23",
 		"region": "Ленинградская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid4.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"310px",
-		"map_l":"287px"
+		"kamen":"img/granit/kamen/granit_4.png",
+		"kamen_m":"img/granit/kamen/granit_m4.png",
+		"kamen_map":"img/granit/kamen/granit_trak4.png",
+		"map_t":"119px",
+		"map_l":"136px"
 	},
 	{
 		"id":5,
 		"name":"Месторождение Габбро",
 		"phone":"+7 111 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid5.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_5.png",
+		"kamen_m":"img/granit/kamen/granit_m5.png",
+		"kamen_map":"img/granit/kamen/granit_trak5.png",
+		"map_t":"133px",
+		"map_l":"165px"
 	},
 
 	{
 		"id":6,
-		"name":"Месторождение Камбулатовский(камбулатский)",
+		"name":"Месторождение Камбулатовский (камбулатский)",
 		"phone":"+7 222 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid6.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"210px",
-		"map_l":"117px"
+		"kamen":"img/granit/kamen/granit_6.png",
+		"kamen_m":"img/granit/kamen/granit_m6.png",
+		"kamen_map":"img/granit/kamen/granit_trak6.png",
+		"map_t":"308px",
+		"map_l":"237px"
 	},
 
 	{
@@ -87,13 +87,13 @@
 		"name":"Месторождение Каменогорское",
 		"phone":"+7 333 345 34 23",
 		"region": "Ленинградская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid7.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_7.png",
+		"kamen_m":"img/granit/kamen/granit_m7.png",
+		"kamen_map":"img/granit/kamen/granit_trak7.png",
+		"map_t":"116px",
+		"map_l":"134px"
 	},
 
 	{
@@ -101,13 +101,13 @@
 		"name":"Месторождение Кашина Гора",
 		"phone":"+7 333 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid8.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_8.png",
+		"kamen_m":"img/granit/kamen/granit_m8.png",
+		"kamen_map":"img/granit/kamen/granit_trak8.png",
+		"map_t":"140px",
+		"map_l":"178px"
 	},
 
 	{
@@ -115,13 +115,13 @@
 		"name":"Месторождение Кузреченское",
 		"phone":"+7 333 345 34 23",
 		"region": "Мурманская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid9.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_9.png",
+		"kamen_m":"img/granit/kamen/granit_m9.png",
+		"kamen_map":"img/granit/kamen/granit_trak9.png",
+		"map_t":"90px",
+		"map_l":"229px"
 	},
 
 	{
@@ -129,13 +129,13 @@
 		"name":"Месторождение Летнереченское",
 		"phone":"+7 333 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid10.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_10.png",
+		"kamen_m":"img/granit/kamen/granit_m10.png",
+		"kamen_map":"img/granit/kamen/granit_trak10.png",
+		"map_t":"104px",
+		"map_l":"198px"
 	},
 
 	{
@@ -143,13 +143,13 @@
 		"name":"Месторождение Лисья Горка",
 		"phone":"+7 333 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid11.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/granit/kamen/granit_11.png",
+		"kamen_m":"img/granit/kamen/granit_m11.png",
+		"kamen_map":"img/granit/kamen/granit_trak11.png",
+		"map_t":"292px",
+		"map_l":"249px"
 	},
 
 	{
@@ -157,13 +157,13 @@
 		"name":"Месторождение Мансуровское",
 		"phone":"+7 444 345 34 23",
 		"region": "Республика Башкортостан",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid12.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"310px",
-		"map_l":"287px"
+		"kamen":"img/granit/kamen/granit_12.png",
+		"kamen_m":"img/granit/kamen/granit_m12.png",
+		"kamen_map":"img/granit/kamen/granit_trak12.png",
+		"map_t":"312px",
+		"map_l":"224px"
 	},
 
 	{
@@ -171,13 +171,13 @@
 		"name":"Месторождение Нигрозеро",
 		"phone":"+7 111 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid13.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_13.png",
+		"kamen_m":"img/granit/kamen/granit_m13.png",
+		"kamen_map":"img/granit/kamen/granit_trak13.png",
+		"map_t":"94px",
+		"map_l":"205px"
 	},
 
 	{
@@ -185,13 +185,13 @@
 		"name":"Месторождение Нигрозеро Айс Тундра",
 		"phone":"+7 111 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid14.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_14.png",
+		"kamen_m":"img/granit/kamen/granit_m14.png",
+		"kamen_map":"img/granit/kamen/granit_trak14.png",
+		"map_t":"93px",
+		"map_l":"204px"
 	},
 
 	{
@@ -199,13 +199,13 @@
 		"name":"Месторождение Никитовичи",
 		"phone":"+7 111 345 34 23",
 		"region": "Ленинградская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid15.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_15.png",
+		"kamen_m":"img/granit/kamen/granit_m15.png",
+		"kamen_map":"img/granit/kamen/granit_trak15.png",
+		"map_t":"128px",
+		"map_l":"130px"
 	},
 
 	{
@@ -213,13 +213,13 @@
 		"name":"Месторождение Павловское",
 		"phone":"+7 111 345 34 23",
 		"region": "Воронежская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid16.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_16.png",
+		"kamen_m":"img/granit/kamen/granit_m16.png",
+		"kamen_map":"img/granit/kamen/granit_trak16.png",
+		"map_t":"331px",
+		"map_l":"41px"
 	},
 
 	{
@@ -227,13 +227,13 @@
 		"name":"Месторождение Сибирский",
 		"phone":"+7 111 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid17.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_17.png",
+		"kamen_m":"img/granit/kamen/granit_m17.png",
+		"kamen_map":"img/granit/kamen/granit_trak17.png",
+		"map_t":"290px",
+		"map_l":"251px"
 	},
 
 	{
@@ -241,13 +241,13 @@
 		"name":"Месторождение Сопка Бунтина",
 		"phone":"+7 111 345 34 23",
 		"region": "Республика Карелия",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid18.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_18.png",
+		"kamen_m":"img/granit/kamen/granit_m18.png",
+		"kamen_map":"img/granit/kamen/granit_trak18.png",
+		"map_t":"116px",
+		"map_l":"137px"
 	},
 
 	{
@@ -255,13 +255,13 @@
 		"name":"Месторождение Сосновый Бор",
 		"phone":"+7 111 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid19.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_19.png",
+		"kamen_m":"img/granit/kamen/granit_m19.png",
+		"kamen_map":"img/granit/kamen/granit_trak19.png",
+		"map_t":"286px",
+		"map_l":"257px"
 	},
 
 	{
@@ -269,41 +269,55 @@
 		"name":"Месторождение Суховязский",
 		"phone":"+7 111 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid20.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_20.png",
+		"kamen_m":"img/granit/kamen/granit_m20.png",
+		"kamen_map":"img/granit/kamen/granit_trak20.png",
+		"map_t":"301px",
+		"map_l":"234px"
 	},
 
 	{
 		"id":21,
-		"name":"Месторождение Цветок Урала",
+		"name":"Месторождение Южно-Султаевский",
 		"phone":"+7 111 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"photos":"img/granit/photos/slid21.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/granit/kamen/granit_21.png",
+		"kamen_m":"img/granit/kamen/granit_m21.png",
+		"kamen_map":"img/granit/kamen/granit_trak21.png",
+		"map_t":"307px",
+		"map_l":"237px"
 	},
 
 	{
 		"id":22,
-		"name":"Месторождение Южно-Султаевский",
+		"name":"Месторождение  Гора Токимовка",
 		"phone":"+7 111 345 34 23",
-		"region": "Челябинская область",
-		"photos":"img/granit/photos/slid1.jpg,img/granit/photos/slid2.jpg,img/granit/photos/slid3.jpg",
+		"region": "Республика Карелия",
+		"photos":"img/granit/photos/slid22.jpg",
 		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
-	}
+		"kamen":"img/granit/kamen/granit_22.png",
+		"kamen_m":"img/granit/kamen/granit_m22.png",
+		"kamen_map":"img/granit/kamen/granit_trak22.png",
+		"map_t":"95px",
+		"map_l":"206px"
+	},
+
+	{
+		"id":23,
+		"name":"Месторождение Ладожское",
+		"phone":"+7 111 345 34 23",
+		"region": "Ленинградская область",
+		"photos":"img/granit/photos/slid23.jpg",
+		"sert":"img/granit/sert/sld3.jpg,img/granit/sert/sld2.jpg,img/granit/sert/sld1.jpg",
+		"kamen":"img/granit/kamen/granit_23.png",
+		"kamen_m":"img/granit/kamen/granit_m23.png",
+		"kamen_map":"img/granit/kamen/granit_trak23.png",
+		"map_t":"118px",
+		"map_l":"135px"
+	}	
 
 ]

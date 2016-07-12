@@ -22,6 +22,7 @@ $('.btn_z').click(function(e) {
 $('#pop1 .kamni').click(function(){
   $('#pop1 .kamni').removeClass('active');
   $(this).addClass('active');
+  $('#kal2').addClass('active');
 });
 
 $('#kal2').click(function(e){
@@ -36,6 +37,39 @@ $('#kal2').click(function(e){
   }
 });
 
+//меню скрол камень и попап и кнопки
+$('#mram, #mramp, .kkam[data-kamen="mramor"]').click(function(e){  
+  $('.kam_wrap[data-kamen="granit"], .kam_wrap[data-kamen="dolomit"], .kam[data-kamen="granit"], .kam[data-kamen="dolomit"]').removeClass('active');
+  $('.kam_wrap[data-kamen="mramor"], .kam[data-kamen="mramor"]').addClass('active');
+});
+$('#gran, #granp, .kkam[data-kamen="granit"]').click(function(e){  
+  $('.kam_wrap[data-kamen="mramor"], .kam_wrap[data-kamen="dolomit"], .kam[data-kamen="mramor"], .kam[data-kamen="dolomit"]').removeClass('active');
+  $('.kam_wrap[data-kamen="granit"], .kam[data-kamen="granit"]').addClass('active');
+});
+$('#dolo, #dolop, .kkam[data-kamen="dolomit"]').click(function(e){  
+  $('.kam_wrap[data-kamen="granit"], .kam_wrap[data-kamen="mramor"], .kam[data-kamen="granit"], .kam[data-kamen="mramor"]').removeClass('active');
+  $('.kam_wrap[data-kamen="dolomit"], .kam[data-kamen="dolomit"]').addClass('active');
+});
+
+$(".menu_line a").mouseover(function(){
+    if ($(this).is('[data-kamen]')) {
+
+      $(".menu_line a").removeClass('active');
+      $(this).addClass('active');
+      $(".opis_b,.opis_b_wrap").removeClass('active');
+      $('.opis_b[data-kamen="'+$(this).data('kamen')+'"]').addClass('active');
+      $('.opis_b_wrap[data-kamen="'+$(this).data('kamen')+'"]').addClass('active');
+
+    }
+});
+$('.menu_line a[data-kamen="granit"]').addClass('active');
+$('.opis_b[data-kamen="granit"]').addClass('active');
+      
+//анимация
+$('.proc_gr').viewportChecker({
+  classToAdd: 'active',
+  offset: 100
+});
 
 $('.back').click(function(e){
   e.preventDefault();
@@ -45,6 +79,8 @@ $('.back').click(function(e){
           $('body,header').css({'overflow': 'hidden','padding-right': '16px'});
         }
     });
+    $('#kal2').removeClass('active');
+    $('#pop1 .kamni').removeClass('active');
 });
 $('#kal31,#kal32,#kal33').click(function(e){
   e.preventDefault();
@@ -62,7 +98,7 @@ $('.trak').hover(function(){
     }
   });
 
-$('.top,.verh,.mena,.kkam').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-90}, 500);});
+$('.top,.mena,.kkam,.mause').click(function(e){e.preventDefault();$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-90}, 500);});
 
 $( window ).scroll(function() {
   if ($(document).scrollTop()>20) {
@@ -71,7 +107,10 @@ $( window ).scroll(function() {
     $('header').removeClass('head_w').removeAttr('style');
   }
 });
-
+$('.polit').click(function(e) {
+    e.preventDefault();
+    $('#conf_pop').arcticmodal();
+  });
 //menu
 var menu_active = 0;
 $('.menu_btn').click(function(e) {
@@ -112,6 +151,7 @@ $('.menu_btn').click(function(e) {
     railVisible: true});
     },500);
   }
+  $("html,body").css("overflow","hidden");
 
   
 
@@ -119,7 +159,8 @@ $('.menu_btn').click(function(e) {
 $('section,.as-close,.mena').click(function(){
   if (menu_active == 1) {
     $('.menu_m,.menu').addClass('noactive');
-    menu_active = 0;
+    menu_active = 0;    
+  $("html,body").css("overflow","auto");
   }
 });
 
@@ -145,6 +186,9 @@ $('.mena').click(function(){
     utm=[];$.each(["utm_source","utm_medium","utm_campaign","utm_term",'source_type','source','position_type','position','added','creative','matchtype'],function(i,v){utm[v]=getURLParameter(v) || $('<input type="hidden" />').attr({name: v, class: v, value: function(){if(getURLParameter(v) == undefined)return '-'; else return getURLParameter(v)}}).appendTo("form")}); 
     $('<input type="hidden" />').attr({name: 'url', value: document.location.href}).appendTo("form");
     $('<input type="hidden" />').attr({name: 'title', value: document.title}).appendTo("form");
+
+    $('input[name="mesto"]').blur(function() {if($(this).val().length < 2) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
+    $('input[name="mesto"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
 
     $('input[name="name"]').blur(function() {if($(this).val().length < 2) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
     $('input[name="name"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
@@ -175,13 +219,26 @@ $('.mena').click(function(){
             }
         }); 
         }else{
-          $('#error').arcticmodal({
+          if($(this).find('input[type="text"]').closest('.map_form')) {
+            $('#error_m').arcticmodal({
              afterClose: function(data, el) {
               if ($('.arcticmodal-container').length<2) {
                 $('body,header').css({'overflow': 'visible','padding-right': '0px'});
               }
               }
           });
+          }
+          else{
+            $('#error').arcticmodal({
+             afterClose: function(data, el) {
+              if ($('.arcticmodal-container').length<2) {
+                $('body,header').css({'overflow': 'visible','padding-right': '0px'});
+              }
+              }
+          });
+          }
+
+          
         }
     });
 
@@ -207,21 +264,46 @@ $('.foto').click(function() {
 parse_mramor();
 parse_granit();
 parse_dolomit();
-  
-
-
-
 
 
 });
 
 
-
+var mramor_array_parsed = false;
+var granit_array_parsed = false;
+var dolomit_array_parsed = false;
 
 
 var mramor_array;
 var granit_array;
 var dolomit_array;
+
+
+
+function scroll_links_init(){
+  if (mramor_array_parsed && granit_array_parsed && dolomit_array_parsed) {
+      //функція для вибра камню з меню
+        $('.opis_b a').click(function(e){
+          e.preventDefault();
+          var kamen = $(this).closest('.opis_b').data('kamen');
+          $('.kam[data-kamen="'+kamen+'"] .scroll-wrap a[data-id="'+$(this).data('id')+'"]').trigger('click');
+          $('.mena[data-kamen="'+kamen+'"]').trigger('click');
+          
+        });
+
+      //функція скролу з мапи
+        $('.map').find('a').click(function(e){
+          e.preventDefault();
+
+          var kamen = $(this).data('kamen');
+
+          $('.kam[data-kamen="'+kamen+'"] .scroll-wrap a[data-id="'+$(this).data('id')+'"]').trigger('click');
+          $('.mena[data-kamen="'+kamen+'"]').trigger('click');
+        });
+    }
+}
+
+
 
 function parse_mramor(){
   $.getJSON( "js/mramor.json", function( data ) {
@@ -246,9 +328,11 @@ function parse_mramor(){
       'top':mramor_array[i].map_t,
       'left':mramor_array[i].map_l
     });
+    $('#map-point-sceleton a').attr('data-kamen','mramor').attr('data-id',mramor_array[i].id);
     $($('#map-point-sceleton').html()).appendTo('.map');
-  }
 
+
+  }
 
 
   //ініціалізація функціоналу селектбоксів
@@ -316,8 +400,12 @@ function parse_mramor(){
 
 
 
+  $('.kam[data-kamen="mramor"] .scroll-wrap a:first-child').trigger('click');
 
-  });
+  mramor_array_parsed = true;
+  scroll_links_init();
+
+});
 
 }
 function parse_mramor_cart(id){
@@ -338,7 +426,7 @@ function parse_mramor_cart(id){
       $('.kam[data-kamen="mramor"] p.foto').unbind('click');//видаляємо попередню функцію привязану на клік
       var photo_array = mramor_array[i].photos.split(',');
       $('.kam[data-kamen="mramor"] p.foto').click(function() {
-        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'loop': false} )
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
       //сертифікати карьеру тимчасово непотрібно
       /*
@@ -375,10 +463,9 @@ function parse_granit(){
       'top':granit_array[i].map_t,
       'left':granit_array[i].map_l
     });
+    $('#map-point-sceleton a').attr('data-kamen','granit').attr('data-id',granit_array[i].id);
     $($('#map-point-sceleton').html()).appendTo('.map');
   }
-
-
 
   //ініціалізація функціоналу селектбоксів
 
@@ -443,8 +530,12 @@ function parse_granit(){
   });
   //відкриття, закриття селектбоксів енд
 
+  //ввімкнення першиго камня зі списку
+  $('.kam[data-kamen="granit"] .scroll-wrap a:first-child').trigger('click');
 
-
+  
+  granit_array_parsed = true;
+  scroll_links_init();
 
   });
 
@@ -467,7 +558,7 @@ function parse_granit_cart(id){
       $('.kam[data-kamen="granit"] p.foto').unbind('click');//видаляємо попередню функцію привязану на клік
       var photo_array = granit_array[i].photos.split(',');
       $('.kam[data-kamen="granit"] p.foto').click(function() {
-        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'loop': false} )
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
       //сертифікати карьеру тимчасово непотрібно
       /*
@@ -503,10 +594,9 @@ function parse_dolomit(){
       'top':dolomit_array[i].map_t,
       'left':dolomit_array[i].map_l
     });
+    $('#map-point-sceleton a').attr('data-kamen','dolomit').attr('data-id',dolomit_array[i].id);
     $($('#map-point-sceleton').html()).appendTo('.map');
   }
-
-
 
   //ініціалізація функціоналу селектбоксів
 
@@ -571,9 +661,11 @@ function parse_dolomit(){
   });
   //відкриття, закриття селектбоксів енд
 
+$('.kam[data-kamen="dolomit"] .scroll-wrap a:first-child').trigger('click');
 
 
-
+  dolomit_array_parsed = true;
+  scroll_links_init();
   });
 
 }
@@ -595,7 +687,7 @@ function parse_dolomit_cart(id){
       $('.kam[data-kamen="dolomit"] p.foto').unbind('click');//видаляємо попередню функцію привязану на клік
       var photo_array = dolomit_array[i].photos.split(',');
       $('.kam[data-kamen="dolomit"] p.foto').click(function() {
-        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'loop': false} )
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
       //сертифікати карьеру тимчасово непотрібно
       /*

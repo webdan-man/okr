@@ -4,13 +4,13 @@
 		"name":"Месторождение Верхний Уфалей (Октябрьское)",
 		"phone":"+7 111 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid1.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"303px",
-		"map_l":"233px"
+		"kamen":"img/mramor/kamen/mramor_1.png",
+		"kamen_m":"img/mramor/kamen/mramor_m1.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak1.png",
+		"map_t":"298px",
+		"map_l":"239px"
 	},
 
 	{
@@ -18,13 +18,13 @@
 		"name":"Месторождение Коелга",
 		"phone":"+7 222 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid2.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"210px",
-		"map_l":"117px"
+		"kamen":"img/mramor/kamen/mramor_2.png",
+		"kamen_m":"img/mramor/kamen/mramor_m2.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak2.png",
+		"map_t":"314px",
+		"map_l":"239px"
 	},
 
 	{
@@ -32,40 +32,40 @@
 		"name":"Месторождение Мраморское (Полевской)",
 		"phone":"+7 333 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid3.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/mramor/kamen/mramor_3.png",
+		"kamen_m":"img/mramor/kamen/mramor_m3.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak3.png",
+		"map_t":"294px",
+		"map_l":"246px"
 	},
 
 	{
 		"id":4,
-		"name":"Месторождение Перевальное (Бирюза)",
+		"name":"Месторождение Перевальное",
 		"phone":"+7 444 345 34 23",
 		"region": "Республика Дагестан",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid4.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"310px",
-		"map_l":"287px"
+		"kamen":"img/mramor/kamen/mramor_4.png",
+		"kamen_m":"img/mramor/kamen/mramor_m4.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak4.png",
+		"map_t":"366px",
+		"map_l":"57px"
 	},
 	{
 		"id":5,
-		"name":"Месторождение Подходиловское (ООО МАБЛ )",
+		"name":"Месторождение Подходиловское",
 		"phone":"+7 111 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid5.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/mramor/kamen/mramor_5.png",
+		"kamen_m":"img/mramor/kamen/mramor_m5.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak5.png",
+		"map_t":"296px",
+		"map_l":"252px"
 	},
 
 	{
@@ -73,13 +73,13 @@
 		"name":"Месторождение Полоцкий",
 		"phone":"+7 222 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid6.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"210px",
-		"map_l":"117px"
+		"kamen":"img/mramor/kamen/mramor_6.png",
+		"kamen_m":"img/mramor/kamen/mramor_m6.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak6.png",
+		"map_t":"320px",
+		"map_l":"221px"
 	},
 
 	{
@@ -87,13 +87,13 @@
 		"name":"Месторождение Романовское",
 		"phone":"+7 333 345 34 23",
 		"region": "Челябинская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid7.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"190px",
-		"map_l":"317px"
+		"kamen":"img/mramor/kamen/mramor_7.png",
+		"kamen_m":"img/mramor/kamen/mramor_m7.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak7.png",
+		"map_t":"305px",
+		"map_l":"227px"
 	},
 
 	{
@@ -101,26 +101,26 @@
 		"name":"Месторождение Саянское",
 		"phone":"+7 444 345 34 23",
 		"region": "Край Красноярский",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid8.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"310px",
-		"map_l":"287px"
+		"kamen":"img/mramor/kamen/mramor_8.png",
+		"kamen_m":"img/mramor/kamen/mramor_m8.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak8.png",
+		"map_t":"371px",
+		"map_l":"459px"
 	},
 	{
 		"id":9,
 		"name":"Месторождение Шабровское (Змеевик)",
 		"phone":"+7 111 345 34 23",
 		"region": "Свердловская область",
-		"photos":"img/mramor/photos/slid1.jpg,img/mramor/photos/slid2.jpg,img/mramor/photos/slid3.jpg",
+		"photos":"img/mramor/photos/slid9.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor.png",
-		"kamen_m":"img/mramor/kamen/mramor_m.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak.png",
-		"map_t":"110px",
-		"map_l":"217px"
+		"kamen":"img/mramor/kamen/mramor_9.png",
+		"kamen_m":"img/mramor/kamen/mramor_m9.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak9.png",
+		"map_t":"290px",
+		"map_l":"254px"
 	}
 
 ]
