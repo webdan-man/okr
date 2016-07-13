@@ -9,6 +9,8 @@
 		"kamen":"img/dolomit/kamen/dolomit_1.png",
 		"kamen_m":"img/dolomit/kamen/dolomit_m1.png",
 		"kamen_map":"img/dolomit/kamen/dolomit_trak1.png",
+		"kamen_b":"img/dolomit/kamen/dolomit_b1.png",
+		"event":"dolomit_1",
 		"map_t":"289px",
 		"map_l":"140px"
 	}

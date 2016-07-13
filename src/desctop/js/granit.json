@@ -9,6 +9,8 @@
 		"kamen":"img/granit/kamen/granit_1.png",
 		"kamen_m":"img/granit/kamen/granit_m1.png",
 		"kamen_map":"img/granit/kamen/granit_trak1.png",
+		"kamen_b":"img/granit/kamen/granit_b1.png",
+		"event":"granit_1",
 		"map_t":"115px",
 		"map_l":"191px"
 	},
@@ -23,6 +25,8 @@
 		"kamen":"img/granit/kamen/granit_2.png",
 		"kamen_m":"img/granit/kamen/granit_m2.png",
 		"kamen_map":"img/granit/kamen/granit_trak2.png",
+		"kamen_b":"img/granit/kamen/granit_b2.png",
+		"event":"granit_2",
 		"map_t":"115px",
 		"map_l":"139px"
 	},
@@ -37,6 +41,8 @@
 		"kamen":"img/granit/kamen/granit_3.png",
 		"kamen_m":"img/granit/kamen/granit_m3.png",
 		"kamen_map":"img/granit/kamen/granit_trak3.png",
+		"kamen_b":"img/granit/kamen/granit_b3.png",
+		"event":"granit_3",
 		"map_t":"79px",
 		"map_l":"210px"
 	},
@@ -51,6 +57,8 @@
 		"kamen":"img/granit/kamen/granit_4.png",
 		"kamen_m":"img/granit/kamen/granit_m4.png",
 		"kamen_map":"img/granit/kamen/granit_trak4.png",
+		"kamen_b":"img/granit/kamen/granit_b4.png",
+		"event":"granit_4",
 		"map_t":"119px",
 		"map_l":"136px"
 	},
@@ -64,13 +72,15 @@
 		"kamen":"img/granit/kamen/granit_5.png",
 		"kamen_m":"img/granit/kamen/granit_m5.png",
 		"kamen_map":"img/granit/kamen/granit_trak5.png",
+		"kamen_b":"img/granit/kamen/granit_b5.png",
+		"event":"granit_5",
 		"map_t":"133px",
 		"map_l":"165px"
 	},
 
 	{
 		"id":6,
-		"name":"Месторождение Камбулатовский \"камбулатский\"",
+		"name":"Месторождение Камбулатовский \"Камбулатский\"",
 		"phone":"+7 222 345 34 23",
 		"region": "Челябинская область",
 		"photos":"img/granit/photos/slid6.jpg",
@@ -78,6 +88,8 @@
 		"kamen":"img/granit/kamen/granit_6.png",
 		"kamen_m":"img/granit/kamen/granit_m6.png",
 		"kamen_map":"img/granit/kamen/granit_trak6.png",
+		"kamen_b":"img/granit/kamen/granit_b6.png",
+		"event":"granit_6",
 		"map_t":"308px",
 		"map_l":"237px"
 	},
@@ -92,6 +104,8 @@
 		"kamen":"img/granit/kamen/granit_7.png",
 		"kamen_m":"img/granit/kamen/granit_m7.png",
 		"kamen_map":"img/granit/kamen/granit_trak7.png",
+		"kamen_b":"img/granit/kamen/granit_b7.png",
+		"event":"granit_7",
 		"map_t":"116px",
 		"map_l":"134px"
 	},
@@ -106,6 +120,8 @@
 		"kamen":"img/granit/kamen/granit_8.png",
 		"kamen_m":"img/granit/kamen/granit_m8.png",
 		"kamen_map":"img/granit/kamen/granit_trak8.png",
+		"kamen_b":"img/granit/kamen/granit_b8.png",
+		"event":"granit_8",
 		"map_t":"140px",
 		"map_l":"178px"
 	},
@@ -120,6 +136,8 @@
 		"kamen":"img/granit/kamen/granit_9.png",
 		"kamen_m":"img/granit/kamen/granit_m9.png",
 		"kamen_map":"img/granit/kamen/granit_trak9.png",
+		"kamen_b":"img/granit/kamen/granit_b9.png",
+		"event":"granit_9",
 		"map_t":"90px",
 		"map_l":"229px"
 	},
@@ -134,6 +152,8 @@
 		"kamen":"img/granit/kamen/granit_10.png",
 		"kamen_m":"img/granit/kamen/granit_m10.png",
 		"kamen_map":"img/granit/kamen/granit_trak10.png",
+		"kamen_b":"img/granit/kamen/granit_b10.png",
+		"event":"granit_10",
 		"map_t":"104px",
 		"map_l":"198px"
 	},
@@ -148,6 +168,8 @@
 		"kamen":"img/granit/kamen/granit_11.png",
 		"kamen_m":"img/granit/kamen/granit_m11.png",
 		"kamen_map":"img/granit/kamen/granit_trak11.png",
+		"kamen_b":"img/granit/kamen/granit_b11.png",
+		"event":"granit_11",
 		"map_t":"292px",
 		"map_l":"249px"
 	},
@@ -162,6 +184,8 @@
 		"kamen":"img/granit/kamen/granit_12.png",
 		"kamen_m":"img/granit/kamen/granit_m12.png",
 		"kamen_map":"img/granit/kamen/granit_trak12.png",
+		"kamen_b":"img/granit/kamen/granit_b12.png",
+		"event":"granit_12",
 		"map_t":"312px",
 		"map_l":"224px"
 	},
@@ -176,6 +200,8 @@
 		"kamen":"img/granit/kamen/granit_13.png",
 		"kamen_m":"img/granit/kamen/granit_m13.png",
 		"kamen_map":"img/granit/kamen/granit_trak13.png",
+		"kamen_b":"img/granit/kamen/granit_b13.png",
+		"event":"granit_13",
 		"map_t":"94px",
 		"map_l":"205px"
 	},
@@ -190,6 +216,8 @@
 		"kamen":"img/granit/kamen/granit_14.png",
 		"kamen_m":"img/granit/kamen/granit_m14.png",
 		"kamen_map":"img/granit/kamen/granit_trak14.png",
+		"kamen_b":"img/granit/kamen/granit_b14.png",
+		"event":"granit_14",
 		"map_t":"93px",
 		"map_l":"204px"
 	},
@@ -204,6 +232,8 @@
 		"kamen":"img/granit/kamen/granit_15.png",
 		"kamen_m":"img/granit/kamen/granit_m15.png",
 		"kamen_map":"img/granit/kamen/granit_trak15.png",
+		"kamen_b":"img/granit/kamen/granit_b15.png",
+		"event":"granit_15",
 		"map_t":"128px",
 		"map_l":"130px"
 	},
@@ -218,6 +248,8 @@
 		"kamen":"img/granit/kamen/granit_16.png",
 		"kamen_m":"img/granit/kamen/granit_m16.png",
 		"kamen_map":"img/granit/kamen/granit_trak16.png",
+		"kamen_b":"img/granit/kamen/granit_b16.png",
+		"event":"granit_16",
 		"map_t":"331px",
 		"map_l":"41px"
 	},
@@ -232,6 +264,8 @@
 		"kamen":"img/granit/kamen/granit_17.png",
 		"kamen_m":"img/granit/kamen/granit_m17.png",
 		"kamen_map":"img/granit/kamen/granit_trak17.png",
+		"kamen_b":"img/granit/kamen/granit_b17.png",
+		"event":"granit_17",
 		"map_t":"290px",
 		"map_l":"251px"
 	},
@@ -246,6 +280,8 @@
 		"kamen":"img/granit/kamen/granit_18.png",
 		"kamen_m":"img/granit/kamen/granit_m18.png",
 		"kamen_map":"img/granit/kamen/granit_trak18.png",
+		"kamen_b":"img/granit/kamen/granit_b18.png",
+		"event":"granit_18",
 		"map_t":"116px",
 		"map_l":"137px"
 	},
@@ -260,6 +296,8 @@
 		"kamen":"img/granit/kamen/granit_19.png",
 		"kamen_m":"img/granit/kamen/granit_m19.png",
 		"kamen_map":"img/granit/kamen/granit_trak19.png",
+		"kamen_b":"img/granit/kamen/granit_b19.png",
+		"event":"granit_19",
 		"map_t":"286px",
 		"map_l":"257px"
 	},
@@ -274,6 +312,8 @@
 		"kamen":"img/granit/kamen/granit_20.png",
 		"kamen_m":"img/granit/kamen/granit_m20.png",
 		"kamen_map":"img/granit/kamen/granit_trak20.png",
+		"kamen_b":"img/granit/kamen/granit_b20.png",
+		"event":"granit_20",
 		"map_t":"301px",
 		"map_l":"234px"
 	},
@@ -288,6 +328,8 @@
 		"kamen":"img/granit/kamen/granit_21.png",
 		"kamen_m":"img/granit/kamen/granit_m21.png",
 		"kamen_map":"img/granit/kamen/granit_trak21.png",
+		"kamen_b":"img/granit/kamen/granit_b21.png",
+		"event":"granit_21",
 		"map_t":"307px",
 		"map_l":"237px"
 	},
@@ -302,6 +344,8 @@
 		"kamen":"img/granit/kamen/granit_22.png",
 		"kamen_m":"img/granit/kamen/granit_m22.png",
 		"kamen_map":"img/granit/kamen/granit_trak22.png",
+		"kamen_b":"img/granit/kamen/granit_b22.png",
+		"event":"granit_22",
 		"map_t":"95px",
 		"map_l":"206px"
 	},
@@ -316,6 +360,8 @@
 		"kamen":"img/granit/kamen/granit_23.png",
 		"kamen_m":"img/granit/kamen/granit_m23.png",
 		"kamen_map":"img/granit/kamen/granit_trak23.png",
+		"kamen_b":"img/granit/kamen/granit_b23.png",
+		"event":"granit_23",
 		"map_t":"118px",
 		"map_l":"135px"
 	}	

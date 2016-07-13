@@ -902,7 +902,9 @@ function parse_granit_cart(id){
       $('.kam[data-kamen="granit"] p.oblast').text(granit_array[i].region);
       //ідентифікатори в формах
       $('input.input-granit').val(granit_array[i].name);
+      $('input.event-granit').val(granit_array[i].event);
       $('input.input-kamen-karier').val(granit_array[i].name);
+      $('input.input-kamen-event').val(granit_array[i].event);
       //фотки текстур камнів
       $('.for-parsed-style[data-kamen="granit"]').html('');//очистка
       var style_string = '.kam[data-kamen="granit"] .kamen{background-image: url('+granit_array[i].kamen+')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="granit"] .kamen{background-image: url('+granit_array[i].kamen_m+')}}';
@@ -914,7 +916,9 @@ function parse_granit_cart(id){
         $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
       //сертифікати карьеру тимчасово непотрібно
+      $('#granp').find('img').attr('src',granit_array[i].kamen_b);
       /*
+
       $('.kam[data-kamen="granit"] p.sert').unbind('click');//видаляємо попередню функцію привязану на клік
       var sert_array = granit_array[i].photos.split(',');
       $('.kam[data-kamen="granit"] p.sert').click(function() {
@@ -1036,7 +1040,9 @@ function parse_dolomit_cart(id){
       $('.kam[data-kamen="dolomit"] p.oblast').text(dolomit_array[i].region);
       //ідентифікатори в формах
       $('input.input-dolomit').val(dolomit_array[i].name);
+      $('input.event-dolomit').val(dolomit_array[i].event);
       $('input.input-kamen-karier').val(dolomit_array[i].name);
+      $('input.input-kamen-event').val(dolomit_array[i].event);
       //фотки текстур камнів
       $('.for-parsed-style[data-kamen="dolomit"]').html('');//очистка
       var style_string = '.kam[data-kamen="dolomit"] .kamen{background-image: url('+dolomit_array[i].kamen+')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="dolomit"] .kamen{background-image: url('+dolomit_array[i].kamen_m+')}}';
@@ -1049,7 +1055,7 @@ function parse_dolomit_cart(id){
       });
 
 
-      //$('#dolop').find('img').attr('src',dolomit_array[i].kamen_b);
+      $('#dolop').find('img').attr('src',dolomit_array[i].kamen_b);
       //$('#mramp,#granp,#dolop')
       //сертифікати карьеру тимчасово непотрібно
       /*

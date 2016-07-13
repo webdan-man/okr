@@ -1001,7 +1001,7 @@ form button,.btn_pp {
 }
 
 .sec6 {
-    height: 700px;
+    height: 767px;
     background-color: rgb( 245, 245, 245 );
     position: relative;
     z-index: 3;
@@ -1021,7 +1021,7 @@ form button,.btn_pp {
     min-width: 940px;
     position: absolute;
     background-size: contain;
-    top: 40px;
+    top: 10px;
     left: 50%;
     margin-left: -470px;
     transform: scale(1);
@@ -1473,7 +1473,7 @@ footer {
 
 .kam_gr {
     margin-top: 31px;
-    padding: 0px 50px;
+    padding: 0px 0px;
 }
 
 .kamni {
@@ -1783,6 +1783,18 @@ bottom: 0px;
 margin-bottom: 20px;
   
 width: 100%;
+  
+/* height: 125px; */
+  
+padding: 10px;
+  
+border: solid 2px rgb( 255, 191, 0 );
+  
+/* width: 90%; */
+  
+/* display: inline-block; */
+  
+border-radius: 4px;
 }
 .map_form h3 {
   font-size: 24px;
@@ -1791,24 +1803,51 @@ width: 100%;
 }
 .map_form input{
 	border: 1px solid #444444;
-	width: 20%;
+	width: 23%;
 	margin: 0px 5px;
 }
 .map_form button{
   
 border: 2px solid #444444;
   
-border-radius: 4px;
+/* border-radius: 4px; */
   
-width: 20%;
+width: 23%;
   
 margin: 0px 5px;
   
 color: #444444;
 }
+.map_form:before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/form_map2.jpg);
+	background-position: top;
+	background-repeat-x: no-repeat;
+	top: 0;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 6px;
+	background-color: transparent;
+	top: -4px;
+	z-index: 6;
+}
+
 .map_form form{
   margin-top: 20px;
+  /* background-image: url(../img/form_map.png); */
+  /* background-position: top -1px center; */
+  /* background-repeat-x: no-repeat; */
+  /* height: 74px; */
+  /* padding: 10px; */
+  position: relative;
+  /* border: solid 2px rgb( 255, 191, 0 ); */
+  /* width: 90%; */
+  /* display: inline-block; */
+  /* border-radius: 4px; */
 }
+
 @media screen  and (max-width: 960px) { 
 .sec1 {
     padding-top: 190px;
@@ -1820,7 +1859,7 @@ color: #444444;
     transform: scale3d(0.95, 0.95, 1);
     top: 10px;
 }
-.sec6{height: 635px}
+.sec6{height: 735px;}
 .trak_h h4{
        font-size: 17px; 
 }
@@ -1856,6 +1895,7 @@ color: #444444;
 .sec1 {
     padding-top: 200px;
 }
+
 .map{
     transform: scale3d(0.94, 0.94, 1);
     top: 10px;
@@ -1866,7 +1906,7 @@ color: #444444;
 .trak_h p {
     font-size: 16px;
 }
-.sec6{height: 635px}
+.sec6{height: 750px;}
 }
 @media screen and (min-width: 650px) and (max-width: 900px) {
 .kam {
@@ -1905,7 +1945,7 @@ color: #444444;
     transform: scale3d(0.85, 0.85, 1);
     top: 0px;
 }
-.sec6{height: 620px}
+.sec6{height: 730px;}
 .bit_gr a{padding-left: 2px;}
 .kam_in {
     padding: 0px 8% 0px 5.5%;
@@ -1915,6 +1955,12 @@ color: #444444;
 }
 }
 @media screen and (min-width: 800px) and (max-width: 850px) { 
+  .kam_grs {
+  /* margin: 17px 4%; */
+}
+.kam_gr {
+  /* padding: 0px 0px; */
+}
 .bit_gr{
    margin-top: 120px; 
 }
@@ -1929,7 +1975,7 @@ color: #444444;
     transform: scale3d(0.8, 0.8, 1);
     top: -15px;
 }
-.sec6{height: 605px}
+.sec6{height: 690px;}
 .kam_in {
     padding: 0px 6.5% 0px 5%;
 }
@@ -2021,7 +2067,7 @@ color: #444444;
     transform: scale3d(0.75, 0.75, 1);
     top: -25px;
 }
-.sec6{height: 590px}
+.sec6{height: 690px;}
 .cel {
     margin: 20px -1%;
 }
@@ -2035,7 +2081,7 @@ color: #444444;
   margin-top: 10px;
 }
 .kam_grs{
-    margin: 10px 2%;
+    margin: 10px 4%;
 }
 }
 @media screen and (max-width: 800px) { 
@@ -2070,7 +2116,7 @@ color: #444444;
 }
 
 .kam_grs{
-    margin: 10px 0.8%;
+    margin: 10px 3.5%;
 }
 }
 @media screen and (min-width: 320px) and (max-width: 750px) { 
@@ -2095,33 +2141,66 @@ color: #444444;
     margin: 20px 0%;
 }
 .kam_grs{
-    margin: 10px 3%;
+    margin: 10px 6%;
 }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) { 
-.kamni:hover .kam_cir, .kamni.active .kam_cir {
+@media screen and (max-width: 700px) and (min-width: 320px) { 
+.kamni.active .kam_cir {
     background-image: url(../img/trac_cir.png);
-    width: 100px;
-    height: 62px;
-    padding-top: 7px;
+    width: 64px;
+    height: 64px;
+    padding-top: 8px;
     display: inline-block;
+    transform: rotate(15deg);
+}
+.kamni:hover .kam_cir img, .kamni.active .kam_cir img{
+	transform: rotate(0deg);
 }
 .kam_cir img{
     background-size: contain;
     height: 50px;
     width: 50px;
+    /* transform: rotate(-15deg); */
 }
 .kam_cir{
-    width: 100px;
-    height: 62px;
+    width: 64px;
+    height: 64px;
     display: inline-block;
-    padding-top: 7px;
+    padding-top: 8px;
 }
-
+#pop1 .kamni .after:before{
+	width: 32px;
+	margin-right: -32px;
+	margin-top: -32px;
+	background-image: url(../img/trac_cir.png);
+}
+#pop1 .kamni .after:after{
+	width: 32px;
+	margin-left: -32px;
+	margin-bottom: -32px;
+	background-image: url(../img/trac_cir.png);
+}
+#pop1 .kamni:hover .kam_cir .after:before{
+	height: 64px;
+	width: 32px;
+}
+.kam_cir .after{
+	width: 64px;
+	height: 64px;
+	margin-top: -32px;
+	margin-left: -32px;
+	transform: rotate(15deg);
+}
+#pop1 .kamni:hover .kam_cir .after:after{
+	height: 64px;
+	width: 32px;
+}
 }
 @media screen and (max-width: 650px) and (min-width: 320px) { 
 
-
+.kam_grs {
+  margin: 10px 6%;
+}
 .pr_gr {
     /* width: 52%; */
 }
@@ -2272,7 +2351,7 @@ header.head_w .okr span{
 .sec1 h4:nth-of-type(1){display: none;}
 .sec1 .okr{display: inline-block;top: 0;margin: 0 auto;height: 90px;margin-top: 0;}
 .kam_in{
-    padding-right: 5%;
+    padding-right: 8%;
 }
 .sec1 h4:nth-of-type(2) span{display: none;}
 .proc_gr{
@@ -2359,7 +2438,10 @@ header.head_w .okr span{
 	height: 30px;
 	line-height: 30px;
 }
-
+.str_a{
+	right: 7.2%;
+	top: 30px;
+}
 .sec1 h4:nth-of-type(2) .like-button .before{width: 50px;height: 30px;}
 .sec1 h4:nth-of-type(2) .like-button .before:before{
   content:'';
@@ -2379,7 +2461,7 @@ header.head_w .okr span{
 }
 @media screen and (min-width: 320px) and (max-width: 500px) { 
 .kam_grs{
-    margin: 10px 2%;
+    margin: 10px 6%;
 }
 .sec1 {
     padding-top: 130px;
@@ -2563,8 +2645,7 @@ display: none;
     width: 280px;
     display: inline-block;
 }
-.sel a{font-size: 18px;padding-left: 12px;letter-spacing: 0.1px;width: 80%;
-line-height: 20px!important;}
+.sel a{font-size: 18px;padding-left: 12px;letter-spacing: 0.1px;width: 80%;line-height: 20px!important;padding-top: 13px;}
 .kamen{
     float: none;
     margin: 0;
@@ -2699,7 +2780,7 @@ line-height: 20px!important;}
     padding-top: 10px;
 }
 .kam_grs{
-    margin: 17px 10%;
+    margin: 17px 12%;
 }
 .kamni p{
     margin-top: 0px;
@@ -2788,7 +2869,9 @@ line-height: 20px!important;}
 }
 @media screen and (max-width:600px){
   .menu_line a{font-size: 18px;margin-left: 25px;}
-.menu_line a:hover, .menu_line a.active{}
+.menu_line a:hover, .menu_line a.active{
+	background: 0;
+}
 .sscrl_w{
 	display: none;
 	/* background-image: url(../img/menu_line_m.png); */
