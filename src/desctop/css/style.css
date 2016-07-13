@@ -286,7 +286,7 @@ header {
 }
 .bit_gr a{
     display: inline-block;
-    margin: 0px 20px;
+    margin: 0px 10px;
     background-image: none;
     background-repeat: no-repeat;
     background-position: right;
@@ -361,7 +361,7 @@ header {
     /* -webkit-flex: 2 1; */
 }
 .bit_gr a span.span {
-    font-size: 21px;
+    font-size: 20px;
     color: rgb( 255, 191, 0 );
     position: absolute;
     top: -27px;
@@ -1143,12 +1143,12 @@ footer {
 .verh {
     float: right;
     font-size: 15px;
-    color: rgba( 255, 255, 255, 0.4 );
+    color: white;
     margin-right: 1.2%;
     margin-top: 36px;
 }
 .verh:hover{
-    color: rgb( 255, 255, 255 );
+    color: rgb(255, 192, 1);
 }
 .polit {
     position: relative;
@@ -1304,7 +1304,7 @@ footer {
     display: inline-block;
     letter-spacing: 0.1px;
     width: 95%;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 10px;
 }
 .opis a:hover,.opis_b a:hover {
     background-color: rgb(226, 226, 226);
@@ -1947,7 +1947,8 @@ color: #444444;
 }
 .bit_gr a{}
 .btn_z {
-    right: 0%;
+    /* right: 0%; */
+    margin-left: 50px!important;
 }
 .mause{display: none;}
 .kam_gr{padding: 0}
@@ -2182,7 +2183,7 @@ color: #444444;
 .verh{
     float: none;
     display: block;
-    width: 70px;
+    width: 150px;
     margin: 15px auto 0;
 }
 .polit{
@@ -2236,8 +2237,9 @@ header.head_w .okr span{
     margin-top: 55px;
 }
 .btn_z{
-    margin-right: 5%;
-    width: 33%;
+    /* margin-right: 5%; */
+    /* width: 33%; */
+    margin-left: 10px!important;
 }
 .menu_btn{
     margin-left: 2%;
@@ -2389,6 +2391,9 @@ header{
     top: 0px;
     height: 80px;
 }
+.head_w .phone_gr{
+  display: none;
+}
 .menu_btn {
     margin-left: 1.6%;
     top: 30px;
@@ -2399,6 +2404,8 @@ header{
     height: 40px;
     border-radius: 4px;
     padding-top: 7px;
+    margin-left: 0!important;
+    float: right;
 }
 .sec1 {
     padding-top: 116px;
@@ -2524,7 +2531,7 @@ header{
     margin-top: 10px;
     padding-top: 5px;
     letter-spacing: 0px;
-    display: block;
+    /* display: block; */
     color: white;
 }
 .inf_gr a span:nth-of-type(2){display: none;}
@@ -2621,7 +2628,7 @@ header{
 .usl_gr .usl:nth-of-type(4) .usl_img{
     padding-top: 34px;
 }
-.verh{font-size: 15px;text-transform: uppercase;margin-top: 31px;}
+.verh{font-size: 15px;/* text-transform: uppercase; */margin-top: 31px;}
 .polit{
     margin-top: 32px;
     letter-spacing: 1px;
@@ -2637,12 +2644,13 @@ header{
     background-image: url(../img/cir_m.png);
     width: 130px;
     height: 42px;
+    padding-top: 10px;
 }
-.kam_grs{  
-    margin: 17px 4%;
+.kam_grs{
+    margin: 17px 10%;
 }
 .kamni p{
-    margin-top: 12px;
+    margin-top: 0px;
 }
 .kamni:hover,.kamni:active{
     background-color: rgb( 255, 191, 0 );
