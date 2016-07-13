@@ -274,7 +274,19 @@ header {
     top: 67.5%;
     margin-right: -203px;
     cursor: pointer;
+    -webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;animation-name:mouseDrag;-webkit-animation-play-state:running;animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);animation-timing-function:cubic-bezier(.7,.01,1,1);-webkit-animation-delay:1s;-webkit-animation-direction:alternate;-webkit-animation-duration:.5s;-webkit-animation-fill-mode:none;-webkit-animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;-webkit-animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);
 }
+
+@keyframes mouseDrag{0%{margin-top:0px}
+100%{margin-top:20px}
+}
+@-webkit-keyframes mouseDrag{0%{margin-top:0px}
+100%{margin-top:20px}
+}
+
+
+
+
 .grup_bit{position: absolute;width: 100%;bottom: 19px;height: 115px;}
 .bit_gr {
     position: absolute;
@@ -343,7 +355,7 @@ header {
   margin-right: -40px;
   margin-top: -40px;
   background-repeat: no-repeat;
-  background-image: url(../img/trac_cir_n.png); */
+  background-image: url(../img/trac_cir_n.png);
   background-position: top right;
   background-position: right top;
   /* transform: rotate(15deg); */
@@ -393,6 +405,7 @@ header {
   z-index: 4;
   border-radius: 3px;
   left: 0;
+  display: none;
   top: -2px;
   cursor: pointer;
 }
@@ -992,7 +1005,7 @@ form button,.btn_pp {
     background-color: rgb( 245, 245, 245 );
     position: relative;
     z-index: 3;
-    overflow: visible;
+    overflow: hidden!important;
     /* background-image: url(../mapi.png); */
     /* background-size: 81% 86%; */
     /* background-position: 143px 36px; */
@@ -1011,6 +1024,7 @@ form button,.btn_pp {
     top: 40px;
     left: 50%;
     margin-left: -470px;
+    transform: scale(1);
 }
 .trak {
     background-image: url(../img/tractor.png);
@@ -1097,7 +1111,7 @@ form button,.btn_pp {
   top: 50%;
   margin-right: -32px;
   margin-top: -32px;
-  background-image: url(../img/trac_cir.png); */
+  background-image: url(../img/trac_cir.png);
   background-position: top right;
   background-position: right top;
   /* transform: rotate(15deg); */
@@ -1189,7 +1203,7 @@ footer {
     -webkit-transition: all .25s;
     transition: all .25s;
     padding-right: 30px;
-    display: none;
+    /* display: none; */
 }
 .menu_m .menu_gr{
     width: 100%;
@@ -1317,6 +1331,7 @@ footer {
 .opis {
     position: relative;
     display: block;
+    z-index: 2;
     float: left;
     /* display: none; */
 }
@@ -1927,9 +1942,31 @@ color: #444444;
 }
 @media screen and (max-width: 800px) and (min-width: 320px) { 
 .grup_pr{
-    min-height: 240px;
+    min-height: 230px;
     /* width: 600px; */
-    overflow: hidden;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.grup_pr::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.grup_pr::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+.grup_pr::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+.grup_pr::-webkit-scrollbar-thumb {
+    background-color: rgb( 255, 191, 0 );
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+}
+
+.grup_pr::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
 .proc_gr{/* position: absolute; */background: 0;width: 800px;/* left: 50%; *//* margin-left: -400px; */}
 .proc_gr .proc:nth-of-type(1),.proc_gr .proc:nth-of-type(2),.proc_gr .proc:nth-of-type(3),.proc_gr .proc:nth-of-type(4),.proc_gr .proc:nth-of-type(5),.proc_gr .proc:nth-of-type(6){
@@ -2388,7 +2425,7 @@ header.head_w .okr span{
 }
 
 }
-@media screen and (min-width: 320px) and (max-width: 480px) { 
+@media screen and (max-width: 480px) and (min-width: 320px) { 
 .section, section, header {
     padding: 0 3%;
 }
@@ -2526,7 +2563,8 @@ display: none;
     width: 280px;
     display: inline-block;
 }
-.sel a{font-size: 18px;padding-left: 12px;letter-spacing: 0.1px;width: 80%;line-height: 20px;}
+.sel a{font-size: 18px;padding-left: 12px;letter-spacing: 0.1px;width: 80%;
+line-height: 20px!important;}
 .kamen{
     float: none;
     margin: 0;
@@ -2666,7 +2704,7 @@ display: none;
 .kamni p{
     margin-top: 0px;
 }
-.kamni:hover,.kamni:active{
+.kamni:hover, .kamni.active{
     background-color: rgb( 255, 191, 0 );
     width: 130px;
     height: 42px;
@@ -2747,16 +2785,51 @@ display: none;
     padding: 30px 0px 0px 0px;
 }
 #pop5 .line_m{margin-top: 100px;}
-.menu_line a{font-size: 18px;margin-left: 25px;}
+}
+@media screen and (max-width:600px){
+  .menu_line a{font-size: 18px;margin-left: 25px;}
 .menu_line a:hover, .menu_line a.active{}
+.sscrl_w{
+	display: none;
+	/* background-image: url(../img/menu_line_m.png); */
+	background-position: top left;
+	position:relative;
+}
+.menu_m .sscrolldiv:before{
+
+position: absolute;
+
+z-index: 3;
+
+top: 0px;
+
+width: 100%;
+
+height: 20px;
+
+background-image: url(../img/menu_line_m.png);
+
+background-position: top left;
+
+background-repeat: no-repeat;
+
+background-color: white;
+}
+.sscrl_w.active{display:block}
 .opis{
     /* display: block; */
-    background-image: url(../img/menu_line_m.png);
-    background-position: top left;
+    /* background-image: url(../img/menu_line_m.png); */
+    /* background-position: top left; */
     width: 100%;
     margin-top: 1px;
     padding: 20px 0px;
 }
+/*.opis:before{
+	width: 100%;
+	top: 0;
+	background: red;
+	height: 20px;
+}*/
 .as-close{
     margin-left: 25px;
 }
@@ -2765,7 +2838,7 @@ font-size: 16px;
 margin: 4px 0px;
 }
 .opis li{
-    height: 30px;
+    max-height: 40px;
     padding-left: 25px;
 }
 .opis:after{
@@ -2781,4 +2854,4 @@ margin: 4px 0px;
     float: left;
     display:block;
   }
- 
+}
