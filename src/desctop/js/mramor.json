@@ -9,6 +9,8 @@
 		"kamen":"img/mramor/kamen/mramor_1.png",
 		"kamen_m":"img/mramor/kamen/mramor_m1.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak1.png",
+		"kamen_b":"img/mramor/kamen/mramor_b1.png",
+		"event":"mramor_1",
 		"map_t":"298px",
 		"map_l":"239px"
 	},
@@ -23,6 +25,8 @@
 		"kamen":"img/mramor/kamen/mramor_2.png",
 		"kamen_m":"img/mramor/kamen/mramor_m2.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak2.png",
+		"kamen_b":"img/mramor/kamen/mramor_b2.png",
+		"event":"mramor_2",
 		"map_t":"314px",
 		"map_l":"239px"
 	},
@@ -37,6 +41,8 @@
 		"kamen":"img/mramor/kamen/mramor_3.png",
 		"kamen_m":"img/mramor/kamen/mramor_m3.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak3.png",
+		"kamen_b":"img/mramor/kamen/mramor_b3.png",
+		"event":"mramor_3",
 		"map_t":"294px",
 		"map_l":"246px"
 	},
@@ -51,6 +57,8 @@
 		"kamen":"img/mramor/kamen/mramor_4.png",
 		"kamen_m":"img/mramor/kamen/mramor_m4.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak4.png",
+		"kamen_b":"img/mramor/kamen/mramor_b4.png",
+		"event":"mramor_4",
 		"map_t":"366px",
 		"map_l":"57px"
 	},
@@ -64,6 +72,8 @@
 		"kamen":"img/mramor/kamen/mramor_5.png",
 		"kamen_m":"img/mramor/kamen/mramor_m5.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak5.png",
+		"kamen_b":"img/mramor/kamen/mramor_b5.png",
+		"event":"mramor_5",
 		"map_t":"296px",
 		"map_l":"252px"
 	},
@@ -78,6 +88,8 @@
 		"kamen":"img/mramor/kamen/mramor_6.png",
 		"kamen_m":"img/mramor/kamen/mramor_m6.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak6.png",
+		"kamen_b":"img/mramor/kamen/mramor_b6.png",
+		"event":"mramor_6",
 		"map_t":"320px",
 		"map_l":"221px"
 	},
@@ -92,6 +104,8 @@
 		"kamen":"img/mramor/kamen/mramor_7.png",
 		"kamen_m":"img/mramor/kamen/mramor_m7.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak7.png",
+		"kamen_b":"img/mramor/kamen/mramor_b7.png",
+		"event":"mramor_7",
 		"map_t":"305px",
 		"map_l":"227px"
 	},
@@ -106,6 +120,8 @@
 		"kamen":"img/mramor/kamen/mramor_8.png",
 		"kamen_m":"img/mramor/kamen/mramor_m8.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak8.png",
+		"kamen_b":"img/mramor/kamen/mramor_b8.png",
+		"event":"mramor_8",
 		"map_t":"371px",
 		"map_l":"459px"
 	},
@@ -119,6 +135,8 @@
 		"kamen":"img/mramor/kamen/mramor_9.png",
 		"kamen_m":"img/mramor/kamen/mramor_m9.png",
 		"kamen_map":"img/mramor/kamen/mramor_trak9.png",
+		"kamen_b":"img/mramor/kamen/mramor_b9.png",
+		"event":"mramor_9",
 		"map_t":"290px",
 		"map_l":"254px"
 	}

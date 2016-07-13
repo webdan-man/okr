@@ -165,7 +165,9 @@
                             <input type="text" name="name" placeholder="Имя">
                             <input type="text" name="phone" placeholder="Телефон">
                             <input type="text" name="email" placeholder="Email">
+                            <input type="hidden" name="type_k" value="Мрамор">
                             <input type="hidden" name="karier" class="input-mramor">
+                            <input type="hidden" name="event" class="event-mramor">
                             <button type="submit" value="Получить прайс">Получить прайс</button>
                         </form>
                         <a href="" class="btn_pp">Получить прайс</a>
@@ -312,7 +314,8 @@
     <section class="sec6" id="sec6">
         <div class="wrap">
             <h2>Вашего карьера еще нет на нашей карте?</h2>
-            <div class="map"></div>
+            <div class="map_w"><div class="map"></div></div>
+            
             <div class="map_form">
                 <h3>Оставьте свои контактные данные, мы свяжемся с вами и расскажем свои условия</h3>
                 <form action="" method="post">
@@ -373,15 +376,17 @@
                 <li><a class="mena" href="#sec1">Главная</a></li>
                 <li><a class="mena" href="#sec2">ОКР</a></li>
                 <li><a class="mena" href="#sec4_a">Мрамор</a>
-                    <ul class="opis" data-kamen="mramor">
-                    </ul>
+                    <div class="sscrl_w"><ul class="opis" data-kamen="mramor">
+                    </ul></div>
                 </li>
-                <li><a class="mena" href="#sec4_b">Гранит</a></li>
-                    <ul class="opis" data-kamen="granit">
-                    </ul>
-                <li><a class="mena" href="#sec4_c">Доломит</a></li>
-                    <ul class="opis" data-kamen="dolomit">
-                    </ul>
+                <li><a class="mena" href="#sec4_b">Гранит</a>
+                    <div class="sscrl_w"><ul class="opis" data-kamen="granit">
+                    </ul></div>
+                </li>
+                <li><a class="mena" href="#sec4_c">Доломит</a>
+                    <div class="sscrl_w"><ul class="opis" data-kamen="dolomit">
+                    </ul></div>
+                </li>
                 <li><a class="mena" href="#sec5">Услуги</a></li>
             </ul>
 
@@ -466,7 +471,7 @@
                                 <p class="oblast">Челябинская область</p>
                             </div>
                         </div>
-                        <a href="javascript:void(0)" class="btn_p" id="kal33">Далее</a>
+                        <a href="javascript:void(0)" class="btn_p" id="kal31">Далее</a>
                     </div>
                     <div class="kam" data-kamen="granit">
                         <div class="sel">
@@ -525,7 +530,9 @@
                     <input type="text" name="name" placeholder="Имя">
                     <input type="text" name="phone" placeholder="Телефон">
                     <input type="text" name="email" placeholder="Email">
-                    <input class="input-kamen-karier" name="kamen-karier" type="hidden">
+                    <input class="input-kamen-type" name="type_k" type="hidden">
+                    <input class="input-kamen-karier" name="karier" type="hidden">
+                    <input class="input-kamen-event" name="event" type="hidden">
                     <div class="line"></div>
                     <button type="submit" value="Получить прайс">Получить прайс</button>
                 </form>
@@ -603,6 +610,7 @@
     <script src="js/jquery.slimscroll.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.viewportchecker.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     
     
