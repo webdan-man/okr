@@ -781,6 +781,13 @@ function parse_mramor_cart(id){
       $('.kam[data-kamen="mramor"] p.foto').click(function() {
         $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
+      //фотографії виробів
+      $('.kam[data-kamen="mramor"] p.product').unbind('click');//видаляємо попередню функцію привязану на клік
+      var photo_array = mramor_array[i].product.split(',');
+      $('.kam[data-kamen="mramor"] p.product').click(function() {
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
+      });
+
 
 
 
@@ -926,6 +933,12 @@ function parse_granit_cart(id){
       $('.kam[data-kamen="granit"] p.foto').click(function() {
         $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
+      //фотографії виробів
+      $('.kam[data-kamen="granit"] p.product').unbind('click');//видаляємо попередню функцію привязану на клік
+      var photo_array = granit_array[i].product.split(',');
+      $('.kam[data-kamen="granit"] p.product').click(function() {
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
+      });
       //сертифікати карьеру тимчасово непотрібно
       $('#granp').find('img').attr('src',granit_array[i].kamen_b);
       /*
@@ -1062,6 +1075,12 @@ function parse_dolomit_cart(id){
       $('.kam[data-kamen="dolomit"] p.foto').unbind('click');//видаляємо попередню функцію привязану на клік
       var photo_array = dolomit_array[i].photos.split(',');
       $('.kam[data-kamen="dolomit"] p.foto').click(function() {
+        $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
+      });
+      //фотографії виробів
+      $('.kam[data-kamen="dolomit"] p.product').unbind('click');//видаляємо попередню функцію привязану на клік
+      var photo_array = dolomit_array[i].product.split(',');
+      $('.kam[data-kamen="dolomit"] p.product').click(function() {
         $.fancybox.open(photo_array , {helpers:{overlay:{locked:false},title:null},'padding':0} )
       });
 

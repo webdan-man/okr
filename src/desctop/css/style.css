@@ -820,7 +820,7 @@ header {
     margin-top: 25px;
     display: inline-block;
 }
-.inf_gr a:hover,.inf_gr p:nth-of-type(2):hover{
+.inf_gr a:hover,.inf_gr p:nth-of-type(2):hover,.inf_gr p:nth-of-type(3):hover{
     color: rgb( 255, 191, 0 );    
     cursor: pointer;
 }
@@ -846,6 +846,10 @@ header {
     min-height: 30px;
 }
 .inf_gr p:nth-of-type(3){
+    background-image: url(../img/izdelyja.png);
+    min-height: 30px;
+}
+.inf_gr p:nth-of-type(4){
     background-image: url(../img/sert.png);
     min-height: 30px;
 }
