@@ -2,6 +2,10 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$frmid = $_POST['frmid'];
+$type_k = $_POST['type_k'];
+$mesto = $_POST['mesto'];
+$karier = $_POST['karier'];
 $utm_source = $_POST['utm_source'];
 $utm_medium = $_POST['utm_medium'];
 $utm_campaign = $_POST['utm_campaign'];
@@ -27,9 +31,13 @@ $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
 $to = "karier-rossii@mail.ru, triowork2@gmail.com";
 
-$message = "Имя: $name\n";
+$message = "Форма: $frmid\n\n";
+$message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n";
 $message .= "E-mail: $email\n\n";
+$message .= "Тип камня: $type_k\n";
+$message .= "Месторождение: $karier\n\n";
+$message .= "На карте нет моего месторождения: $mesto\n\n";
 $message .= "Источник: $utm_source\n";
 $message .= "Тип источника: $utm_medium\n";
 $message .= "Кампания: $utm_campaign\n";

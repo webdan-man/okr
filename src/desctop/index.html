@@ -172,10 +172,11 @@
                     <h3>Получите прайс</h3>
                     <div class="form_gr">
                         <h4>Минимальный заказ —<span> 200 м<sup>3</sup></span></h4>
-                        <form action="" method="post">
+                        <form action="ajax/mail.php" method="post">
                             <input type="text" name="name" placeholder="Имя">
                             <input type="text" name="phone" placeholder="Телефон">
                             <input type="text" name="email" placeholder="Email">
+                            <input name="frmid" value="Блок мрамор" type="hidden">
                             <input type="hidden" name="type_k" value="Мрамор">
                             <input type="hidden" name="karier" class="input-mramor">
                             <input type="hidden" name="event" class="event-mramor">
@@ -226,10 +227,11 @@
                     <h3>Получите прайс</h3>
                     <div class="form_gr">
                         <h4>Минимальный заказ —<span> 200 м<sup>3</sup></span></h4>
-                        <form action="" method="post">
+                        <form action="ajax/mail.php" method="post">
                             <input type="text" name="name" placeholder="Имя">
                             <input type="text" name="phone" placeholder="Телефон">
                             <input type="text" name="email" placeholder="Email">
+                            <input name="frmid" value="Блок гранит" type="hidden">
                             <input type="hidden" name="type_k" value="Гранит">
                             <input type="hidden" name="karier" class="input-granit">
                             <input type="hidden" name="event" class="event-granit">                            
@@ -280,10 +282,11 @@
                     <h3>Получите прайс</h3>
                     <div class="form_gr">
                         <h4>Минимальный заказ —<span> 200 м<sup>3</sup></span></h4>
-                        <form action="" method="post">
+                        <form action="ajax/mail.php" method="post">
                             <input type="text" name="name" placeholder="Имя">
                             <input type="text" name="phone" placeholder="Телефон">
                             <input type="text" name="email" placeholder="Email">
+                            <input name="frmid" value="Блок доломит" type="hidden">
                             <input type="hidden" name="type_k" value="Гранит">
                             <input type="hidden" name="karier" class="input-dolomit">
                             <input type="hidden" name="event" class="event-dolomit">   
@@ -333,7 +336,8 @@
             
             <div class="map_form">
                 <h3>Оставьте свои контактные данные, мы свяжемся с вами и расскажем свои условия</h3>
-                <form action="" method="post">
+                <form action="ajax/mail.php" method="post">
+                    <input name="frmid" value="Добавить карьер на карту" type="hidden">
                     <input type="text" name="mesto" placeholder="Месторождение">
                     <input type="text" name="name" placeholder="Имя">
                     <input type="text" name="phone" placeholder="Телефон">
@@ -542,7 +546,8 @@
             <div class="wrap">
                 <h2>Введите данные</h2>
                 <h4>Представитель карьера свяжется с вами.</h4>
-                <form action="" method="post">
+                <form action="ajax/mail.php" method="post">
+                    <input name="frmid" value="Калькулятор" type="hidden">
                     <input type="text" name="name" placeholder="Имя">
                     <input type="text" name="phone" placeholder="Телефон">
                     <input type="text" name="email" placeholder="Email">

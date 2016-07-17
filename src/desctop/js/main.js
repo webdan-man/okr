@@ -300,7 +300,7 @@ $('.menu_btn').click(function(e) {
     alwaysVisible: true,
     railVisible: true});
     },500);
-  $("html,body").css("overflow","hidden");
+  $("body").css("overflow","hidden");
 
   
 
@@ -311,7 +311,7 @@ $('section,.as-close').click(function(e){
   if (menu_active == 1) {
     $('.menu_m,.menu').addClass('noactive');
     menu_active = 0;    
-  $("html,body").css("overflow","auto");
+  $("body").css("overflow","auto");
   }
 
 });
@@ -323,7 +323,7 @@ $('.mena').click(function(){
   if (menu_active == 1) {
     $('.menu_m,.menu').addClass('noactive');
     menu_active = 0;    
-  $("html,body").css("overflow","auto");
+  $("body").css("overflow","auto");
   }}
 });
 
@@ -363,14 +363,23 @@ $('.mena').click(function(){
     $('input[name="email"]').blur(function() {if(!validateEmail($(this).val())) {$(this).addClass('error-input');}else{$(this).addClass('good-input')}});
     $('input[name="email"]').focus(function() {$(this).removeClass('error-input').removeClass('good-input');});
 
+    $('button[type="submit"]').click(function(e) {
+     e.preventDefault();
+     //alert('click');
+      $(this).closest('form').submit();
+    });
+
+
     $('form').submit(function(e){
         e.preventDefault();
+        //alert($(this).find('input[name="event"]').val());
         $(this).find('input[type="text"]').trigger('blur');
         $(this).find('textarea').trigger('blur');
         if(!$(this).find('input[type="text"]').hasClass('error-input')&&!$(this).find('textarea').hasClass('error-input')) {
             var type=$(this).attr('method');
             var url=$(this).attr('action');
             var data=$(this).serialize();
+            var track_event = $(this).find('input[name="event"]').val();
             $.ajax({type: type, url: url, data: data,
             success : function(){
                 $.arcticmodal('close');
@@ -379,10 +388,12 @@ $('.mena').click(function(){
                       $('body,header').css({'overflow': 'hidden','padding-right': '16px'});
                     }
                 });
+                yaCounter38471935.reachGoal(track_event);
+                ga('send','event','submit',track_event);
             }
-        }); 
+          }); 
         }else{
-          if($(this).find('input[type="text"]').closest('.map_form')) {
+          if($(this).find('input[type="text"]').closest('.map_form').length > 0) {
             $('#error_m').arcticmodal({
              afterClose: function(data, el) {
               if ($('.arcticmodal-container').length<2) {
