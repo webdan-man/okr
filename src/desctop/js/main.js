@@ -488,21 +488,305 @@ $('.kam_grs .str_r').click(function(){
 
 
 
-
 //map start
-var cur_scale;
-$(".map_w").draggable();
-$(".map_w").mousemove(function(e){
+var cur_scale = 1;
+function map_zoom_in(event,double_click){
+  
+  var matrixRegex = /matrix\((-?\d*\.?\d+),\s*0,\s*0,\s*(-?\d*\.?\d+),\s*0,\s*0\)/;
+  var сur_scale_arr = $('.map').css('transform').match(matrixRegex);
+
+  var сur_wrap_scale_arr = $('.map_w').css('transform').match(matrixRegex);
+  var сur_wrap_scale = parseFloat(сur_wrap_scale_arr[сur_wrap_scale_arr.length-1]);
+  
+  console.log('cur_wrap_scale = '+сur_wrap_scale);
+
+  cur_scale = parseFloat(сur_scale_arr[сur_scale_arr.length-1]);
+
+  var new_scale;
+  
+  new_scale = cur_scale*1.2;
+  
 
 
-    var offset = $(".map").offset();
+  $('.map').css({
+    transform:'scale('+new_scale+')'    
+  });
+  $('.map .trak').css({
+    transform:'scale('+1/new_scale/сur_wrap_scale+')'
+  });
+
+  cur_scale = new_scale;
+  console.log('cur_scale = '+cur_scale);
+
+  make_drag_limits();
+}
+
+function map_zoom_out(){
+
+  var matrixRegex = /matrix\((-?\d*\.?\d+),\s*0,\s*0,\s*(-?\d*\.?\d+),\s*0,\s*0\)/;
+  var сur_scale_arr = $('.map').css('transform').match(matrixRegex);
+
+  var сur_wrap_scale_arr = $('.map_w').css('transform').match(matrixRegex);
+  var сur_wrap_scale = parseFloat(сur_wrap_scale_arr[сur_wrap_scale_arr.length-1]);
+
+  console.log('cur_wrap_scale = '+сur_wrap_scale);
+
+  cur_scale = parseFloat(сur_scale_arr[сur_scale_arr.length-1]);
+
+  var new_scale;
+
+  if (cur_scale < 1.2) {
+    new_scale = 1;
+  }else{
+    new_scale = cur_scale/1.2;
+  }
+
+
+
+  $('.map').css({
+    transform:'scale('+new_scale+')'
+  });
+  $('.map .trak').css({
+    transform:'scale('+1/new_scale/сur_wrap_scale+')'
+  });
+
+
+  cur_scale = new_scale;
+  console.log('cur_scale = '+cur_scale);
+
+  make_drag_limits();
+  map_move_by_limits();
+}
+var map_pos_l = 0;
+var map_pos_t = 0;
+var map_origin_l = $('.map').width()/2;
+var map_origin_t = $('.map').height()/2;
+function map_make_new_center_drag(){
+
+  var new_map_pos_l = parseFloat($('.map_w').css('left'));
+  var new_map_pos_t = parseFloat($('.map_w').css('top'));
+  //alert(new_map_pos_l+' '+new_map_pos_t);
+
+
+  var matrixRegex = /matrix\((-?\d*\.?\d+),\s*0,\s*0,\s*(-?\d*\.?\d+),\s*0,\s*0\)/;
+
+  var сur_wrap_scale_arr = $('.map_w').css('transform').match(matrixRegex);
+  var сur_wrap_scale = parseFloat(сur_wrap_scale_arr[сur_wrap_scale_arr.length-1]);
+
+  if (map_pos_l != new_map_pos_l) {
     
-    origin_l = e.pageX - offset.left +'px';
-    origin_t = e.pageY - offset.top+'px'
+    map_origin_l -= new_map_pos_l/cur_scale;
+    new_map_pos_l = new_map_pos_l/cur_scale +'px';
+    
+    //alert(new_map_pos_l);
+
+  }
+  if (map_pos_t != new_map_pos_t) {
+    
+    map_origin_t -= new_map_pos_t/cur_scale;
+    new_map_pos_t = new_map_pos_t/cur_scale +'px';
+
+    //alert(new_map_pos_t);
+
+  }
 
 
+  var map_origin = map_origin_l +'px ' + map_origin_t + 'px';
+
+
+
+  console.log('origin = '+map_origin+'; cur_scale = '+ cur_scale);
+
+
+  $('.map').css({
+      'transform-origin': map_origin,
+      '-webkit-transform-origin': map_origin
+  });
+
+  $('.map_w').css({
+    left:new_map_pos_l,
+    top:new_map_pos_t
+  });
+
+  map_pos_l = parseFloat($('.map_w').css('left'));
+  map_pos_t = parseFloat($('.map_w').css('top'));
+
+}
+
+var drag_min_l = 0;
+var drag_max_l = 0;
+var drag_min_t = 0;
+var drag_max_t = 0;
+
+function make_drag_limits(){
+  drag_min_l = ($('.map').width()-map_origin_l)*(-1)*(cur_scale-1);
+  drag_max_l = (map_origin_l)*(cur_scale-1);
+  drag_min_t = ($('.map').height()-map_origin_t)*(-1)*(cur_scale-1);
+  drag_max_t = (map_origin_t)*(cur_scale-1);
+
+  console.log('left: '+drag_min_l+' - '+drag_max_l+'; top '+drag_min_t+' - '+drag_max_t);
+}
+
+function map_move_by_limits(){
+    map_pos_l = parseFloat($('.map_w').css('left'));
+    map_pos_t = parseFloat($('.map_w').css('top'));
+
+    if (map_pos_l < drag_min_l) map_pos_l = drag_min_l;
+    if (map_pos_l > drag_max_l) map_pos_l = drag_max_l;
+    if (map_pos_t < drag_min_t) map_pos_t = drag_min_t;
+    if (map_pos_t > drag_max_t) map_pos_t = drag_max_t;
+
+    $('.map_w').css({
+      left:map_pos_l,
+      top:map_pos_t
+    });
+}
+
+function map_zoom_in_on_mouse(){
+  if (zoom_in_mouse) {
+    map_zoom_in();
+    setTimeout(function(){map_zoom_in_on_mouse()},500);
+  }
+}
+
+function map_zoom_out_on_mouse(){
+  if (zoom_out_mouse) {
+    map_zoom_out();
+    setTimeout(function(){map_zoom_out_on_mouse()},500);
+  }
+}
+function init_map(){
+  //$(".map_w").draggable( "destroy" );
+  $(".map_w").draggable({
+    scroll: false,
+    start:function(){
+      make_drag_limits();
+      //$("html").addClass("diableSelection");
+    },
+    drag:function(event,ui){
+      if (ui.position.left < drag_min_l) ui.position.left = drag_min_l;
+      if (ui.position.left > drag_max_l) ui.position.left = drag_max_l;
+      if (ui.position.top < drag_min_t) ui.position.top = drag_min_t;
+      if (ui.position.top > drag_max_t) ui.position.top = drag_max_t;
+    },
+    stop:function(){
+      map_make_new_center_drag();
+      //$("html").removeClass("diableSelection");
+    },
+    create:function(){
+      setTimeout(function(){map_zoom_in();map_zoom_out();},200);
+      
+    }
+  });
+}
+
+
+$('.map_zoom_in').click(function(e){
+  map_zoom_in(e);
 });
-$('.map').bind('mousewheel', function(e){
+
+
+var zoom_in_mouse = false;
+$('.map_zoom_in').mousedown(function(e){ 
+  if( e.button == 0 ) {
+    zoom_in_mouse = true;
+    console.log('start_first_timeout zoom_in_mouse');
+    setTimeout(function(){map_zoom_in_on_mouse()},1000);
+    return false; 
+  } 
+  return true; 
+});
+$('.map_zoom_in').mouseup(function(e){ 
+  zoom_in_mouse = false;  
+  return true; 
+});
+
+
+var zoom_out_mouse = false;
+$('.map_zoom_out').mousedown(function(e){ 
+  if( e.button == 0 ) {
+    zoom_out_mouse = true;
+    console.log('start_first_timeout zoom_in_mouse');
+    setTimeout(function(){map_zoom_out_on_mouse()},1000);
+    return false; 
+  } 
+  return true; 
+});
+$('.map_zoom_out').mouseup(function(e){ 
+  zoom_out_mouse = false;  
+  return true; 
+});
+$('.map_zoom_out').click(function(e){
+  map_zoom_out(e);
+});
+
+$(window).resize(function(){
+  $(".map_w").draggable( "destroy" );
+  init_map();
+});
+/*
+  {
+    drag: function( event, ui ) {
+      
+      origin_l= $('.map').width()/2 + ui.position.left;
+      origin_t= $('.map').height()/2 + ui.position.top;
+
+      var origin = origin_l +'px ' + origin_t+ 'px';
+
+      console.log('origin = '+origin);
+
+      $('.map').css({
+          'transform-origin': origin,
+          '-webkit-transform-origin': origin
+      });
+      
+      //
+      return false;
+    }
+  }
+);*/
+
+/*var map_clicking = false;
+
+$('.map').mousedown(function(event){
+    map_clicking = true;    
+    cur_mouse_position_l = event.pageX;
+    cur_mouse_position_t = event.pageY;
+});
+
+$(document).mouseup(function(event){
+    map_clicking = false;
+    cur_mouse_position_l = event.pageX;
+    cur_mouse_position_t = event.pageY;
+})
+
+var cur_origin_l =  $('.map').width()/2;
+var cur_origin_t =  $('.map').height()/2;
+
+$('.map').mousemove(function(event){
+    if(map_clicking == false) return;
+
+    var move_l = cur_mouse_position_l - event.pageX;
+    var move_t = cur_mouse_position_t - event.pageY;
+
+    cur_origin_l += move_l/cur_scale;
+    cur_origin_t += move_t/cur_scale;
+
+    //cur_origin_l
+
+    var origin = cur_origin_l +'px ' + cur_origin_t + 'px';
+
+    console.log('origin = '+origin+'; cur_scale = '+ cur_scale);
+
+    $('.map').css({
+          'transform-origin': origin,
+          '-webkit-transform-origin': origin
+    });
+
+});*/
+
+
+/*$('.map').bind('mousewheel', function(e){
   e.preventDefault();
   var matrixRegex = /matrix\((-?\d*\.?\d+),\s*0,\s*0,\s*(-?\d*\.?\d+),\s*0,\s*0\)/;
   сur_scale = $(this).css('transform').match(matrixRegex);
@@ -526,6 +810,8 @@ $('.map').bind('mousewheel', function(e){
       //  });
 
       //}
+      cur_scale = new_scale;
+      console.log('cur_scale = '+cur_scale);
     }
     else{
       //if (cur_scale+0.05<4) {
@@ -546,8 +832,10 @@ $('.map').bind('mousewheel', function(e){
       //  });
 
       //}
+      cur_scale = new_scale;
+      console.log('cur_scale = '+cur_scale);
     }
-});
+});*/
 
 //map end
 
@@ -557,7 +845,9 @@ parse_mramor();
 parse_granit();
 parse_dolomit();
 
+init_map();
 });
+
 
 
 var mramor_array_parsed = false;

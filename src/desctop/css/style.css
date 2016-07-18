@@ -1015,7 +1015,7 @@ form button,.btn_pp {
     /* background-position: 143px 36px; */
     padding-top: 40px;
 }
-
+.map_w{position:relative;transform: scale3d(1, 1, 1);left:0;top:0;}
 .map {
     background-image: url(../img/map.png);
     display: inline-block;
@@ -1082,7 +1082,7 @@ form button,.btn_pp {
   display: block;
   top: 50%;
   left: 50%;
-  margin-top: -31px;
+  margin-top: -32px;
   margin-left: -32px;
 }
 
@@ -1859,7 +1859,7 @@ color: #444444;
 }
 }
 @media screen and (min-width: 960px) and (max-width: 1000px) { 
-.map{
+.map_w{
     transform: scale3d(0.95, 0.95, 1);
     top: 10px;
 }
@@ -1900,7 +1900,7 @@ color: #444444;
     padding-top: 200px;
 }
 
-.map{
+.map_w{
     transform: scale3d(0.94, 0.94, 1);
     top: 10px;
 }
@@ -1945,7 +1945,7 @@ color: #444444;
     margin: 20px 0%;
 }
 
-.map{
+.map_w{
     transform: scale3d(0.85, 0.85, 1);
     top: 0px;
 }
@@ -1975,7 +1975,7 @@ color: #444444;
 .cel {
     margin: 20px -1%;
 }
-.map{
+.map_w{
     transform: scale3d(0.8, 0.8, 1);
     top: -15px;
 }
@@ -2057,7 +2057,7 @@ color: #444444;
 .sec1 {
     padding-top: 170px;
 }
-.map{
+.map_w{
     transform: scale3d(0.8, 0.8, 1);
     top: 35px;
 }
@@ -2067,7 +2067,7 @@ color: #444444;
    margin-top: 110px; 
 }
 
-.map {
+.map_w {
     transform: scale3d(0.75, 0.75, 1);
     top: -25px;
 }
@@ -2941,4 +2941,40 @@ margin: 4px 0px;
     float: left;
     display:block;
   }
+}
+.map_zoom_in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    z-index: 20;
+    color: red;
+    background: black;
+    cursor:pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+.map_zoom_out{
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    z-index: 20;
+    color: red;
+    background: black;
+    cursor:pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
 }
