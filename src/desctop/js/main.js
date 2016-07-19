@@ -1181,7 +1181,7 @@ function parse_mramor_cart(id) {
             $('input.input-kamen-event').val(mramor_array[i].event);
             //фотки текстур камнів
             $('.for-parsed-style[data-kamen="mramor"]').html(''); //очистка
-            var style_string = '.kam[data-kamen="mramor"] .kamen{background-image: url(' + mramor_array[i].kamen + ')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="mramor"] .kamen{background-image: url(' + mramor_array[i].kamen_m + ')}}';
+            var style_string = '.kam[data-kamen="mramor"] .kamen{background-image: url(' + mramor_array[i].kamen + ')!important}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="mramor"] .kamen{background-image: url(' + mramor_array[i].kamen_m + ')!important}}';
             $('<style>' + style_string + '</style>').appendTo('.for-parsed-style[data-kamen="mramor"]');
             //фотографії карьеру
             $('.kam[data-kamen="mramor"] p.foto').unbind('click'); //видаляємо попередню функцію привязану на клік
@@ -1351,7 +1351,7 @@ function parse_granit_cart(id) {
             $('input.input-kamen-event').val(granit_array[i].event);
             //фотки текстур камнів
             $('.for-parsed-style[data-kamen="granit"]').html(''); //очистка
-            var style_string = '.kam[data-kamen="granit"] .kamen{background-image: url(' + granit_array[i].kamen + ')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="granit"] .kamen{background-image: url(' + granit_array[i].kamen_m + ')}}';
+            var style_string = '.kam[data-kamen="granit"] .kamen{background-image: url(' + granit_array[i].kamen + ')!important}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="granit"] .kamen{background-image: url(' + granit_array[i].kamen_m + ')!important}}';
             $('<style>' + style_string + '</style>').appendTo('.for-parsed-style[data-kamen="granit"]');
             //фотографії карьеру
             $('.kam[data-kamen="granit"] p.foto').unbind('click'); //видаляємо попередню функцію привязану на клік
@@ -1493,6 +1493,10 @@ function parse_dolomit() {
 
         dolomit_array_parsed = true;
         scroll_links_init();
+
+        $(".menu_line a").trigger('mouseleave');
+        $('#mram').trigger('mouseover');
+
     });
 
 }
@@ -1514,7 +1518,7 @@ function parse_dolomit_cart(id) {
             $('input.input-kamen-event').val(dolomit_array[i].event);
             //фотки текстур камнів
             $('.for-parsed-style[data-kamen="dolomit"]').html(''); //очистка
-            var style_string = '.kam[data-kamen="dolomit"] .kamen{background-image: url(' + dolomit_array[i].kamen + ')}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="dolomit"] .kamen{background-image: url(' + dolomit_array[i].kamen_m + ')}}';
+            var style_string = '.kam[data-kamen="dolomit"] .kamen{background-image: url(' + dolomit_array[i].kamen + ')!important}@media screen and (max-width: 480px) and (min-width: 320px){.kam[data-kamen="dolomit"] .kamen{background-image: url(' + dolomit_array[i].kamen_m + ')!important}}';
             $('<style>' + style_string + '</style>').appendTo('.for-parsed-style[data-kamen="dolomit"]');
             //фотографії карьеру
             $('.kam[data-kamen="dolomit"] p.foto').unbind('click'); //видаляємо попередню функцію привязану на клік

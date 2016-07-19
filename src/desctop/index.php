@@ -73,17 +73,17 @@
                 <div class="grup_bit">
                     <div class="bit_gr">
                         <a class="kkam" data-kamen="mramor" href="#sec4_a">
-                            <img src="img/mramor/kamen/mramor_b2.png" alt height="60" width="60">
+                            <img src="img/mramor_b2m.png" alt height="60" width="60">
                             <span class="span">Мрамор</span>
                             <span class="a"></span>
                         </a>
                         <a class="kkam" data-kamen="granit" href="#sec4_b">
-                            <img src="img/granit/kamen/granit_b2.png" alt height="60" width="60">
+                            <img src="img/granit_b2m.png" alt height="60" width="60">
                             <span class="span">Гранит</span>
                             <span class="a"></span>
                         </a>
                         <a class="kkam" data-kamen="dolomit" href="#sec4_c">
-                            <img src="img/dolomit/kamen/dolomit_b1.png" alt height="60" width="60">
+                            <img src="img/dolomit_b1m.png" alt height="60" width="60">
                             <span class="span">Доломит</span>
                             <span class="a"></span>
                         </a>
