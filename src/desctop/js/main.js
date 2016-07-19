@@ -1,12 +1,6 @@
-$(window).load(function(){
 
-$('#sec1 h4').viewportChecker({
-  classToAdd: 'active',
-  offset: 100
-});
-});
 $(document).ready(function(){
-
+$('body').addClass('loaded');
 $('#pop1').arcticmodal('setDefault',{
         beforeOpen: function(data, el) {
           $('body,header').css({'overflow': 'hidden','padding-right': '16px'});
