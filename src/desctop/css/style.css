@@ -1017,14 +1017,18 @@ form button,.btn_pp {
 }
 .map_w{position:relative;transform: scale3d(1, 1, 1);left:0;top:0;}
 .map {
-    background-image: url(../img/map.png);
+    background-image: url(../img/map.svg);
+    background-size: 940px auto;
+    background-position: center -96px;
+    /* background-image: url(../img/map.png); */
+    /* background-position: center; */
     display: inline-block;
     /* margin: 80px auto 0; */
     height: 490px;
     width: 100%;
     min-width: 940px;
     position: absolute;
-    background-size: contain;
+    /* background-size: contain; */
     top: 10px;
     left: 50%;
     margin-left: -470px;
@@ -1035,7 +1039,9 @@ form button,.btn_pp {
     width: 40px;
     height: 26px;
     position: absolute;
+    /* margin-left: -20px; */
     cursor: pointer;
+    /* margin-top: -13px; */
 }
 .trak:hover,.trak.active {
     background-image: url(../img/tractor_h.png);
