@@ -362,6 +362,9 @@
 
 .sec1
 {
+    position: relative;
+    z-index: 2;
+
     background-image: url(img/bg_sec1.jpg);
     background-size: cover;
 }

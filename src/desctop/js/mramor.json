@@ -15,22 +15,22 @@
 		"map_t":"308px",
 		"map_l":"239px"
 	},
-
+	
 	{
 		"id":2,
-		"name":"Месторождение Коелга",
-		"phone":"+7 222 345 34 23",
-		"region": "Челябинская область",
-		"photos":"img/mramor/photos/slid2.jpg",
-		"product":"img/mramor/product/prod2_1.jpg,img/mramor/product/prod2_2.jpg,img/mramor/product/prod2_3.jpg,img/mramor/product/prod2_4.jpg,img/mramor/product/prod2_5.jpg,img/mramor/product/prod2_6.jpg,img/mramor/product/prod2_7.jpg,img/mramor/product/prod2_8.jpg,img/mramor/product/prod2_9.jpg,img/mramor/product/prod2_10.jpg",
+		"name":"Месторождение Шабровское (Змеевик)",
+		"phone":"+7 111 345 34 23",
+		"region": "Свердловская область",
+		"photos":"img/mramor/photos/slid9.jpg",
+		"product":"img/mramor/product/prod9_1.jpg,img/mramor/product/prod9_2.jpg,img/mramor/product/prod9_3.jpg,img/mramor/product/prod9_4.jpg,img/mramor/product/prod9_5.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor_2.png",
-		"kamen_m":"img/mramor/kamen/mramor_m2.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak2.png",
-		"kamen_b":"img/mramor/kamen/mramor_b2.png",
-		"event":"mramor_2",
-		"map_t":"324px",
-		"map_l":"239px"
+		"kamen":"img/mramor/kamen/mramor_9.png",
+		"kamen_m":"img/mramor/kamen/mramor_m9.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak9.png",
+		"kamen_b":"img/mramor/kamen/mramor_b9.png",
+		"event":"mramor_9",
+		"map_t":"300px",
+		"map_l":"254px"
 	},
 
 	{
@@ -66,6 +66,7 @@
 		"map_t":"376px",
 		"map_l":"57px"
 	},
+
 	{
 		"id":5,
 		"name":"Месторождение Подходиловское",
@@ -133,21 +134,22 @@
 		"map_t":"381px",
 		"map_l":"459px"
 	},
+
 	{
 		"id":9,
-		"name":"Месторождение Шабровское (Змеевик)",
-		"phone":"+7 111 345 34 23",
-		"region": "Свердловская область",
-		"photos":"img/mramor/photos/slid9.jpg",
-		"product":"img/mramor/product/prod9_1.jpg,img/mramor/product/prod9_2.jpg,img/mramor/product/prod9_3.jpg,img/mramor/product/prod9_4.jpg,img/mramor/product/prod9_5.jpg",
+		"name":"Месторождение Коелга",
+		"phone":"+7 222 345 34 23",
+		"region": "Челябинская область",
+		"photos":"img/mramor/photos/slid2.jpg",
+		"product":"img/mramor/product/prod2_1.jpg,img/mramor/product/prod2_2.jpg,img/mramor/product/prod2_3.jpg,img/mramor/product/prod2_4.jpg,img/mramor/product/prod2_5.jpg,img/mramor/product/prod2_6.jpg,img/mramor/product/prod2_7.jpg,img/mramor/product/prod2_8.jpg,img/mramor/product/prod2_9.jpg,img/mramor/product/prod2_10.jpg",
 		"sert":"img/mramor/sert/sld3.jpg,img/mramor/sert/sld2.jpg,img/mramor/sert/sld1.jpg",
-		"kamen":"img/mramor/kamen/mramor_9.png",
-		"kamen_m":"img/mramor/kamen/mramor_m9.png",
-		"kamen_map":"img/mramor/kamen/mramor_trak9.png",
-		"kamen_b":"img/mramor/kamen/mramor_b9.png",
-		"event":"mramor_9",
-		"map_t":"300px",
-		"map_l":"254px"
+		"kamen":"img/mramor/kamen/mramor_2.png",
+		"kamen_m":"img/mramor/kamen/mramor_m2.png",
+		"kamen_map":"img/mramor/kamen/mramor_trak2.png",
+		"kamen_b":"img/mramor/kamen/mramor_b2.png",
+		"event":"mramor_2",
+		"map_t":"324px",
+		"map_l":"239px"
 	}
 
 ]

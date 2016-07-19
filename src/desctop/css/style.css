@@ -1,6 +1,6 @@
 *
 {
-    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
+    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
     margin: 0;padding: 0;background-repeat: no-repeat;background-position: center;
 }
 :not(a):after,
@@ -437,7 +437,7 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
     height: 70px;
     margin-right: -203px;
 
-    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
+    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
     animation-timing-function: cubic-bezier(.7,.01,1,1);
     -webkit-animation-delay: 1s;-webkit-animation-delay: 1s;animation-delay: 1s;-webkit-animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;-webkit-animation-direction: alternate;animation-direction: alternate;
 
@@ -1917,7 +1917,7 @@ footer
     letter-spacing: -.3px;
 
     color: rgb( 170, 170, 170 );
-    background-position: right 3px center;
+    background-position: 155px;
     /* width: 95%; */
 }
 .menu_line a:hover
@@ -2655,6 +2655,7 @@ footer
     /* width: 90%; */
     /* display: inline-block; */
     border-radius: 4px;
+    background-color: rgba(0, 0, 0, .05);
 }
 .map_form .before
 {
@@ -2706,6 +2707,7 @@ footer
     margin: 0 5px;
 
     border: 1px solid #444;
+    background-color: white;
 }
 .map_form button
 {
@@ -2715,6 +2717,7 @@ footer
 
     color: #444;
     border: 2px solid #444;
+    background-color: white;
 }
 .map_form:before
 {
@@ -2775,6 +2778,7 @@ footer
 {
     .sec1
     {
+        height: 700px;
         min-height: 700px;
         padding-top: 190px;
     }
@@ -3007,7 +3011,7 @@ footer
 
     .grup_pr::-webkit-scrollbar-thumb
     {
-        border: 3px solid whitesmoke;
+        border: 1px solid whitesmoke;
         border-radius: 10px;
         background-color: rgb( 255, 191, 0 );
     }
@@ -3015,6 +3019,9 @@ footer
     .grup_pr::-webkit-scrollbar-track
     {
         border-radius: 10px;
+        background-color:red;
+        border:5px solid whitesmoke;
+        width:20px;
     }
     .proc_gr
     {
@@ -3964,6 +3971,7 @@ footer
         font-size: 16px;
 
         margin-top: 10px;
+        margin-right: 40px;
         padding-top: 5px;
 
         letter-spacing: 0;
@@ -4126,6 +4134,8 @@ footer
     }
     .polit
     {
+        display: inline-block;
+
         width: 250px;
         margin-top: 32px;
 
@@ -4411,7 +4421,7 @@ footer
 .map_zoom_out
 {
     font-size: 28px;
-    line-height: 30px;
+    line-height: 31px;
 
     position: absolute;
     z-index: 20;

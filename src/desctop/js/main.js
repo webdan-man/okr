@@ -319,7 +319,10 @@ $(document).ready(function() {
                 railVisible: true
             });
         }, 500);
-        $("body").css("overflow", "hidden");
+        $('body,header').css({
+            'overflow': 'hidden',
+            'padding-right': '16px'
+        });
 
 
 
@@ -330,7 +333,10 @@ $(document).ready(function() {
         if (menu_active == 1) {
             $('.menu_m,.menu').addClass('noactive');
             menu_active = 0;
-            $("body").css("overflow", "auto");
+            $('body,header').css({
+                'overflow': 'auto',
+                'padding-right': '0px'
+            });
         }
 
     });
@@ -342,7 +348,10 @@ $(document).ready(function() {
             if (menu_active == 1) {
                 $('.menu_m,.menu').addClass('noactive');
                 menu_active = 0;
-                $("body").css("overflow", "auto");
+                $('body,header').css({
+                    'overflow': 'auto',
+                    'padding-right': '0px'
+                });
             }
         }
     });
@@ -1199,9 +1208,9 @@ function parse_mramor_cart(id) {
             });
             //фотографії виробів
             $('.kam[data-kamen="mramor"] p.product').unbind('click'); //видаляємо попередню функцію привязану на клік
-            var photo_array = mramor_array[i].product.split(',');
+            var product_array = mramor_array[i].product.split(',');
             $('.kam[data-kamen="mramor"] p.product').click(function() {
-                $.fancybox.open(photo_array, {
+                $.fancybox.open(product_array, {
                     helpers: {
                         overlay: {
                             locked: false
@@ -1369,9 +1378,9 @@ function parse_granit_cart(id) {
             });
             //фотографії виробів
             $('.kam[data-kamen="granit"] p.product').unbind('click'); //видаляємо попередню функцію привязану на клік
-            var photo_array = granit_array[i].product.split(',');
+            var product_array = granit_array[i].product.split(',');
             $('.kam[data-kamen="granit"] p.product').click(function() {
-                $.fancybox.open(photo_array, {
+                $.fancybox.open(product_array, {
                     helpers: {
                         overlay: {
                             locked: false
@@ -1536,9 +1545,9 @@ function parse_dolomit_cart(id) {
             });
             //фотографії виробів
             $('.kam[data-kamen="dolomit"] p.product').unbind('click'); //видаляємо попередню функцію привязану на клік
-            var photo_array = dolomit_array[i].product.split(',');
+            var product_array = dolomit_array[i].product.split(',');
             $('.kam[data-kamen="dolomit"] p.product').click(function() {
-                $.fancybox.open(photo_array, {
+                $.fancybox.open(product_array, {
                     helpers: {
                         overlay: {
                             locked: false
