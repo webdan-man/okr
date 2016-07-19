@@ -1,6 +1,6 @@
 .cssload-triangle
 {
-    position: relative;
+    position: absolute;
     z-index: 1001;
     /* right: 50%; */
     top: 50%;
@@ -76,7 +76,14 @@
 }
 #loader-wrapper
 {
-    position: fixed;z-index: 1000;top: 0;left: 0;width: 100%;height: 100%;
+    position: fixed;z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    -webkit-transition: opacity .5s 0s linear, visibility 0s 1s linear;
+    transition: opacity .5s 0s linear, visibility 0s 1s linear;
 }
 #loader-wrapper .loader-section
 {
@@ -92,19 +99,27 @@
 }
 .loaded #loader-wrapper .loader-section.section-left
 {
-    -webkit-transition: all .7s .3s cubic-bezier(.645,.045,.355,1)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;transition: all .7s .3s cubic-bezier(.645,.045,.355,1);
-    -webkit-transform: translateX(-100%);-ms-transform: translateX(-100%);transform: translateX(-100%);
+    /*-webkit-transition: all 0.7s 0s cubic-bezier(.645,.045,.355,1)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    ;transition: all .7s 0s cubic-bezier(.645,.045,.355,1);
+    -webkit-transform: translateX(-100%);-ms-transform: translateX(-100%);transform: translateX(-100%);*/
 }
 .loaded #loader-wrapper .loader-section.section-right
 {
-    -webkit-transition: all .7s .3s cubic-bezier(.645,.045,.355,1)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;transition: all .7s .3s cubic-bezier(.645,.045,.355,1);
-    -webkit-transform: translateX(100%);-ms-transform: translateX(100%);transform: translateX(100%);
+    /*-webkit-transition: all 0.7s 0s cubic-bezier(.645,.045,.355,1)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    ;transition: all .7s 0s cubic-bezier(.645,.045,.355,1);
+    -webkit-transform: translateX(100%);-ms-transform: translateX(100%);transform: translateX(100%);*/
 }
 .loaded #loader-wrapper
 {
-    visibility: hidden;-webkit-transition: all .3s 1s ease-out;transition: all .3s 1s ease-out;-webkit-transform: translateY(-100%);-ms-transform: translateY(-100%);transform: translateY(-100%);
+    visibility: hidden;
+
+    opacity: 0;
 }
 
+.mobile #loader-wrapper
+{
+    display: none;
+}
 @keyframes cssload-spin
 {
     0%
@@ -343,4 +358,10 @@
     {
         -moz-transform: translate3drgb(0,0,0);
     }
+}
+
+.sec1
+{
+    background-image: url(img/bg_sec1.jpg);
+    background-size: cover;
 }
