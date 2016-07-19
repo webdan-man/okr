@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     grunt.registerTask('unusedimages', function(test) {
         if (test == 'desctop') {
             var i_cwd = 'dist/img/';
-            var i_expand = ['dist/index.php','dist/ajax/*.html', 'dist/css/full.min.css', 'dist/js/main.min.js', 'dist/js/map.min.js'];
+            var i_expand = ['dist/index.php','dist/ajax/*.html', 'dist/css/full.min.css', 'dist/js/main.min.js', 'dist/js/map.min.js','dist/js/mramor.json','dist/js/granit.json','dist/js/dolomit.json'];
         }
 
         if (test == 'en') {
@@ -338,6 +338,20 @@ module.exports = function(grunt) {
             desctop_libs_js: {
                 src: 'src/desctop/js/libs.js',
                 dest: 'dist/js/libs.min.js',
+            },
+            desctop_json: {
+                expand: true,
+                flatten: true,
+                cwd: 'src/desctop/js/',
+                src: '*.json',
+                dest: 'dist/js/',
+            },
+            desctop_svg: {
+                expand: true,
+                flatten: true,
+                cwd: 'src/desctop/img/',
+                src: '*.svg',
+                dest: 'dist/img/',
             },
             desctop_fonts_css: {
                 src: 'src/desctop/css/fonts.css',
@@ -1298,6 +1312,8 @@ if(!mobile&&!tablet){
         'string-replace:desctop_async_css', //Изменение src/desctop/js/bp/init.js для асинхронной загрузки css
         'uglify:desctop_src', //Сжатие (src/desctop/js/) init.js, main.js, init.js в dist/js/*.min.js
         'copy:desctop_libs_js', //Копирование src/desctop/js/libs.js в dist/js/libs.min.js
+        'copy:desctop_json',
+        'copy:desctop_svg',
         'cssmin:desctop', //Сжатие (src/desctop/css/ap/) head.css,full.css в dist/css/*.min.css
         'imagemin:desctop', //Сжатие src/desctop/img/*.* в dist/img/
         'clean:desctop', //Удаление src/desctop/index_fc.html,src/desctop/css/bp,src/desctop/css/ap,src/desctop/js/bp

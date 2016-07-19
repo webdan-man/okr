@@ -1,0 +1,18 @@
+[
+	{
+		"id":1,
+		"name":"Месторождение Балаково",
+		"phone":"+7 111 345 34 23",
+		"region": "Саратовская область",
+		"photos":"img/dolomit/photos/slid1.jpg",
+		"product":"img/dolomit/product/prod1_1.jpg,img/dolomit/product/prod1_2.jpg,img/dolomit/product/prod1_3.jpg,img/dolomit/product/prod1_4.jpg,img/dolomit/product/prod1_5.jpg,img/dolomit/product/prod1_6.jpg,img/dolomit/product/prod1_7.jpg,img/dolomit/product/prod1_8.jpg,img/dolomit/product/prod1_9.jpg,img/dolomit/product/prod1_10.jpg,img/dolomit/product/prod1_11.jpg,img/dolomit/product/prod1_12.jpg,img/dolomit/product/prod1_13.jpg,img/dolomit/product/prod1_14.jpg,img/dolomit/product/prod1_15.jpg,img/dolomit/product/prod1_16.jpg,img/dolomit/product/prod1_17.jpg,img/dolomit/product/prod1_18.jpg,img/dolomit/product/prod1_19.jpg,img/dolomit/product/prod1_20.jpg,img/dolomit/product/prod1_21.jpg,img/dolomit/product/prod1_22.jpg,img/dolomit/product/prod1_23.jpg,img/dolomit/product/prod1_24.jpg,img/dolomit/product/prod1_25.jpg,img/dolomit/product/prod1_26.jpg,img/dolomit/product/prod1_27.jpg,img/dolomit/product/prod1_28jpg,img/dolomit/product/prod1_29.jpg,img/dolomit/product/prod1_30.jpg,img/dolomit/product/prod1_31.jpg,img/dolomit/product/prod1_32.jpg,img/dolomit/product/prod1_33.jpg,img/dolomit/product/prod1_34.jpg,img/dolomit/product/prod1_35.jpg,img/dolomit/product/prod1_36.jpg,img/dolomit/product/prod1_37.jpg,img/dolomit/product/prod1_38.jpg,img/dolomit/product/prod1_39.jpg,img/dolomit/product/prod1_40.jpg,img/dolomit/product/prod1_41.jpg,img/dolomit/product/prod1_42.jpg,img/dolomit/product/prod1_43.jpg,img/dolomit/product/prod1_44.jpg,img/dolomit/product/prod1_45.jpg,img/dolomit/product/prod1_46.jpg,img/dolomit/product/prod1_47.jpg,img/dolomit/product/prod1_48.jpg,img/dolomit/product/prod1_49.jpg",
+		"sert":"img/dolomit/sert/sld3.jpg,img/dolomit/sert/sld2.jpg,img/dolomit/sert/sld1.jpg",
+		"kamen":"img/dolomit/kamen/dolomit_1.png",
+		"kamen_m":"img/dolomit/kamen/dolomit_m1.png",
+		"kamen_map":"img/dolomit/kamen/dolomit_trak1.png",
+		"kamen_b":"img/dolomit/kamen/dolomit_b1.png",
+		"event":"dolomit_1",
+		"map_t":"299px",
+		"map_l":"140px"
+	}
+]
