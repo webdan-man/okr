@@ -1,6 +1,6 @@
 *
 {
-    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
+    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
     margin: 0;padding: 0;background-repeat: no-repeat;background-position: center;
 }
 :not(a):after,
@@ -66,6 +66,7 @@ body
 a
 {
     text-decoration: none;
+
     color: inherit;
     outline: 0!important;
 }
@@ -184,8 +185,11 @@ form button:hover,
     position: relative;
     top: 23px;
     right: 3%;
+
     float: right;
+
     min-width: 175px;
+
     text-align: left;
 }
 .phone_gr a
@@ -198,8 +202,9 @@ form button:hover,
     color: white;
 }
 
-.phone_gr a span:nth-of-type(1){
-font-size: 24px;
+.phone_gr a span:nth-of-type(1)
+{
+    font-size: 24px;
 }
 .head_w .phone_gr a
 {
@@ -228,16 +233,21 @@ font-size: 24px;
     font-size: 45px;
     /* left: 50%; */
     line-height: 20px;
+
     position: relative;
+
     display: inline-block;
+
     width: 225px;
     width: 225px;
     height: 80px;
     margin-top: 5px;
     /* top: 26px; */
     margin-left: 8%;
+
     text-align: center;
     letter-spacing: .1px;
+
     background-image: url(../img/logo.png);
     background-size: contain;
 }
@@ -344,26 +354,35 @@ body.loaded .sec1 h1 span.after
     font-size: 42px;
     font-weight: 300;
     line-height: 60px;
+
     margin-top: 11px;
+
     letter-spacing: -.9px;
+
     color: #ffbf00;
 }
-.sec1 h2 span{
+.sec1 h2 span
+{
     position: relative;
-    margin-right: 8px;
+
     display: inline-block;
+
+    margin-right: 8px;
 }
-.sec1 h2 sup{
-	top: 13px;
-	font-size: 24px;
-	position: absolute;
-	right: -9px;
+.sec1 h2 sup
+{
+    font-size: 24px;
+
+    position: absolute;
+    top: 13px;
+    right: -9px;
 }
 .sec1 h2:nth-of-type(2)
 {
     display: none;
 }
-.sec1 h4{
+.sec1 h4
+{
     font-size: 25px;
     font-weight: 300;
     /* padding: 0 40px; */
@@ -374,15 +393,18 @@ body.loaded .sec1 h1 span.after
 
     letter-spacing: -.5px;
 }
-.like-button{
-    transition: all 0.25s;
+.like-button
+{
     cursor: pointer;
+    transition: all .25s;
 }
-.like-button:hover{
-	background-color: #ffc000;
-	transition: all 0.25s;
-	color: #444444;
-	border-radius: 4px;
+.like-button:hover
+{
+    transition: all .25s;
+
+    color: #444;
+    border-radius: 4px;
+    background-color: #ffc000;
 }
 .sec1 h4 .like-button
 {
@@ -418,14 +440,22 @@ body.loaded .sec1 h1 span.after
     position: absolute;
     top: -2px;
     left: 0;
+
     display: block;
+
     width: 100%;
     height: 6px;
+
     content: '';
+    transition: all .25s;
+
     background: url(../img/sq_border_left.png) no-repeat top right;
-    transition: all 0.25s;
 }
-.sec1 h4 .like-button:hover .before:before{background-color: #ffc000;/* transition: all 0.25s; */height: 2px;top: 0px;}
+.sec1 h4 .like-button:hover .before:before
+{top: 0;height: 2px;
+
+    background-color: #ffc000;/* transition: all 0.25s; */
+}
 .sec1 h4 .like-button .after
 {
     position: absolute;top: 0;right: 0;display: block;
@@ -445,7 +475,7 @@ body.loaded .sec1 h1 span.after
     height: 70px;
     margin-right: -203px;
 
-    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
+    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
     animation-timing-function: cubic-bezier(.7,.01,1,1);
     -webkit-animation-delay: 1s;-webkit-animation-delay: 1s;animation-delay: 1s;-webkit-animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;-webkit-animation-direction: alternate;animation-direction: alternate;
 
@@ -673,9 +703,12 @@ body.loaded .sec1 h1 span.after
 {
     font-size: 32px;
     line-height: 30px;
-    letter-spacing: -.3px;
-    color: rgb( 68, 68, 68 );
+
     margin-bottom: 40px;
+
+    letter-spacing: -.3px;
+
+    color: rgb( 68, 68, 68 );
 }
 .sec2 h2:nth-of-type(2)
 {
@@ -1589,16 +1622,20 @@ form button,
 .trak_h
 {
     position: absolute;
+    z-index: 5;
     top: -240px;
     left: -99px;
     /* display: none; */
+
     visibility: hidden;
+
     width: 230px;
     height: 240px;
     padding: 0 2px;
+
     cursor: initial;
+
     background-image: url(../img/trac_h.png);
-    z-index: 5;
 }
 .trak_h h4
 {
@@ -1785,13 +1822,16 @@ footer
     z-index: 11;
     top: 0;
     left: 0;
+
     width: 625px;
     height: 100%;
     /* opacity: 0.5; */
     padding-top: 35px;
     padding-left: 61px;
+
     -webkit-transition: all .25s;
-    transition: all .25s;
+            transition: all .25s;
+
     background-color: rgb( 255, 255, 255 );
     /* display: none; */
 }
@@ -1896,8 +1936,8 @@ footer
 {
     width: 100%;
     min-height: 35px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .menu_m .menu_line a
 {
@@ -1906,13 +1946,18 @@ footer
 .menu_line a
 {
     font-size: 20px;
+
     position: relative;
     /* background-color: rgb(226, 226, 226); */
     z-index: 10;
+
     display: block;
+
     min-height: 20px;
+
     text-align: left;
     letter-spacing: -.3px;
+
     color: rgb( 170, 170, 170 );
     background-position: 155px;
     /* width: 95%; */
@@ -1920,11 +1965,11 @@ footer
 .menu_line a:hover
 {
     color: rgb( 68, 68, 68 );
-}    
+}
 .menu_line a.active
 {
     background-image: url(../img/menu_str.png);
-}    
+}
 .opis_b,
 .opis_b_wrap
 {
@@ -1932,7 +1977,9 @@ footer
     z-index: 2;
     top: 0;
     left: 9px;
+
     visibility: hidden;
+
     width: 370px;
     min-width: 300px;
 }
@@ -1958,101 +2005,120 @@ footer
 .opis_b a
 {
     font-size: 18px;
+
+    position: relative;
+
     display: inline-block;
+
     width: 81%;
     margin: 0 0;
     padding: 5px 0 5px 10px;
+
     letter-spacing: .1px;
+
     color: rgb(88, 88, 88);
-    position: relative;
 }
-.opis a span, .opis_b a span{
-    
-margin-left: 10px;
-    
-position: absolute;
-    
-top: 50%;
-    
-right: -37px;
-    
-margin-top: -15px;
-    
-width: 30px;
-    
-height: 30px;
+.opis a span,
+.opis_b a span
+{
+    position: absolute;
+    top: 50%;
+    right: -37px;
+
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: 10px;
 }
 .opis a:hover,
 .opis_b a:hover
 {
     background-color: rgb(226, 226, 226)!important;
 }
-.opis_b a span .after, .opis a span .after
+.opis_b a span .after,
+.opis a span .after
 {
     position: absolute;
     top: 50%;
     left: 50%;
+
     display: block;
+
     width: 42px;
     height: 42px;
     margin-top: -21px;
     margin-left: -21px;
+
     transform: rotate(15deg);
 }
 
-.opis_b a span.after:after, .opis a span.after:after
+.opis_b a span.after:after,
+.opis a span.after:after
 {
     position: absolute;
     z-index: 4;
     bottom: 50%;
     left: 50%;
+
     display: block;
+
     width: 21px;
     height: 0;
     margin-bottom: -21px;
     margin-left: -20px;
+
     content: '';
     /* transition: 0.2s height 0.2s linear,0.2s width 0.1s linear; */
     transition: height .2s linear,widht .1s linear;
     /* transform: rotate(15deg); */
     transform-origin: right center;
+
     background-image: url(../img/trac_cir_m.png);
-    background-position: left bottom;
     background-repeat: no-repeat;
+    background-position: left bottom;
 }
-.opis_b a span .after:before, .opis a span .after:before
+.opis_b a span .after:before,
+.opis a span .after:before
 {
     position: absolute;
     top: 50%;
     right: 50%;
     left: 50%;
+
     display: block;
+
     width: 21px;
     height: 0;
     margin-top: -21px;
     margin-right: -21px;
+
     content: '';
     /* transition: height 0.2s linear,widht 0.1s linear; */
     transition: .2s height .2s linear,.2s width .1s linear;
     /* transform: rotate(15deg); */
     transform-origin: left center;
+
     background-image: url(../img/trac_cir_m.png);
+    background-repeat: no-repeat;
     background-position: top right;
     background-position: right top;
-    background-repeat: no-repeat;
 }
-.opis_b a:hover span .after:after, .opis a:hover span .after:after
+.opis_b a:hover span .after:after,
+.opis a:hover span .after:after
 {
     width: 21px;
     /* transition: height 0.2s linear,widht 0.1s linear; */
     height: 42px;
+
     transition: .2s height .2s linear,.2s width .1s linear;
 }
-.opis_b a:hover span .after:before, .opis a:hover span .after:before
+.opis_b a:hover span .after:before,
+.opis a:hover span .after:before
 {
     width: 21px;
     /* transition: 0.2s height 0.2s linear,0.2s width 0.1s linear; */
     height: 42px;
+
     transition: height .2s linear,widht .1s linear;
 }
 
@@ -2090,9 +2156,11 @@ height: 30px;
 {
     position: relative;
     /* overflow: hidden; */
+
     float: left;
     /* display: table-cell; */
     /* vertical-align: middle; */
+
     width: 400px;
     /* height: 470px; */
     max-height: 100%;
@@ -2529,7 +2597,8 @@ height: 30px;
     margin-top: 58px;
 }
 
-#okgo, #okgo_m
+#okgo,
+#okgo_m
 {
     /* padding-top: 298px; */
     /* display: table-cell; */
@@ -2537,7 +2606,8 @@ height: 30px;
     /* height: 100vh; */
     position: relative;
 }
-#okgo, #okgo_m .wrap
+#okgo,
+#okgo_m .wrap
 {
     position: absolute;
     top: 50%;
@@ -2547,7 +2617,8 @@ height: 30px;
 
     transform: translate3d(-50%,-50%,0);
 }
-#okgo, #okgo_m h4
+#okgo,
+#okgo_m h4
 {
     margin-top: 57px;
 }
@@ -2711,19 +2782,24 @@ height: 30px;
 .sec6 h2
 {
     font-size: 35px;
-    letter-spacing: -1.0px;
-    color: rgb( 68, 68, 68 );
+
     position: relative;
     z-index: 5;
+
+    letter-spacing: -1.0px;
+
+    color: rgb( 68, 68, 68 );
 }
 .map_form
 {
     position: absolute;
     bottom: 0;
+
     width: 100%;
     margin-bottom: 20px;
     /* height: 125px; */
     padding: 10px;
+
     border: solid 2px rgb( 255, 191, 0 );
     border-top: 0;
     /* width: 90%; */
@@ -2770,13 +2846,16 @@ height: 30px;
 .map_form h3
 {
     font-size: 24px;
+
     letter-spacing: -1.0px;
+
     color: rgb(250, 199, 44);
 }
 .map_form input
 {
     width: 23%;
     margin: 0 5px;
+
     border: 1px solid #444;
     background-color: white;
 }
@@ -2917,10 +2996,10 @@ height: 30px;
     {
         padding-top: 200px;
     }
-.sec1 h2{
-    
-font-size: 39px;
-}
+    .sec1 h2
+    {
+        font-size: 39px;
+    }
     .map_w
     {
         top: 10px;
@@ -2950,14 +3029,16 @@ font-size: 39px;
 
         vertical-align: top;
     }
-    .sec1 h2{
-    
-font-size: 35px;
-}
-.sec1 h2 sup{
-	font-size: 22px;
-	top: 13px;
-}
+    .sec1 h2
+    {
+        font-size: 35px;
+    }
+    .sec1 h2 sup
+    {
+        font-size: 22px;
+
+        top: 13px;
+    }
     .pr_gr
     {
         /* float: left; */
@@ -3071,6 +3152,7 @@ font-size: 35px;
     .grup_pr
     {
         overflow: auto;
+
         min-height: 230px;
         /* width: 600px; */
         margin-bottom: 10px;
@@ -3099,10 +3181,11 @@ font-size: 35px;
 
     .grup_pr::-webkit-scrollbar-track
     {
+        width: 20px;
+
+        border: 5px solid whitesmoke;
         border-radius: 10px;
-        background-color:rgb(221, 221, 221);
-        border:5px solid whitesmoke;
-        width:20px;
+        background-color: rgb(221, 221, 221);
     }
     .proc_gr
     {
@@ -3180,12 +3263,14 @@ font-size: 35px;
     {
         padding-top: 170px;
     }
-    .sec1 h2 {
-    font-size: 33px;
-}
-.sec1 h2 sup {
-    font-size: 20px;
-}
+    .sec1 h2
+    {
+        font-size: 33px;
+    }
+    .sec1 h2 sup
+    {
+        font-size: 20px;
+    }
     .map_w
     {
         top: 35px;
@@ -3261,12 +3346,14 @@ font-size: 35px;
     {
         padding-top: 160px;
     }
-        .sec1 h2 {
-    font-size: 31px;
-}
-.sec1 h2 sup {
-    font-size: 19px;
-}
+    .sec1 h2
+    {
+        font-size: 31px;
+    }
+    .sec1 h2 sup
+    {
+        font-size: 19px;
+    }
     .bit_gr
     {
         margin-top: 100px;
@@ -3302,7 +3389,7 @@ font-size: 35px;
     {
         padding-top: 150px;
     }
-    
+
     .bit_gr
     {
         margin-top: 90px;
@@ -3327,14 +3414,17 @@ font-size: 35px;
 }
 @media screen and (max-width: 700px) and (min-width: 320px)
 {
-    .sec1 h2 {
-    font-size: 35px;
-    line-height: 48px;
-}
-.sec1 h2 sup {
-    font-size: 22px;
-    top: 9px;
-}
+    .sec1 h2
+    {
+        font-size: 35px;
+        line-height: 48px;
+    }
+    .sec1 h2 sup
+    {
+        font-size: 22px;
+
+        top: 9px;
+    }
     .kamni.active .kam_cir
     {
         display: inline-block;
@@ -3547,10 +3637,11 @@ font-size: 35px;
     .logo
     {
         display: inline-block;
-        float: none;
-        margin: 15px auto 0;
         display: block;
         float: none;
+        float: none;
+
+        margin: 15px auto 0;
     }
     .verh
     {
@@ -3565,10 +3656,12 @@ font-size: 35px;
         position: relative;
         top: 0;
         left: 0;
+
         display: block;
         float: none;
-        margin-left: 0;
+
         margin: 25px auto 0;
+        margin-left: 0;
     }
     .select a
     {
@@ -3606,7 +3699,7 @@ font-size: 35px;
 }
 @media screen and (max-width: 600px) and (min-width: 320px)
 {
-header .okr
+    header .okr
     {
         display: none;
     }
@@ -3628,9 +3721,10 @@ header .okr
 }
 @media screen and (max-width: 550px) and (min-width: 320px)
 {
-    .kamen {
-    width: 120px;
-}
+    .kamen
+    {
+        width: 120px;
+    }
     .kam_in
     {
         padding-right: 10%;
@@ -3802,8 +3896,11 @@ header .okr
     {
         font-size: 35px;
         line-height: 44px;
+
         display: inline-block;
+
         margin-top: 45px;
+
         text-transform: none;
     }
 
@@ -3914,17 +4011,23 @@ header .okr
     {
         font-size: 24px;
         line-height: 32px;
+
         display: inline-block;
+
         margin-top: 18px;
+
         letter-spacing: -.3px;
     }
-    .sec1 h2 sup{
-	font-size: 16px;
-}
+    .sec1 h2 sup
+    {
+        font-size: 16px;
+    }
     .sec1 h4
     {
         font-size: 20px;
+
         margin-top: 25px;
+
         letter-spacing: -.3px;
     }
     .sec2
@@ -4416,11 +4519,14 @@ header .okr
         margin-top: 100px;
     }
 }
-@media screen and (min-width:600px){
-.opis a, .opis_b a{
-	padding: 10px 0px 10px 10px;
-	/* margin: 10px 0px 0px 0px; */
-}
+@media screen and (min-width:600px)
+{
+    .opis a,
+    .opis_b a
+    {
+        padding: 10px 0 10px 10px;
+        /* margin: 10px 0px 0px 0px; */
+    }
 }
 @media screen and (max-width:625px)
 {

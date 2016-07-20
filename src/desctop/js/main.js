@@ -495,22 +495,22 @@ $(document).ready(function() {
                     $.arcticmodal('close');
                     if ($('form').find('input[type="text"]').closest('.map_form').length > 0) {
                         $('#okgo_m').arcticmodal({
-                        afterOpen: function(data, el) {
-                            $('body,header').css({
-                                'overflow': 'hidden',
-                                'padding-right': '16px'
-                            });
-                        }
-                    });
+                            afterOpen: function(data, el) {
+                                $('body,header').css({
+                                    'overflow': 'hidden',
+                                    'padding-right': '16px'
+                                });
+                            }
+                        });
                     } else {
                         $('#okgo').arcticmodal({
-                        afterOpen: function(data, el) {
-                            $('body,header').css({
-                                'overflow': 'hidden',
-                                'padding-right': '16px'
-                            });
-                        }
-                    });
+                            afterOpen: function(data, el) {
+                                $('body,header').css({
+                                    'overflow': 'hidden',
+                                    'padding-right': '16px'
+                                });
+                            }
+                        });
                     }
                     yaCounter38471935.reachGoal(track_event);
                     ga('send', 'event', 'submit', track_event);
@@ -1264,7 +1264,7 @@ function parse_granit() {
 
 
             //наповнення списків з карьерами  
-             $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '<span><img src="' + granit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a>').appendTo('.opis_b[data-kamen="granit"]');
+            $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '<span><img src="' + granit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a>').appendTo('.opis_b[data-kamen="granit"]');
             $('<li><a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a><span><img src="' + granit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></li>').appendTo('.opis[data-kamen="granit"]');
             $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a>').appendTo('.kam[data-kamen="granit"] .scroll-wrap');
 
