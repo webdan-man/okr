@@ -65,7 +65,9 @@ body
 }
 a
 {
-    text-decoration: none;color: inherit;outline: 0!important;
+    text-decoration: none;
+    color: inherit;
+    outline: 0!important;
 }
 
 #maket
@@ -182,11 +184,8 @@ form button:hover,
     position: relative;
     top: 23px;
     right: 3%;
-
     float: right;
-
-    min-width: 155px;
-
+    min-width: 175px;
     text-align: left;
 }
 .phone_gr a
@@ -199,7 +198,9 @@ form button:hover,
     color: white;
 }
 
-
+.phone_gr a span:nth-of-type(1){
+font-size: 24px;
+}
 .head_w .phone_gr a
 {
     transition: all .25s;
@@ -227,21 +228,16 @@ form button:hover,
     font-size: 45px;
     /* left: 50%; */
     line-height: 20px;
-
     position: relative;
-
     display: inline-block;
-
     width: 225px;
     width: 225px;
     height: 80px;
     margin-top: 5px;
     /* top: 26px; */
-    margin-left: 7.5%;
-
+    margin-left: 8%;
     text-align: center;
     letter-spacing: .1px;
-
     background-image: url(../img/logo.png);
     background-size: contain;
 }
@@ -279,7 +275,7 @@ form button:hover,
     width: 100%;
     margin-top: -218px;
 }
-.sec1 h4:nth-of-type(1)
+.sec1 h1
 {
     font-size: 25px;
     font-weight: 300;
@@ -294,7 +290,7 @@ form button:hover,
     letter-spacing: -.5px;
     /* background-image: url(../img/sec1_h.png); */
 }
-.sec1 h4:nth-of-type(1) span.after
+.sec1 h1 span.after
 {
     position: absolute;
     bottom: 4px;
@@ -310,20 +306,17 @@ form button:hover,
     background-image: url(../img/sec1_h.png);
     background-position: left bottom;
 }
-.sec1 h4:nth-of-type(1) span.after:hover
+.sec1 h1 span.after:hover
 {
-    position: absolute;
-    bottom: 4px;
-    left: 37.3%;
-
-    width: 110px;
-    height: 80px;
-
-    transition: height .35s cubic-bezier(.37, .52, .62, .36),width .35s cubic-bezier(.5, .02, .43, .98);
+    /* position: absolute; */
+    /* bottom: 4px; */
+    /* left: 37.3%; */
+    /* width: 110px; */
+    /* height: 80px; */
+    /* transition: height .35s cubic-bezier(.37, .52, .62, .36),width .35s cubic-bezier(.5, .02, .43, .98); */
     /* transition-delay: 5s; */
-    transition: all .35s linear;
-
-    background-image: url(../img/sec1_h.png);
+    /* transition: all .35s linear; */
+    /* background-image: url(../img/sec1_h.png); */
     background-position: left bottom;
 }
 /*.sec1 h4:nth-of-type(1) span.after:after{
@@ -337,33 +330,40 @@ form button:hover,
     width: 10px;
     height: 11px;
 }*/
-body.loaded .sec1 h4:nth-of-type(1) span.after
+body.loaded .sec1 h1 span.after
 {
     width: 110px;
     height: 80px;
 }
-.sec1 h4 span.span
+.sec1 h1 span.span
 {
     margin-left: 52px;
 }
 .sec1 h2
 {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 300;
     line-height: 60px;
-
     margin-top: 11px;
-
     letter-spacing: -.9px;
-
     color: #ffbf00;
+}
+.sec1 h2 span{
+    position: relative;
+    margin-right: 8px;
+    display: inline-block;
+}
+.sec1 h2 sup{
+	top: 13px;
+	font-size: 24px;
+	position: absolute;
+	right: -9px;
 }
 .sec1 h2:nth-of-type(2)
 {
     display: none;
 }
-.sec1 h4:nth-of-type(2)
-{
+.sec1 h4{
     font-size: 25px;
     font-weight: 300;
     /* padding: 0 40px; */
@@ -374,7 +374,17 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
 
     letter-spacing: -.5px;
 }
-.sec1 h4:nth-of-type(2) .like-button
+.like-button{
+    transition: all 0.25s;
+    cursor: pointer;
+}
+.like-button:hover{
+	background-color: #ffc000;
+	transition: all 0.25s;
+	color: #444444;
+	border-radius: 4px;
+}
+.sec1 h4 .like-button
 {
     line-height: 50px;
 
@@ -386,7 +396,7 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
     height: 50px;
     margin: 5px 13px;
 }
-.sec1 h4:nth-of-type(2) .like-button .before
+.sec1 h4 .like-button .before
 {
     position: absolute;
     top: 0;
@@ -403,22 +413,20 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
     /* background: url(../img/sq_border_left.png) no-repeat top right; */
     border-bottom-left-radius: 4px;
 }
-.sec1 h4:nth-of-type(2) .like-button .before:before
+.sec1 h4 .like-button .before:before
 {
     position: absolute;
     top: -2px;
     left: 0;
-
     display: block;
-
     width: 100%;
     height: 6px;
-
     content: '';
-
     background: url(../img/sq_border_left.png) no-repeat top right;
+    transition: all 0.25s;
 }
-.sec1 h4:nth-of-type(2) .like-button .after
+.sec1 h4 .like-button:hover .before:before{background-color: #ffc000;/* transition: all 0.25s; */height: 2px;top: 0px;}
+.sec1 h4 .like-button .after
 {
     position: absolute;top: 0;right: 0;display: block;
 
@@ -661,16 +669,15 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
 
     background-color: white;
 }
-.sec2 h5
+.sec2 h2:nth-of-type(1)
 {
-    font-size: 22px;
+    font-size: 32px;
     line-height: 30px;
-
     letter-spacing: -.3px;
-
     color: rgb( 68, 68, 68 );
+    margin-bottom: 40px;
 }
-.sec2 h2
+.sec2 h2:nth-of-type(2)
 {
     font-size: 36px;
 
@@ -682,7 +689,7 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
 
     color: rgb( 255, 191, 0 );
 }
-.sec2 h2:before
+.sec2 h2:nth-of-type(2):before
 {
     position: absolute;
     top: -35px;
@@ -708,7 +715,7 @@ body.loaded .sec1 h4:nth-of-type(1) span.after
     color: #444;
 }
 .sec2 h3 span,
-.sec2 h5 span
+.sec2 h2:nth-of-type(1) span
 {
     display: block;vertical-align: top;
 }
@@ -1585,16 +1592,13 @@ form button,
     top: -240px;
     left: -99px;
     /* display: none; */
-
     visibility: hidden;
-
     width: 230px;
     height: 240px;
     padding: 0 2px;
-
     cursor: initial;
-
     background-image: url(../img/trac_h.png);
+    z-index: 5;
 }
 .trak_h h4
 {
@@ -1781,16 +1785,13 @@ footer
     z-index: 11;
     top: 0;
     left: 0;
-
-    width: 600px;
+    width: 625px;
     height: 100%;
     /* opacity: 0.5; */
     padding-top: 35px;
     padding-left: 61px;
-
     -webkit-transition: all .25s;
-            transition: all .25s;
-
+    transition: all .25s;
     background-color: rgb( 255, 255, 255 );
     /* display: none; */
 }
@@ -1895,7 +1896,8 @@ footer
 {
     width: 100%;
     min-height: 35px;
-    padding-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .menu_m .menu_line a
 {
@@ -1904,18 +1906,13 @@ footer
 .menu_line a
 {
     font-size: 20px;
-
     position: relative;
     /* background-color: rgb(226, 226, 226); */
     z-index: 10;
-
     display: block;
-
     min-height: 20px;
-
     text-align: left;
     letter-spacing: -.3px;
-
     color: rgb( 170, 170, 170 );
     background-position: 155px;
     /* width: 95%; */
@@ -1935,10 +1932,9 @@ footer
     z-index: 2;
     top: 0;
     left: 9px;
-
     visibility: hidden;
-
-    width: 315px;
+    width: 370px;
+    min-width: 300px;
 }
 .opis_b.active,
 .opis_b_wrap.active
@@ -1962,21 +1958,102 @@ footer
 .opis_b a
 {
     font-size: 18px;
-
     display: inline-block;
-
-    width: 95%;
+    width: 81%;
     margin: 0 0;
-    padding: 10px 0 10px 10px;
-
+    padding: 5px 0 5px 10px;
     letter-spacing: .1px;
-
     color: rgb(88, 88, 88);
+    position: relative;
+}
+.opis a span, .opis_b a span{
+    
+margin-left: 10px;
+    
+position: absolute;
+    
+top: 50%;
+    
+right: -37px;
+    
+margin-top: -15px;
+    
+width: 30px;
+    
+height: 30px;
 }
 .opis a:hover,
 .opis_b a:hover
 {
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226)!important;
+}
+.opis_b a span .after, .opis a span .after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    margin-left: -21px;
+    transform: rotate(15deg);
+}
+
+.opis_b a span.after:after, .opis a span.after:after
+{
+    position: absolute;
+    z-index: 4;
+    bottom: 50%;
+    left: 50%;
+    display: block;
+    width: 21px;
+    height: 0;
+    margin-bottom: -21px;
+    margin-left: -20px;
+    content: '';
+    /* transition: 0.2s height 0.2s linear,0.2s width 0.1s linear; */
+    transition: height .2s linear,widht .1s linear;
+    /* transform: rotate(15deg); */
+    transform-origin: right center;
+    background-image: url(../img/trac_cir_m.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.opis_b a span .after:before, .opis a span .after:before
+{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    display: block;
+    width: 21px;
+    height: 0;
+    margin-top: -21px;
+    margin-right: -21px;
+    content: '';
+    /* transition: height 0.2s linear,widht 0.1s linear; */
+    transition: .2s height .2s linear,.2s width .1s linear;
+    /* transform: rotate(15deg); */
+    transform-origin: left center;
+    background-image: url(../img/trac_cir_m.png);
+    background-position: top right;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.opis_b a:hover span .after:after, .opis a:hover span .after:after
+{
+    width: 21px;
+    /* transition: height 0.2s linear,widht 0.1s linear; */
+    height: 42px;
+    transition: .2s height .2s linear,.2s width .1s linear;
+}
+.opis_b a:hover span .after:before, .opis a:hover span .after:before
+{
+    width: 21px;
+    /* transition: 0.2s height 0.2s linear,0.2s width 0.1s linear; */
+    height: 42px;
+    transition: height .2s linear,widht .1s linear;
 }
 
 #conf_pop
@@ -2013,12 +2090,10 @@ footer
 {
     position: relative;
     /* overflow: hidden; */
-
     float: left;
     /* display: table-cell; */
     /* vertical-align: middle; */
-
-    width: 350px;
+    width: 400px;
     /* height: 470px; */
     max-height: 100%;
     padding-right: 22px;
@@ -2398,7 +2473,7 @@ footer
 }
 #pop2 .inf_gr
 {
-    margin-top: 31px;
+    margin-top: -15px;
 }
 #pop2 .inf_gr p
 {
@@ -2454,7 +2529,7 @@ footer
     margin-top: 58px;
 }
 
-#okgo
+#okgo, #okgo_m
 {
     /* padding-top: 298px; */
     /* display: table-cell; */
@@ -2462,7 +2537,7 @@ footer
     /* height: 100vh; */
     position: relative;
 }
-#okgo .wrap
+#okgo, #okgo_m .wrap
 {
     position: absolute;
     top: 50%;
@@ -2472,7 +2547,7 @@ footer
 
     transform: translate3d(-50%,-50%,0);
 }
-#okgo h4
+#okgo, #okgo_m h4
 {
     margin-top: 57px;
 }
@@ -2591,7 +2666,8 @@ footer
 }
 .error-input
 {
-    /* border:1px solid red!important; */background-color: rgba(255, 0, 0, .2);
+    /* border:1px solid red!important; */
+    background-color: rgba(255, 0, 0, .2)!important;
 }
 .good-input
 {
@@ -2635,27 +2711,25 @@ footer
 .sec6 h2
 {
     font-size: 35px;
-
     letter-spacing: -1.0px;
-
     color: rgb( 68, 68, 68 );
+    position: relative;
+    z-index: 5;
 }
 .map_form
 {
     position: absolute;
     bottom: 0;
-
     width: 100%;
     margin-bottom: 20px;
     /* height: 125px; */
     padding: 10px;
-
     border: solid 2px rgb( 255, 191, 0 );
     border-top: 0;
     /* width: 90%; */
     /* display: inline-block; */
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .5);
 }
 .map_form .before
 {
@@ -2696,16 +2770,13 @@ footer
 .map_form h3
 {
     font-size: 24px;
-
     letter-spacing: -1.0px;
-
-    color: rgb( 68, 68, 68 );
+    color: rgb(250, 199, 44);
 }
 .map_form input
 {
     width: 23%;
     margin: 0 5px;
-
     border: 1px solid #444;
     background-color: white;
 }
@@ -2826,7 +2897,7 @@ footer
         /* margin-left: 0px; */
     }
     .sec2 h3 span,
-    .sec2 h5 span
+    .sec2 h2:nth-of-type(1) span
     {
         display: inline;
     }
@@ -2846,7 +2917,10 @@ footer
     {
         padding-top: 200px;
     }
-
+.sec1 h2{
+    
+font-size: 39px;
+}
     .map_w
     {
         top: 10px;
@@ -2876,6 +2950,14 @@ footer
 
         vertical-align: top;
     }
+    .sec1 h2{
+    
+font-size: 35px;
+}
+.sec1 h2 sup{
+	font-size: 22px;
+	top: 13px;
+}
     .pr_gr
     {
         /* float: left; */
@@ -2928,7 +3010,7 @@ footer
     {
         padding: 0 8% 0 5.5%;
     }
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         background-position: 41% 0;
     }
@@ -2979,7 +3061,7 @@ footer
         padding-left: 0;
     }
 
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 36%;
     }
@@ -2989,7 +3071,6 @@ footer
     .grup_pr
     {
         overflow: auto;
-
         min-height: 230px;
         /* width: 600px; */
         margin-bottom: 10px;
@@ -3019,7 +3100,7 @@ footer
     .grup_pr::-webkit-scrollbar-track
     {
         border-radius: 10px;
-        background-color:red;
+        background-color:rgb(221, 221, 221);
         border:5px solid whitesmoke;
         width:20px;
     }
@@ -3099,6 +3180,12 @@ footer
     {
         padding-top: 170px;
     }
+    .sec1 h2 {
+    font-size: 33px;
+}
+.sec1 h2 sup {
+    font-size: 20px;
+}
     .map_w
     {
         top: 35px;
@@ -3139,7 +3226,7 @@ footer
 
         max-width: 100%;height: 80px;
     }
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         background-position: 39% 0;
     }
@@ -3163,17 +3250,23 @@ footer
 }
 @media screen and (min-width: 750px) and (max-width: 800px)
 {
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 33%;
     }
 }
-@media screen and (min-width: 700px) and (max-width: 750px)
+@media screen and (max-width: 750px) and (min-width: 700px)
 {
     .sec1
     {
         padding-top: 160px;
     }
+        .sec1 h2 {
+    font-size: 31px;
+}
+.sec1 h2 sup {
+    font-size: 19px;
+}
     .bit_gr
     {
         margin-top: 100px;
@@ -3182,11 +3275,11 @@ footer
     {
         margin: 20px 0;
     }
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 33%;
     }
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         background-position: 39% 0;
     }
@@ -3209,16 +3302,17 @@ footer
     {
         padding-top: 150px;
     }
+    
     .bit_gr
     {
         margin-top: 90px;
     }
 
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         background-position: 39% 0;
     }
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 32%;
     }
@@ -3233,6 +3327,14 @@ footer
 }
 @media screen and (max-width: 700px) and (min-width: 320px)
 {
+    .sec1 h2 {
+    font-size: 35px;
+    line-height: 48px;
+}
+.sec1 h2 sup {
+    font-size: 22px;
+    top: 9px;
+}
     .kamni.active .kam_cir
     {
         display: inline-block;
@@ -3322,16 +3424,16 @@ footer
     }
     .sec1 h2
     {
-        font-size: 47px;
+        font-size: 35px;
         line-height: 48px;
     }
-    .sec2 h2
+    .sec2 h2:nth-of-type(2)
     {
         font-size: 36px;
 
         margin-top: 100px;
     }
-    .sec2 h2:before
+    .sec2 h2:nth-of-type(2):before
     {
         top: -47px;
     }
@@ -3421,13 +3523,13 @@ footer
 }
 @media screen and (min-width: 600px) and (max-width: 650px)
 {
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         font-size: 24px;
 
         background-position: 38% 0;
     }
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 32%;
     }
@@ -3446,8 +3548,9 @@ footer
     {
         display: inline-block;
         float: none;
-
         margin: 15px auto 0;
+        display: block;
+        float: none;
     }
     .verh
     {
@@ -3462,12 +3565,10 @@ footer
         position: relative;
         top: 0;
         left: 0;
-
         display: block;
         float: none;
-
-        margin: 25px auto 0;
         margin-left: 0;
+        margin: 25px auto 0;
     }
     .select a
     {
@@ -3484,13 +3585,13 @@ footer
     {
         margin-top: 70px;
     }
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         font-size: 22px;
 
         background-position: 36% 0;
     }
-    .sec1 h4:nth-of-type(1) span.after
+    .sec1 h1 span.after
     {
         left: 28%;
     }
@@ -3503,9 +3604,9 @@ footer
         padding-right: 8%;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 550px)
+@media screen and (max-width: 600px) and (min-width: 320px)
 {
-    header .okr
+header .okr
     {
         display: none;
     }
@@ -3514,7 +3615,7 @@ footer
     {
         display: none;
     }
-    .sec1 h4:nth-of-type(1)
+    .sec1 h1
     {
         display: none;
     }
@@ -3524,11 +3625,17 @@ footer
 
         display: inline-block;height: 90px;margin: 0 auto;margin-top: 0;
     }
+}
+@media screen and (max-width: 550px) and (min-width: 320px)
+{
+    .kamen {
+    width: 120px;
+}
     .kam_in
     {
-        padding-right: 8%;
+        padding-right: 10%;
     }
-    .sec1 h4:nth-of-type(2) span
+    .sec1 h4 span
     {
         display: none;
     }
@@ -3560,7 +3667,7 @@ footer
 }
 @media screen and (min-width: 320px) and (max-width: 1000px)
 {
-    .sec1 h4:nth-of-type(2)
+    .sec1 h4
     {
         width: 660px;
         margin-top: 10px;
@@ -3581,11 +3688,11 @@ footer
 
         margin-top: 20px;
     }
-    .sec1 h4:nth-of-type(2)
+    .sec1 h4
     {
         width: 100%;
     }
-    .sec1 h4:nth-of-type(2) .like-button
+    .sec1 h4 .like-button
     {
         font-size: 20px;
         line-height: 34px;
@@ -3594,11 +3701,11 @@ footer
         height: 34px;
     }
 
-    .sec1 h4:nth-of-type(2) .like-button .before
+    .sec1 h4 .like-button .before
     {
         width: 60px;height: 34px;
     }
-    .sec1 h4:nth-of-type(2) .like-button .before:before
+    .sec1 h4 .like-button .before:before
     {
         position: absolute;
         top: -2px;
@@ -3613,7 +3720,7 @@ footer
 
         background: url(../img/sq_border_left.png) no-repeat top right;
     }
-    .sec1 h4:nth-of-type(2) .like-button .after
+    .sec1 h4 .like-button .after
     {
         width: 60px;
         height: 34px;
@@ -3626,11 +3733,11 @@ footer
 
 @media screen and (max-width: 500px)
 {
-    .sec1 h4:nth-of-type(2)
+    .sec1 h4
     {
         width: 100%;
     }
-    .sec1 h4:nth-of-type(2) .like-button
+    .sec1 h4 .like-button
     {
         font-size: 16px;
         line-height: 30px;
@@ -3643,11 +3750,12 @@ footer
         top: 30px;
         right: 7.2%;
     }
-    .sec1 h4:nth-of-type(2) .like-button .before
+    .sec1 h4 .like-button .before
     {
-        width: 50px;height: 30px;
+        width: 50px;
+        height: 30px;
     }
-    .sec1 h4:nth-of-type(2) .like-button .before:before
+    .sec1 h4 .like-button .before:before
     {
         position: absolute;
         top: -2px;
@@ -3662,7 +3770,7 @@ footer
 
         background: url(../img/sq_border_left.png) no-repeat top right;
     }
-    .sec1 h4:nth-of-type(2) .like-button .after
+    .sec1 h4 .like-button .after
     {
         width: 50px;
         height: 30px;
@@ -3692,18 +3800,20 @@ footer
     }
     .sec1 h2:nth-of-type(2)
     {
-        font-size: 38px;line-height: 40px;
-
-        display: inline-block;margin-top: 45px;text-transform: none;
+        font-size: 35px;
+        line-height: 44px;
+        display: inline-block;
+        margin-top: 45px;
+        text-transform: none;
     }
 
-    .sec2 h2
+    .sec2 h2:nth-of-type(2)
     {
         font-size: 30px;
 
         margin-top: 70px;
     }
-    .sec2 h2:before
+    .sec2 h2:nth-of-type(2):before
     {
         top: -35px;
     }
@@ -3802,16 +3912,19 @@ footer
     }
     .sec1 h2:nth-of-type(2)
     {
-        font-size: 25px;line-height: 30px;
-
-        display: inline-block;margin-top: 32px;letter-spacing: -.3px;
+        font-size: 24px;
+        line-height: 32px;
+        display: inline-block;
+        margin-top: 18px;
+        letter-spacing: -.3px;
     }
-    .sec1 h4:nth-of-type(2)
+    .sec1 h2 sup{
+	font-size: 16px;
+}
+    .sec1 h4
     {
         font-size: 20px;
-
-        margin-top: 35px;
-
+        margin-top: 25px;
         letter-spacing: -.3px;
     }
     .sec2
@@ -3820,13 +3933,13 @@ footer
         padding-top: 35px;
         padding-bottom: 51px;
     }
-    .sec2 h5
+    .sec2 h2:nth-of-type(1)
     {
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 22px;
+        font-weight: 400;
         line-height: 20px;
     }
-    .sec2 h2,
+    .sec2 h2:nth-of-type(2),
     .sec2 h3
     {
         display: none;
@@ -4303,7 +4416,13 @@ footer
         margin-top: 100px;
     }
 }
-@media screen and (max-width:600px)
+@media screen and (min-width:600px){
+.opis a, .opis_b a{
+	padding: 10px 0px 10px 10px;
+	/* margin: 10px 0px 0px 0px; */
+}
+}
+@media screen and (max-width:625px)
 {
     .menu_line a
     {
@@ -4368,7 +4487,7 @@ footer
     }
     .opis li
     {
-        max-height: 40px;
+        /* max-height: 43px; */
         padding-left: 25px;
     }
     .opis:after

@@ -18,7 +18,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.btn_z').click(function(e) {
+    $('.btn_z, .like-button').click(function(e) {
         e.preventDefault();
         $('#pop1').arcticmodal();
     });
@@ -277,7 +277,7 @@ $(document).ready(function() {
     var menu_active = 0;
     $('.menu_btn').click(function(e) {
         e.preventDefault();
-        if ($(window).width() >= 600) {
+        if ($(window).width() >= 625) {
             $('.menu').removeClass('noactive');
         } else {
             $('.menu_m').removeClass('noactive');
@@ -493,7 +493,8 @@ $(document).ready(function() {
                 data: data,
                 success: function() {
                     $.arcticmodal('close');
-                    $('#okgo').arcticmodal({
+                    if ($('form').find('input[type="text"]').closest('.map_form').length > 0) {
+                        $('#okgo_m').arcticmodal({
                         afterOpen: function(data, el) {
                             $('body,header').css({
                                 'overflow': 'hidden',
@@ -501,6 +502,16 @@ $(document).ready(function() {
                             });
                         }
                     });
+                    } else {
+                        $('#okgo').arcticmodal({
+                        afterOpen: function(data, el) {
+                            $('body,header').css({
+                                'overflow': 'hidden',
+                                'padding-right': '16px'
+                            });
+                        }
+                    });
+                    }
                     yaCounter38471935.reachGoal(track_event);
                     ga('send', 'event', 'submit', track_event);
                 }
@@ -536,6 +547,8 @@ $(document).ready(function() {
 
     $('.close_g,.close_w').click(function() {
         $(this).parent().arcticmodal('close');
+        $('#kal2').removeClass('active');
+        $('#pop1 .kamni').removeClass('active');
     });
 
     /*
@@ -1078,8 +1091,8 @@ function parse_mramor() {
         for (var i = mramor_array.length - 1; i >= 0; i--) {
 
             //наповнення списків з карьерами  
-            $('<a href="#" data-id="' + mramor_array[i].id + '">' + mramor_array[i].name + '</a>').appendTo('.opis_b[data-kamen="mramor"]');
-            $('<li><a href="#" data-id="' + mramor_array[i].id + '">' + mramor_array[i].name + '</a></li>').appendTo('.opis[data-kamen="mramor"]');
+            $('<a href="#" data-id="' + mramor_array[i].id + '">' + mramor_array[i].name + '<span><img src="' + mramor_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a>').appendTo('.opis_b[data-kamen="mramor"]');
+            $('<li><a href="#" data-id="' + mramor_array[i].id + '">' + mramor_array[i].name + '<span><img src="' + mramor_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a></li>').appendTo('.opis[data-kamen="mramor"]');
             $('<a href="#" data-id="' + mramor_array[i].id + '">' + mramor_array[i].name + '</a>').appendTo('.kam[data-kamen="mramor"] .scroll-wrap');
 
             //магія карти через скелет
@@ -1251,8 +1264,8 @@ function parse_granit() {
 
 
             //наповнення списків з карьерами  
-            $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a>').appendTo('.opis_b[data-kamen="granit"]');
-            $('<li><a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a></li>').appendTo('.opis[data-kamen="granit"]');
+             $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '<span><img src="' + granit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a>').appendTo('.opis_b[data-kamen="granit"]');
+            $('<li><a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a><span><img src="' + granit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></li>').appendTo('.opis[data-kamen="granit"]');
             $('<a href="#" data-id="' + granit_array[i].id + '">' + granit_array[i].name + '</a>').appendTo('.kam[data-kamen="granit"] .scroll-wrap');
 
             //магія карти через скелет
@@ -1416,8 +1429,8 @@ function parse_dolomit() {
 
 
             //наповнення списків з карьерами  
-            $('<a href="#" data-id="' + dolomit_array[i].id + '">' + dolomit_array[i].name + '</a>').appendTo('.opis_b[data-kamen="dolomit"]');
-            $('<li><a href="#" data-id="' + dolomit_array[i].id + '">' + dolomit_array[i].name + '</a></li>').appendTo('.opis[data-kamen="dolomit"]');
+            $('<a href="#" data-id="' + dolomit_array[i].id + '">' + dolomit_array[i].name + '<span><img src="' + dolomit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a>').appendTo('.opis_b[data-kamen="dolomit"]');
+            $('<li><a href="#" data-id="' + dolomit_array[i].id + '">' + dolomit_array[i].name + '<span><img src="' + dolomit_array[i].kamen_map + '" alt height="30" width="30"><span class="after"></span></span></a></li>').appendTo('.opis[data-kamen="dolomit"]');
             $('<a href="#" data-id="' + dolomit_array[i].id + '">' + dolomit_array[i].name + '</a>').appendTo('.kam[data-kamen="dolomit"] .scroll-wrap');
 
             //магія карти через скелет
