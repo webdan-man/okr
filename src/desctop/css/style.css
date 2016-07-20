@@ -185,12 +185,9 @@ form button:hover,
     position: relative;
     top: 23px;
     right: 3%;
-
     float: right;
-
     min-width: 175px;
-
-    text-align: left;
+    text-align: right;
 }
 .phone_gr a
 {
@@ -364,18 +361,15 @@ body.loaded .sec1 h1 span.after
 .sec1 h2 span
 {
     position: relative;
-
     display: inline-block;
-
-    margin-right: 8px;
+    margin-right: 20px;
 }
 .sec1 h2 sup
 {
     font-size: 24px;
-
     position: absolute;
-    top: 13px;
-    right: -9px;
+    top: 16px;
+    right: -12px;
 }
 .sec1 h2:nth-of-type(2)
 {
@@ -3036,8 +3030,7 @@ footer
     .sec1 h2 sup
     {
         font-size: 22px;
-
-        top: 13px;
+        top: 18px;
     }
     .pr_gr
     {
@@ -3422,8 +3415,7 @@ footer
     .sec1 h2 sup
     {
         font-size: 22px;
-
-        top: 9px;
+        top: 10px;
     }
     .kamni.active .kam_cir
     {
@@ -4021,6 +4013,8 @@ footer
     .sec1 h2 sup
     {
         font-size: 16px;
+        top: 7px;
+        right: -10px;
     }
     .sec1 h4
     {

@@ -29,8 +29,8 @@
                 <span>ОКР</span>
             </a>
             <div class="phone_gr">
-                <a href="tel:88005054981">
-                    <span class="lptracker_phone">8 800 505 49 81</span><br>
+                <a href="tel:+78005054981">
+                    <span class="lptracker_phone">+7 800 505 49 81</span><br>
                     <span>Бесплатная линия</span>
                 </a>
             </div>
