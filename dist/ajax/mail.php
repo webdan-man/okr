@@ -6,6 +6,8 @@ $frmid = $_POST['frmid'];
 $type_k = $_POST['type_k'];
 $mesto = $_POST['mesto'];
 $karier = $_POST['karier'];
+
+
 $utm_source = $_POST['utm_source'];
 $utm_medium = $_POST['utm_medium'];
 $utm_campaign = $_POST['utm_campaign'];
@@ -20,6 +22,7 @@ $matchtype = $_POST['matchtype'];
 $location = $_POST['location'];
 $url = $_POST['url'];
 $title = $_POST['title'];
+
 
 $subject = 'Заявка ОКР';	
 

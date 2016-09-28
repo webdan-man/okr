@@ -35,7 +35,7 @@
                 </a>
             </div>
             <a class="okr" href="javascript:void(0)"></a>
-            <a class="btn_z" href="javascript:void(0)">Запрос цен</a>
+            <a class="btn_z" href="javascript:void(0)" contenteditable="true">Запрос цен</a>
         </header>
         <section class="sec1" id="sec1">
             <div class="wrap">
@@ -227,12 +227,12 @@
                                     <sup>3</sup>
                                 </span>
                             </h4>
-                            <form action="ajax/mail.php" method="post">
-                                <input name="name" type="text" placeholder="Имя">
+                            <form action="ajax/mail.php" method="post" class="licms" data-li-type="form">
+                                <input name="name" type="text" placeholder="Имя" class="licms" data-li-type="input" data-li-name="Имя">
                                 <input name="phone" type="text" placeholder="Телефон">
                                 <input name="email" type="text" placeholder="Email">
                                 <input name="frmid" type="hidden" value="Блок мрамор">
-                                <input name="type_k" type="hidden" value="Мрамор">
+                                <input name="type_k" type="hidden" value="Мрамор" class="licms" data-li-type="input" data-li-name="Тип камня">
                                 <input class="input-mramor" name="karier" type="hidden">
                                 <input class="event-mramor" name="event" type="hidden">
                                 <button type="submit" value="Получить прайс">Получить прайс</button>

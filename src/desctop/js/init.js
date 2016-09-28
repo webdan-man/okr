@@ -56,7 +56,7 @@ function initalize() {
         "undefined" != typeof exports ? exports.loadCSS = n : e.loadCSS = n
     }("undefined" != typeof global ? global : this)
 
-    //loadCSS("css/full.css");
+    loadCSS("css/full.css");
     //console.log('css-append');
 
 

@@ -1,6 +1,6 @@
 *
 {
-    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
+    -webkit-box-sizing: border-box                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;-moz-box-sizing: border-box;box-sizing: border-box;
     margin: 0;padding: 0;background-repeat: no-repeat;background-position: center;
 }
 :not(a):after,
@@ -185,8 +185,11 @@ form button:hover,
     position: relative;
     top: 23px;
     right: 3%;
+
     float: right;
+
     min-width: 175px;
+
     text-align: right;
 }
 .phone_gr a
@@ -361,12 +364,15 @@ body.loaded .sec1 h1 span.after
 .sec1 h2 span
 {
     position: relative;
+
     display: inline-block;
+
     margin-right: 20px;
 }
 .sec1 h2 sup
 {
     font-size: 24px;
+
     position: absolute;
     top: 16px;
     right: -12px;
@@ -446,7 +452,8 @@ body.loaded .sec1 h1 span.after
     background: url(../img/sq_border_left.png) no-repeat top right;
 }
 .sec1 h4 .like-button:hover .before:before
-{top: 0;height: 2px;
+{
+    top: 0;height: 2px;
 
     background-color: #ffc000;/* transition: all 0.25s; */
 }
@@ -469,7 +476,7 @@ body.loaded .sec1 h1 span.after
     height: 70px;
     margin-right: -203px;
 
-    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
+    cursor: pointer;     -webkit-animation-name: mouseDrag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;-webkit-animation-name: mouseDrag;animation-name: mouseDrag;-webkit-animation-duration: .5s;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-play-state: running;-webkit-animation-play-state: running;animation-play-state: running;-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);-webkit-animation-timing-function: cubic-bezier(.7,.01,1,1);
     animation-timing-function: cubic-bezier(.7,.01,1,1);
     -webkit-animation-delay: 1s;-webkit-animation-delay: 1s;animation-delay: 1s;-webkit-animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;-webkit-animation-direction: alternate;animation-direction: alternate;
 
@@ -3030,6 +3037,7 @@ footer
     .sec1 h2 sup
     {
         font-size: 22px;
+
         top: 18px;
     }
     .pr_gr
@@ -3415,6 +3423,7 @@ footer
     .sec1 h2 sup
     {
         font-size: 22px;
+
         top: 10px;
     }
     .kamni.active .kam_cir
@@ -4013,6 +4022,7 @@ footer
     .sec1 h2 sup
     {
         font-size: 16px;
+
         top: 7px;
         right: -10px;
     }
