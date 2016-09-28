@@ -3660,9 +3660,7 @@ footer
 
         display: block;
         float: none;
-
         margin: 25px auto 0;
-        margin-left: 0;
     }
     .select a
     {
@@ -4679,4 +4677,12 @@ footer
 .map_zoom_out:hover
 {
     color: #ffbf00;
+}
+.bs{    background: url(../img/bs_w.png) no-repeat center;
+    display: inline-block;
+    min-width: 175px;
+    min-height: 38px;
+    background-size: contain;
+    margin: 25px 30px 20px;
+    vertical-align: top;
 }

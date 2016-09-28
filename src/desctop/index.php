@@ -435,6 +435,7 @@
             <div class="wrap">
                 <a class="verh" href="mailto:karier-rossii@mail.ru">karier-rossii@mail.ru</a>
                 <a class="polit" href="javascript:void(0)">Политика конфиденциальности</a>
+                <a href="http://xn----btbjbbbyrp3a9e7bu.xn--p1ai/" target="_blank" class="bs"></a>
                 <a class="logo" href="javascript:void(0)"></a>
             </div>
         </footer>
